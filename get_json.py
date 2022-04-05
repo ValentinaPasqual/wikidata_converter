@@ -6,6 +6,9 @@ from tqdm import tqdm
 
 sparql = SPARQLWrapper2("https://query.wikidata.org/sparql")
 
+
+# Data preparation for Wikidata API requests (50 entities per item) 
+
 def wikidata_api_data_preparation(list_of_entities):
     string = ''
     result = []
@@ -22,6 +25,8 @@ def wikidata_api_data_preparation(list_of_entities):
             string = ''
         x += 50
     return result
+
+# Actual request (50 at a time) to Wikidata API
 
 def wikidata_api_requestor(prepared_list, output_partial_path=None):
     API_ENDPOINT = "https://www.wikidata.org/w/api.php"
@@ -40,10 +45,9 @@ def wikidata_api_requestor(prepared_list, output_partial_path=None):
         with open(output_partial_path + str(query) + ".json", "w") as outfile:
             json.dump(r.json(), outfile, indent = 4)
 
-# provina
-sparql = SPARQLWrapper2("https://query.wikidata.org/sparql")
-
-def get_entities_from_wikidata():  # get the list of entities and store them into 3 csv
+# Gets artworks with (when possible) their creator, location and type and stores them into 4 separate csv files
+            
+ def get_entities_from_wikidata():  # get the list of entities and store them into 3 csv
     artworks_list, artists_list, locations_list, types_list = [], [], [], []
     string = """
     SELECT DISTINCT ?artwork ?location ?artist ?type
@@ -76,7 +80,6 @@ def get_entities_from_wikidata():  # get the list of entities and store them int
     print(str(len(locations_list)) + ' locations entities')
     print(str(len(list(set(types_list)))) + ' types entities')
 
-
     artworks_dict = {'artworks_entities': list(set(artworks_list))}
     df = pd.DataFrame(artworks_dict)
     df.to_csv('E:/wiki/intermediate_files/artworks_entities.csv', index=False)
@@ -94,6 +97,9 @@ def get_entities_from_wikidata():  # get the list of entities and store them int
     df.to_csv('E:/wiki/intermediate_files/types_entities.csv', index=False)
 
     return artworks_list, artists_list, locations_list
+
+
+# Call all previous functions
 
 artworks_list, artists_list, locations_list = get_entities_from_wikidata()
 
