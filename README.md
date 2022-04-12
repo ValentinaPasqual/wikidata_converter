@@ -26,4 +26,5 @@ SELECT DISTINCT ?artwork ?type
 # Description
 
 - ```get_json.py```: first, it retrieve a set of Wikidata entities (defined by a SPARQL query - in our case, all artworks with their creators and locations when available). Then, it requests to Wikidata API all data related to all selected enitities and saves them into several json files (50 entities with their relative metadata each).
-- ```pybars_coverter.py```: takes as input all json files (from ```get_json.py```) and first, gets rid of useless information and second, convert them into several desider RDF models for expressing statements. 
+- ```pybars_coverter.py```: takes as input all json files (from ```get_json.py```) and first, gets rid of useless information and second, convert them into several desider RDF models for expressing statements. `templates``` folder. 
+    - The actual conversion fromt json to rdf is hadled with pybars3 templates (python version of javascript handlebars), and they are available in the ```templates``` folder. 
