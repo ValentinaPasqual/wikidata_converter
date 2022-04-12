@@ -26,4 +26,4 @@ SELECT DISTINCT ?artwork ?type
 # Description
 
 - ```get_json.py```: first, it retrieve a set of Wikidata entities (defined by a SPARQL query - in our case, all artworks with their creators and locations when available). Then, it requests to Wikidata API all data related to all selected enitities and saves them into several json files (50 entities with their relative metadata each).
-- ```pybars_coverter.py``: takes as input all json files (from ```get_json.py```) and first, gets rid of useless information and second, convert them into several desider formats. 
+- ```pybars_coverter.py```: takes as input all json files (from ```get_json.py```) and first, gets rid of useless information and second, convert them into several desider RDF models for expressing statements. 
