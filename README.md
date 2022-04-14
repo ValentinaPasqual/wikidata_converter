@@ -5,7 +5,8 @@ The final dataset is composed of three main sub-datasets:
 - Dataset B: Composed by ca. 10 million Wikidata random entities (except for artworks) and their relative statements. 
 - Dataset C: Composed by ca. XXX million entities and their relative statements whose ranking has been randomised (especially with ```wikibase:PreferredRank``` and ```wikibase:DeprecatedRank```).
 
-- Dataset A: All artworks with their type and when available their location and creator. 
+## Dataset A
+All artworks with their type and when available their location and creator. 
 
 ``` 
 SELECT DISTINCT ?artwork ?artist ?location ?type
@@ -17,7 +18,8 @@ SELECT DISTINCT ?artwork ?artist ?location ?type
         } 
 ```
 
-- Dataset B: Entities which are not artworks 
+## Dataset B
+Entities which are not artworks 
 
 ```
 SELECT DISTINCT *
@@ -29,7 +31,8 @@ WHERE {
     }
 LIMIT 10000
 ```
-- Dataset C: Work in Progress
+## Dataset C
+Work in Progress
 
 # Description
 
