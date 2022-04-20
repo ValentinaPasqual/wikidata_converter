@@ -24,6 +24,7 @@ SELECT DISTINCT ?artwork ?artist ?location ?type
         OPTIONAL {?artwork wdt:P276 ?location}
         } 
 ```
+
 Dataset A2 - artoworks, locations, artists
 - 2'000'000 artworks
 - 425'436 locations
@@ -35,6 +36,13 @@ Dataset A2.6 - artoworks, locations, artists
 - 282600 artists
 - 443150 locations
 - Size: 88,3 GB
+
+```
+SELECT DISTINCT ?artwork ?type WHERE {
+    ?artwork wdt:P31 ?type.
+    ?type (wdt:P279*) wd:Q838948. hint:Prior hint:rangeSafe true
+}
+``` 
 
 Dataset3 - only artworks
 - 3'537'243 artworks
