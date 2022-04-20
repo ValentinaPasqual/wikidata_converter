@@ -2,7 +2,7 @@
 
 The final dataset is composed of the union of three main sub-datasets:
 - Dataset A: Composed by ca. 3 million Wikidata artworks (along with, when possible, their creator and location) and their relative statements.
-- Dataset B: Composed by ca. 10 million Wikidata random entities (except for artworks) and their relative statements. 
+- Dataset B: Composed by ca. 3 million Wikidata random entities (except for artworks) and their relative statements. 
 - Dataset C: Composed by ca. XXX million entities and their relative statements whose ranking has been randomised (especially with ```wikibase:PreferredRank``` and ```wikibase:DeprecatedRank```).
 
 The final dataset will be modelled with five different RDF models:
