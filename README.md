@@ -44,7 +44,7 @@ SELECT DISTINCT ?artwork ?type WHERE {
 }
 ``` 
 
-Dataset3 - only artworks
+Dataset A3 - only artworks
 - 3'537'243 artworks
 - Size: 92 GB
 
