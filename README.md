@@ -24,6 +24,21 @@ SELECT DISTINCT ?artwork ?artist ?location ?type
         OPTIONAL {?artwork wdt:P276 ?location}
         } 
 ```
+Dataset A2 - artoworks, locations, artists
+- 2'000'000 artworks
+- 425'436 locations
+- 257'791 artists
+- Size: 74,7 GB
+
+Dataset A2.6 - artoworks, locations, artists
+- 2'600'000 artworks
+- 282600 artists
+- 443150 locations
+- Size: 88,3 GB
+
+Dataset3 - only artworks
+- 3'537'243 artworks
+- Size: 92 GB
 
 ## Dataset B
 Entities which are not artworks 
@@ -38,6 +53,11 @@ WHERE {
     }
 LIMIT 10000
 ```
+
+Dataset B1:
+- 3'000'000 entities
+- Size: 144,5 GB
+
 ## Dataset C
 Work in Progress
 
