@@ -44,14 +44,11 @@ Dataset3 - only artworks
 Entities which are not artworks 
 
 ```
-SELECT DISTINCT *
-WHERE {
-    ?entity wdt:P31 ?type.
-    FILTER NOT EXISTS {
-        ?type wdt:P279* wd:Q838948.
-        }
-    }
-LIMIT 10000
+SELECT DISTINCT * WHERE {
+    ?entity wdt:P31 ?type. hint:Prior hint:rangeSafe true
+    MINUS { ?type (wdt:P279*) wd:Q838948. }
+}
+LIMIT 3000000
 ```
 
 Dataset B1:
