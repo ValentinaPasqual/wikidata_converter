@@ -27,6 +27,10 @@ SELECT DISTINCT ?human
 LIMIT 200000
 
 
-As statements URI, we create random identifiers
+As statements URI, we create random identifiers (e.g. "R-176448-1-Q106690507")
 
 Each subject can randomely has from 1 to 5 fake attributions.
+
+Each statement has been added into a json file which has the same structure as the wikidata json which can be retreived from the Wikidata API.
+
+The json has been converted in RDF thanks to https://www.fabiovitali.it/wikidataconverter/
