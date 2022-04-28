@@ -59,10 +59,3 @@ string_final = """{\"entities\": """ + string3 + "}"
 
 print(string_final)
 print('****************************')
-
-
-
-
-
-
-
