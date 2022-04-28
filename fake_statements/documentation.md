@@ -5,7 +5,7 @@ We create a Dataset C with fake attributions, composed by:
 As subjects, we select 20% of our artworks with an author (wdt:P170), so:
   - 3550313 artworks in total 
   - 882247 artworks wich has a creator (wdt:P170)
-  - 176449 artworks we select to be the subject of our random/fake statements (20% out of XXXXX)
+  - 176449 artworks we select to be the subject of our random/fake statements (20% out of 882247)
 
 Query to retrieve all artworks which have been created by an artist:
 ```
