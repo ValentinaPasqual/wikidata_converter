@@ -36,4 +36,6 @@ Each subject can randomely has from 1 to 5 fake attributions.
 
 Each statement has been added into a json file which has the same structure as the wikidata json which can be retreived from the Wikidata API.
 
+Each statement ranking corresponds to "Deprecated"
+
 The json has been converted in RDF thanks to https://www.fabiovitali.it/wikidataconverter/
