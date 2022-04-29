@@ -49,4 +49,4 @@ Note: these counts has been made trough the counter.py script, available in this
 
 ******************************************************************************************************************************************************************
 
-
+We do the same also for fake artworks locations (but this time, we consider also time constraints).
