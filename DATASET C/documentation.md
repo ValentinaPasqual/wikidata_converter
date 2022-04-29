@@ -40,8 +40,9 @@ The json has been converted in RDF thanks to https://www.fabiovitali.it/wikidata
 With this templating a provenance triple has been added to each statement to qualify its fakeness (statement prov:wasDerivedFrom "fake news")
 
 DATASET C NOW CONTAINS:
-- 176400 artoworks 
+- 176400 artworks 
 - 706611 (fake) attribution statements 
+- avg. 4 statements added to each artwork
 
 
 ******************************************************************************************************************************************************************
