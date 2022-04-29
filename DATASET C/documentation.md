@@ -44,6 +44,8 @@ DATASET C NOW CONTAINS:
 - 706611 (fake) attribution statements 
 - avg. 4 statements added to each artwork
 
+Note: these counts has been made trough the counter.py script, available in this folder
+
 
 ******************************************************************************************************************************************************************
 
