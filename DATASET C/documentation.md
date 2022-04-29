@@ -43,6 +43,7 @@ DATASET C NOW CONTAINS:
 - 176400 artworks 
 - 706611 (fake) attribution statements 
 - avg. 4 statements added to each artwork
+- 621GB size of all the json files created with randomic.py
 
 Note: these counts has been made trough the counter.py script, available in this folder
 
