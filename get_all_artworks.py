@@ -88,4 +88,4 @@ def get_entities_from_wikidata():  # get the list of entities and store them int
 artworks_list = get_entities_from_wikidata()
 
 prepared_artworks_list = wikidata_api_data_preparation(artworks_list)
-wikidata_api_requestor(prepared_artworks_list, "/home/yoda/wiki/output_data/artworks/artwork")
+wikidata_api_requestor(prepared_artworks_list, "/home/x_y_z/wiki/output_data/artworks/artwork")
