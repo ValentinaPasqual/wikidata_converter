@@ -1,32 +1,33 @@
 {{#with this as | main | }}
 {{#each labels as |label|}}
-#   {{main.id}}: {{label.value}} ({{uc label.language}})
+#   wd:{{main.id}}: {{label.value}} ({{uc label.language}})
 {{/each}}
 
 {{#each labels as |label|}}
-{{main.id}} rdfs:label "{{label.value}}"@{{label.language}} ;
+wd:{{main.id}} rdfs:label "{{label.value}}"@{{label.language}} ;
 	skos:prefLabel "{{label.value}}"@{{label.language}} ;
 	schema:name "{{label.value}}"@{{label.language}} .
 {{/each}}
 
 {{#each descriptions as |d|}}
-{{main.id}} schema:description "{{d.value}}"@{{d.language}}.
+wd:{{main.id}} schema:description "{{d.value}}"@{{d.language}}.
 {{/each}}
 
 {{#each aliases}}
 {{#each this as | alias |}}
-{{main.id}} skos:altLabel "{{alias.value}}"@{{alias.language}}.
+wd:{{main.id}} skos:altLabel "{{alias.value}}"@{{alias.language}}.
 {{/each}}
 {{/each}}
 
 {{#each claims}}
 {{#each this as | statement |}}
 
-wd:{{main.id}} s:{{statement.id}} {{dataValue statement.mainsnak.datavalue}}.
-s:{{statement.id}} wikibase:rank wikibase:{{tc rank}}Rank.
+wd:{{main.id}} s:{{rd statement.id}} {{{dataValue statement.mainsnak.datavalue}}}.
+s:{{rd statement.id}} wikibase:rank wikibase:{{tc rank}}Rank ;
+    singleton:signletonPropertyOf wdt:{{statement.mainsnak.property}} .
 {{#each qualifiers}}
 {{#each this as |q|}}
-s:{{statement.id}} p:{{q.property}} {{dataValue q.datavalue}}.
+s:{{rd statement.id}} p:{{q.property}} {{{dataValue q.datavalue}}}.
 {{/each}}
 {{/each}}
 {{/each}}
