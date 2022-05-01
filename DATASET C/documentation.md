@@ -55,3 +55,19 @@ Note: these counts has been made trough the counter.py script, available in this
 ## Fake Locations (with fake locations and dates)
 
 We do the same also for fake artworks locations (but this time, we consider also time constraints).
+
+As subjects, we select 20% of our artworks with a location (wdt:P276), so:
+  - 3550313 artworks in total 
+  - XXX artworks wich has a creator (wdt:P276)
+  - XXX artworks we select to be the subject of our random/fake statements (20% out of XXX)
+
+Query to retrieve all artworks which have been created by an artist:
+```
+SELECT DISTINCT ?artwork
+    WHERE {
+        ?artwork wdt:P31 ?type.
+        ?type wdt:P279* wd:Q838948.
+        ?artwork wdt:P276 ?location}
+```
+
+
