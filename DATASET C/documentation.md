@@ -1,6 +1,8 @@
 # RANDOM STATEMENTS
 
-We create a Dataset C with fake attributions, composed by:
+We create a Dataset C with fake artworks attributions and fake artworks locations
+
+## Fake Attributions (with fake humans as artowork's creators)
 
 As subjects, we select 20% of our artworks with an author (wdt:P170), so:
   - 3550313 artworks in total 
@@ -49,5 +51,7 @@ Note: these counts has been made trough the counter.py script, available in this
 
 
 ******************************************************************************************************************************************************************
+
+## Fake Locations (with fake locations and dates as artowork's creators)
 
 We do the same also for fake artworks locations (but this time, we consider also time constraints).
