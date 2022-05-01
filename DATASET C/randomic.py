@@ -20,7 +20,7 @@ result = []
 i = 0
 while i <= len(artists_list):
     string3, string4, final_string = str(), str(), str()
-    for artist in artists_list[i:i+100]:
+    for artist in artists_list[i:i+200]:
         n = random.choice(num)
         x = 0
         string2 = str()
@@ -56,11 +56,12 @@ while i <= len(artists_list):
             string2 = string2 + string
             x += 1
         string3 = """\"""" + short_subj + """\":{"id":\"""" + short_subj+ """\", \"claims\": {\"P170\":[""" + string2 + "]}}"
-        if artists_list.index(artist) != i+99 :
-            string3 = string3 + ','
+        if artists_list.index(artist) != len(artists_list) - 1:
+            if artists_list.index(artist) != i+199 :
+                string3 = string3 + ','
         string4 = string4 + string3
     string_final = """{\"entities\": {""" + string4 + "}}"
     r = json.loads(string_final)
-    with open('C:/Users/Valentina/Documents/DHDK/DHARC/PhD/tesi_eduard/fake_statements/' + "file" + str(i) + '-' + str(i+100) + ".json", 'w') as outfile:
+    with open('C:/Users/Valentina/Documents/DHDK/DHARC/PhD/tesi_eduard/fake_statements_2/' + "file" + str(i) + '-' + str(i+ 200) + ".json", 'w') as outfile:
         json.dump(r, outfile, indent=4)
-    i += 100
+    i += 200
