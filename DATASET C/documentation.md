@@ -52,6 +52,6 @@ Note: these counts has been made trough the counter.py script, available in this
 
 ******************************************************************************************************************************************************************
 
-## Fake Locations (with fake locations and dates as artowork's creators)
+## Fake Locations (with fake locations and dates)
 
 We do the same also for fake artworks locations (but this time, we consider also time constraints).
