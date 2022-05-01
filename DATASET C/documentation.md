@@ -34,7 +34,7 @@ As statements URI, we create random identifiers (e.g. "R-176448-1-Q106690507")
 
 Each subject can randomely has from 1 to 5 fake attributions.
 
-Each statement has been added into a json file which has the same structure as the wikidata json which can be retreived from the Wikidata API. (by the script randomic). Each statement ranking corresponds to "Deprecated".
+Each statement has been added into a json file which has the same structure as the wikidata json which can be retreived from the Wikidata API. (by the script randomic_humans.py). Each statement ranking corresponds to "Deprecated".
 
 The json has been converted in RDF thanks to https://www.fabiovitali.it/wikidataconverter/
 With this templating a provenance triple has been added to each statement to qualify its fakeness (statement prov:wasDerivedFrom "fake news")
@@ -43,7 +43,7 @@ DATASET C NOW CONTAINS:
 - 176400 artworks 
 - 706611 (fake) attribution statements 
 - avg. 4 statements added to each artwork
-- 621 MB size of all the json files created with randomic.py
+- 621 MB size of all the json files created with randomic_humans.py
 
 Note: these counts has been made trough the counter.py script, available in this folder
 
