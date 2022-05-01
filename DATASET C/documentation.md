@@ -58,8 +58,8 @@ We do the same also for fake artworks locations (but this time, we consider also
 
 As subjects, we select 20% of our artworks with a location (wdt:P276), so:
   - 3550313 artworks in total 
-  - XXX artworks wich has a creator (wdt:P276)
-  - XXX artworks we select to be the subject of our random/fake statements (20% out of XXX)
+  - 1016181 artworks wich has a location (wdt:P276)
+  - 203236 artworks we select to be the subject of our random/fake statements (20% out of 1016181)
 
 Query to retrieve all artworks which have been created by an artist:
 ```
