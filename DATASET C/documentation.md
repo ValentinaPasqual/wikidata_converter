@@ -52,7 +52,7 @@ Note: these counts has been made trough the counter.py script, available in this
 
 ******************************************************************************************************************************************************************
 
-## Fake Locations (with fake locations and dates)
+## Fake Locations (with fake time constraints)
 
 We do the same also for fake artworks locations (but this time, we consider also time constraints).
 
