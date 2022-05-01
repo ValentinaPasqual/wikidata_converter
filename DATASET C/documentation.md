@@ -84,3 +84,8 @@ LIMIT 250000
 ```
 
 
+ALL INCEPTION DATES --> RIVEDI
+SELECT DISTINCT ?obj
+    WHERE {
+        ?s wdt:P571 ?obj}
+
