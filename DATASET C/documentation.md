@@ -69,5 +69,18 @@ SELECT DISTINCT ?artwork
         ?type wdt:P279* wd:Q838948.
         ?artwork wdt:P276 ?location}
 ```
+As predicates we choose wdt:P275
+
+As objects we select a number of humans from wikidata (looking at wdt:P276 costraints, the object has to be an individual of human)
+
+Query to retrieve all 250000 locations from wikidata:
+
+```
+SELECT DISTINCT ?human
+    WHERE {
+        ?human wdt:P31 wd:Q17334923}
+
+LIMIT 250000
+```
 
 
