@@ -47,7 +47,7 @@ def wikidata_api_requestor(prepared_list, output_partial_path=None):
 
 # Gets artworks with (when possible) their creator, location and type and stores them into 4 separate csv files
             
- def get_entities_from_wikidata():  # get the list of entities and store them into 3 csv
+def get_entities_from_wikidata():  # get the list of entities and store them into 3 csv
     artworks_list, artists_list, locations_list, types_list = [], [], [], []
     string = """
     SELECT DISTINCT ?artwork ?location ?artist ?type
