@@ -22,7 +22,7 @@ def select_data_from_json(directory_name):
                         try:
                             entities_list.append(json_file['entities'][entity]['claims'][predicate][x]['mainsnak']['datavalue']['value']['id'])
                         except:
-                            print('some error occurred', entity, predicate)
+                            print('some uncaught json structure', entity, predicate)
                         x += 1
     list(set(entities_list))
     print(len(entities_list), 'new entities')
