@@ -25,7 +25,7 @@ wd:{{main.id}} skos:altLabel "{{alias.value}}"@{{alias.language}}.
 << wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}} >> 
 {{#each qualifiers}}
 {{#each this as |q|}}
-   p:{{q.property}} {{{dataValue q.datavalue}}} ; 
+   ps:{{q.property}} {{{dataValue q.datavalue}}} ; 
 {{/each}}
 {{/each}}
 	wikibase:rank wikibase:{{tc rank}}Rank .
