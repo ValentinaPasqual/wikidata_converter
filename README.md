@@ -79,6 +79,12 @@ Dataset B1:
 - 3'000'000 entities
 - Size: 144,5 GB
 
+|                          | **Dataset B**  | 
+|--------------------------|----------------|
+| **Entities**             | 2999950        |
+| **Statements**           | 62102530       |
+| **Folder weight**        | 144.3 GB       | 
+
 ## Dataset C
 Work in Progress
 
