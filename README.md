@@ -25,18 +25,7 @@ SELECT DISTINCT ?artwork ?artist ?location ?type
         } 
 ```
 
-Dataset A2 - artoworks, locations, artists
-- 2'000'000 artworks
-- 425'436 locations
-- 257'791 artists
-- Size: 74,7 GB
-
-Dataset A2.6 - artoworks, locations, artists
-- 2'600'000 artworks
-- 282600 artists
-- 443150 locations
-- Size: 88,3 GB
-
+All artworks from wikidata
 ```
 SELECT DISTINCT ?artwork ?type WHERE {
     ?artwork wdt:P31 ?type.
