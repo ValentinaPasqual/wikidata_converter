@@ -60,10 +60,6 @@ SELECT DISTINCT * WHERE {
 LIMIT 3000000
 ```
 
-Dataset B1:
-- 3'000'000 entities
-- Size: 144,5 GB
-
 |                          | **Dataset B**  | 
 |--------------------------|----------------|
 | **Entities**             | 2999950        |
