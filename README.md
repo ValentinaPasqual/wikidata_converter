@@ -48,6 +48,22 @@ Dataset A3 - only artworks
 - 3'537'243 artworks
 - Size: 92 GB
 
+
+|                          | **Dataset A1** | **Dataset A2** | **Dataset A3**  |
+|--------------------------|----------------|----------------|-----------------|
+| **Artworks Entities**    | 996679         | 1989093        | 3537045         |
+| **Artworks Statements**  | 12737671       | 23042262       | 39868568        |
+| **Locations Entities**   | 25282          | 76159          |                 |
+| **Locations Statements** | 906008         | 3376693        |                 |
+| **Authors Entities**     | //             | //             |                 |
+| **Authors Statements**   | //             | //             |                 |
+| **Creators Entities**    | 19865          | 88663          |                 |
+| **Creators Statements**  | 1235069        | 5988387        |                 |
+| **Total Entities**       | 1041826        | 2153915        |                 |
+| **Total Statements**     | 23032748       | 32407342       |                 |
+| **Folder weight**        | 31.7 GB        | 74.6 GB        | WIP:57.4+91.9GB |
+
+
 ## Dataset B
 Entities which are not artworks 
 
