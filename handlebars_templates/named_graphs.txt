@@ -1,4 +1,3 @@
-
 {{#with this as | main | }}
 {{#each labels as |label|}}
 #   wd:{{main.id}}: {{label.value}} ({{uc label.language}})
@@ -23,17 +22,14 @@ wd:{{main.id}} skos:altLabel "{{alias.value}}"@{{alias.language}}.
 {{#each claims}}
 {{#each this as | statement |}}
 
-GRAPH s:{{statement.id}}  {
-   wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
-}
-   s:{{statement.id}} wikibase:rank wikibase:{{tc rank}}Rank.
+<< wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}} >> 
 {{#each qualifiers}}
 {{#each this as |q|}}
-   s:{{statement.id}} p:{{q.property}} {{{dataValue q.datavalue}}}.
+   p:{{q.property}} {{{dataValue q.datavalue}}} ; 
 {{/each}}
 {{/each}}
-{{/each}}
-  
+	wikibase:rank wikibase:{{tc rank}}Rank .
+{{/each}}  
    
 {{/each}}
 {{/with}}
