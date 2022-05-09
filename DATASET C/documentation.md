@@ -84,9 +84,13 @@ SELECT DISTINCT ?location
 
 LIMIT 250000
 ```
-
-
-ALL INCEPTION DATES --> RIVEDI
-SELECT DISTINCT ?obj
+Query to retrieve 250000 valid timespans from wikidata:
+```
+SELECT DISTINCT ?startTime ?endTime
     WHERE {
-        ?s wdt:P571 ?obj}
+      ?s pq:P580 ?startTime ;
+         pq:P582 ?endTime
+    }
+
+LIMIT 250000
+```
