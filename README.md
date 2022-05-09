@@ -36,17 +36,17 @@ SELECT DISTINCT ?artwork ?type WHERE {
 
 |                          | **Dataset A1** | **Dataset A2** | **Dataset A3**  |
 |--------------------------|----------------|----------------|-----------------|
-| **Artworks Entities**    | 996679         | 1989093        | 3537045         |
-| **Artworks Statements**  | 12737671       | 23042262       | 39868568        |
-| **Locations Entities**   | 25282          | 76159          |                 |
-| **Locations Statements** | 906008         | 3376693        |                 |
-| **Authors Entities**     | //             | //             |                 |
-| **Authors Statements**   | //             | //             |                 |
-| **Creators Entities**    | 19865          | 88663          |                 |
-| **Creators Statements**  | 1235069        | 5988387        |                 |
-| **Total Entities**       | 1041826        | 2153915        |                 |
-| **Total Statements**     | 23032748       | 32407342       |                 |
-| **Folder weight**        | 31.7 GB        | 74.6 GB        | WIP:57.4+91.9GB |
+| **Artworks Entities**    | 996679         | 1989191        | 3537045         |
+| **Artworks Statements**  | 12737671       | 23043346       | 39868568        |
+| **Locations Entities**   | 25282          | 76159          | 1233369         |
+| **Locations Statements** | 906008         | 3376693        | 24189262        |
+| **Authors Entities**     | //             | //             | 765350          |
+| **Authors Statements**   | //             | //             | 24389391        |
+| **Creators Entities**    | 19865          | 88663          | 1377454         |
+| **Creators Statements**  | 1235069        | 5988387        | 53738223        |
+| **Total Entities**       | 1041826        | 2154013        | 6913218         |
+| **Total Statements**     | 23032748       | 32408426       | 142185444       |
+| **Folder weight**        | 31.7 GB        | 74.6 GB        | 359,2 GB        |
 
 
 ## Dataset B
@@ -62,8 +62,8 @@ LIMIT 3000000
 
 |                          | **Dataset B**  | 
 |--------------------------|----------------|
-| **Entities**             | 2999950        |
-| **Statements**           | 62102530       |
+| **Entities**             | 2999999        |
+| **Statements**           | 62102993       |
 | **Folder weight**        | 144.3 GB       | 
 
 ## Dataset C
