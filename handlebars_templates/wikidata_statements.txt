@@ -27,8 +27,8 @@ wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsn
    {{else}}
 wd:{{main.id}} a wdno:{{statement.mainsnak.property}}.
    {{/if}}
-wd:{{main.id}} p:{{statement.mainsnak.property}} s:{{rd statement.id}} .
-s:{{rd statement.id}} a wikibase:Statement; 
+wd:{{main.id}} p:{{statement.mainsnak.property}} s:{{statement.id}} .
+s:{{statement.id}} a wikibase:Statement; 
 {{#each qualifiers}}
 {{#each this as |q|}}
     pq:{{q.property}} {{{dataValue q.datavalue}}};
@@ -37,7 +37,7 @@ s:{{rd statement.id}} a wikibase:Statement;
    {{#if statement.mainsnak.datavalue }}
     ps:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}};
    {{else}}
-    a wdno:{{statement.mainsnak.property}}.
+    a wdno:{{statement.mainsnak.property}};
    {{/if}}
      wikibase:rank wikibase:{{tc rank}}Rank.
 {{/each}}
