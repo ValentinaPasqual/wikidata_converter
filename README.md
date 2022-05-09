@@ -67,7 +67,14 @@ LIMIT 3000000
 | **Folder weight**        | 144.3 GB       | 
 
 ## Dataset C
-Work in Progress
+For an in depth documentation of the process of creation of Dataset C, please see ```documentation.md``` in ```DATASET C``` folder.
+
+|                                    | **Fake creators** | **Fake authors** | **Fake locations** | **Total Dataset C** |
+|------------------------------------|-------------------|------------------|--------------------|---------------------|
+| **Entities (artworks)**            | 996679            |                  | 203236             |                     |
+| **Statements (fake)**              | 12737671          |                  |                    |                     |
+| **Avg. fake statements x artwork** | 4                 |                  |                    |                     |
+| **Folder weight**                  | 621 MB            |                  |                    |                     |
 
 # Description
 
