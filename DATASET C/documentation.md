@@ -109,7 +109,7 @@ The json has been converted in RDF thanks to https://www.fabiovitali.it/wikidata
 With this templating a provenance triple has been added to each statement to qualify its fakeness (```statement prov:wasDerivedFrom "fake news"```)
 
 DATASET C NOW CONTAINS:
-- XXXX artworks
+- 203236 artworks
 - XXXX (fake) location statements
 - avg. 4 statements added to each artwork
 - 621 MB size of all the json files created with ```randomic_statements.py```
