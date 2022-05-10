@@ -72,9 +72,9 @@ For an in depth documentation of the process of creation of Dataset C, please se
 |                                    | **Fake creators** | **Fake authors** | **Fake locations** | **Total Dataset C** |
 |------------------------------------|-------------------|------------------|--------------------|---------------------|
 | **Entities (artworks)**            | 996679            |                  | 203236             |                     |
-| **Statements (fake)**              | 12737671          |                  |                    |                     |
-| **Avg. fake statements x artwork** | 4                 |                  |                    |                     |
-| **Folder weight**                  | 621 MB            |                  |                    |                     |
+| **Statements (fake)**              | 12737671          |                  | 812039             |                     |
+| **Avg. fake statements x artwork** | 4                 |                  | 4                  |                     |
+| **Folder weight**                  | 0.621 GB          |                  | 2,35 GB            |                     |
 
 # Description
 
