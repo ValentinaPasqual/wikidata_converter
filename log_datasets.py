@@ -81,7 +81,7 @@ wikidata_api_requestor(d1_prepared_entities_list, d1_output_path + 'related_enti
 
 ################################ CALL FUNCTION FOR D2 = 3500ca ENTITIES ################################
 
-n_entities_d2 = n_artworks_entities / 100
+n_entities_d2 = int(n_artworks_entities / 100)
 n_d2 = int(n_entities_d2 / 50)
 print('#### starting filling dir D2 #####')
 print(n_entities_d2, 'selected artwork entities')
@@ -96,8 +96,10 @@ wikidata_api_requestor(d2_prepared_entities_list, d2_output_path + 'related_enti
 
 ################################ CALL FUNCTIONS FOR D3 = 350'000 ARTWORK ENTITIES ################################
 
-n_entities_d3 = n_artworks_entities / 10
+n_entities_d3 = int(n_artworks_entities / 10)
 n_d3 = int(n_entities_d3 / 50)
+print('#### starting filling dir D3 #####')
+print(n_entities_d3, 'selected artwork entities')
 d3_output_path = make_directory(new_dir, 'D3/')
 copy_chosen_files(n_d3, input_path, d3_output_path, 'artwork')
 
