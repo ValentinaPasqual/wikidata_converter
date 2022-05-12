@@ -32,7 +32,7 @@ SELECT DISTINCT ?human
 LIMIT 200000
 ```
 
-As statements URI, we create random identifiers (e.g. "R-176448-1-Q106690507")
+As statements URI, we create random identifiers (e.g. "RC-176448-1-Q106690507")
 
 Each subject can randomly has from 1 to 5 fake attributions.
 
@@ -95,7 +95,7 @@ SELECT DISTINCT ?startTime ?endTime
 LIMIT 250000
 ```
 
-As statements URI, we create random identifiers (e.g. "R-94400-0-Q29478781")
+As statements URI, we create random identifiers (e.g. "RL-94400-0-Q29478781")
 
 Each subject can randomly has from 1 to 5 fake locations.
 
