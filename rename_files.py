@@ -2,7 +2,7 @@ import os
 import json
 import re
 
-# Enter the path to input/output folder
+# Enter the path to input folder
 info = ''' 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 +                           Rename the files in the folders                         +
@@ -12,9 +12,7 @@ print(info)
 
 input_folder_path = str(input('Enter input folder path:> '))
 name = str(input('Enter name:> '))
-#/home/yoda/authors/
-#/home/yoda/creators/
-#/home/yoda/locations/
+#/your_path/authors/
 
 # Change the directory
 os.chdir(input_folder_path)
