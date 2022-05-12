@@ -26,7 +26,7 @@ def select_data_from_json(directory_name):
                             None
                         x += 1
     list(set(entities_list))
-    print(len(entities_list), 'new entities')
+    print(len(entities_list), 'new P170, P50 and P276 entities')
     return entities_list
 
 def wikidata_api_data_preparation(list_of_entities):
@@ -44,7 +44,7 @@ def wikidata_api_data_preparation(list_of_entities):
             result.append(string[0:len(string)-1])
             string = ''
         x += 50
-    print('The list of entities to get from Wikidata API', result)
+    #print('The list of entities to get from Wikidata API', result)
     return result
 
 def wikidata_api_requestor(prepared_list, output_partial_path=None):

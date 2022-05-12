@@ -47,10 +47,12 @@ def copy_chosen_files(n, input_path, output_path, file_start_name):
 ################################ SETTING UP INPUT DATA AND DIRECTORIES ################################
 
 # path of input data (jsons artworks 3'500'000)
-input_path = "C:/Users/Valentina/Documents/DHDK/DHARC/PhD/tesi_eduard/dataset/json_artworks_not_really/"
+input_path = str(input('Enter input folder path:> '))
+#input_path = "C:/Users/Valentina/Documents/DHDK/DHARC/PhD/tesi_eduard/dataset/json_artworks_not_really/"
 
 # directory where to save new data
-root_dir = "C:/Users/Valentina/Documents/DHDK/DHARC/PhD/tesi_eduard/dataset/"
+root_dir = str(input('Enter output folder path:> '))
+#root_dir = "C:/Users/Valentina/Documents/DHDK/DHARC/PhD/tesi_eduard/dataset/"
 new_dir = make_directory(root_dir, 'log_data/')
 
 n_artworks_entities = 3537045
@@ -60,9 +62,12 @@ n_of_artworks_jsons = 1999 # change with the number of json file in the input pa
 
 ################################ CALL FUNCTION FOR D1 - ARTWORKS (ca 3500 Entities) ################################
 
-n_entities_d1 = n_artworks_entities / 1000
+n_entities_d1 = int(n_artworks_entities / 1000)
 n_d1 = int(n_entities_d1 / 50)
 d1_output_path = make_directory(new_dir, 'D1/')
+
+print('#### starting filling dir D1 #####')
+print(n_entities_d1, 'selected artwork entities')
 copy_chosen_files(n_d1, input_path, d1_output_path, 'artwork')
 
 d1_entities_list = select_data_from_json(d1_output_path)
@@ -78,6 +83,8 @@ wikidata_api_requestor(d1_prepared_entities_list, d1_output_path + 'related_enti
 
 n_entities_d2 = n_artworks_entities / 100
 n_d2 = int(n_entities_d2 / 50)
+print('#### starting filling dir D2 #####')
+print(n_entities_d2, 'selected artwork entities')
 d2_output_path = make_directory(new_dir, 'D2/')
 copy_chosen_files(n_d2, input_path, d2_output_path, 'artwork')
 
