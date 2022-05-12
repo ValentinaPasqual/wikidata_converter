@@ -10,7 +10,7 @@ def select_data_from_json(directory_name):
         filename = os.fsdecode(file)
         if filename.endswith(".json"):
             f = open(directory_name + '/' + filename, encoding='utf-8')
-            print(filename)
+            #print(filename)
             json_file = json.load(f) # input jsons
 
         for entity in json_file['entities']:
@@ -22,7 +22,8 @@ def select_data_from_json(directory_name):
                         try:
                             entities_list.append(json_file['entities'][entity]['claims'][predicate][x]['mainsnak']['datavalue']['value']['id'])
                         except:
-                            print('some uncaught json structure', entity, predicate)
+                            #print('some uncaught json structure', entity, predicate)
+                            None
                         x += 1
     list(set(entities_list))
     print(len(entities_list), 'new entities')
@@ -43,7 +44,7 @@ def wikidata_api_data_preparation(list_of_entities):
             result.append(string[0:len(string)-1])
             string = ''
         x += 50
-    print(result)
+    print('The list of entities to get from Wikidata API', result)
     return result
 
 def wikidata_api_requestor(prepared_list, output_partial_path=None):
@@ -63,7 +64,7 @@ def wikidata_api_requestor(prepared_list, output_partial_path=None):
         with open(output_partial_path + str(query) + ".json", "w") as outfile:
             json.dump(r.json(), outfile, indent = 4)
 
-entities_list = select_data_from_json("C:/Users/Valentina/Documents/DHDK/DHARC/PhD/tesi_eduard/dataset/json_artworks_not_really")
-prepared_entities_list = wikidata_api_data_preparation(entities_list)
-wikidata_api_requestor(prepared_entities_list, "C:/Users/Valentina/Documents/DHDK/DHARC/PhD/tesi_eduard/dataset/new_loc_and_artists/")
+#entities_list = select_data_from_json("C:/Users/Valentina/Documents/DHDK/DHARC/PhD/tesi_eduard/dataset/json_artworks_not_really")
+#prepared_entities_list = wikidata_api_data_preparation(entities_list)
+#wikidata_api_requestor(prepared_entities_list, "C:/Users/Valentina/Documents/DHDK/DHARC/PhD/tesi_eduard/dataset/new_loc_and_artists/")
 
