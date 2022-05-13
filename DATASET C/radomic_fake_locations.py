@@ -3,15 +3,15 @@ import random
 import time
 
 # GET JSONS
-with open('/home/yoda/wiki/input/artworks_with_locations.json') as f1:
+with open('/your_local_path_to_the_data/input/artworks_with_locations.json') as f1:
     json_artworks_locations = json.load(f1)
 
 json_artworks_locations = json_artworks_locations[:203236]
 
-with open('/home/yoda/wiki/input/cultural_institutions.json') as f2:
+with open('/your_local_path_to_the_data/input/cultural_institutions.json') as f2:
     json_locations = json.load(f2)
 
-with open('/home/yoda/wiki/input/timespans.json') as f3:
+with open('/your_local_path_to_the_data/input/timespans.json') as f3:
     json_timespans = json.load(f3)
 
 
@@ -113,7 +113,7 @@ def randomic_locations(json_artworks_locations, json_locations, folder_name):  #
             string4 = string4 + string3
         string_final = """{\"entities\": {""" + string4 + "}}"
         r = json.loads(string_final)
-        with open('/home/yoda/wiki/output/' + folder_name + "/file" + str(i) + '-' + str(i + 200) + ".json",
+        with open('/hyour_local_path_to_the_data/output/' + folder_name + "/file" + str(i) + '-' + str(i + 200) + ".json",
                   'w') as outfile:
             json.dump(r, outfile, indent=4)
         i += 200
