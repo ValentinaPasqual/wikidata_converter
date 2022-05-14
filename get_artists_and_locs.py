@@ -61,8 +61,11 @@ def wikidata_api_requestor(prepared_list, output_partial_path=None):
 
         r = requests.get(API_ENDPOINT, params = params)
 
-        with open(output_partial_path + str(query) + ".json", "w") as outfile:
+        with open(output_partial_path + 'art_rel_entities' + str(query) + ".json", "w") as outfile:
             json.dump(r.json(), outfile, indent = 4)
+
+
+# REMOVE COMMENTS BELOW TO GET ENTITIES
 
 #entities_list = select_data_from_json("C:/Users/Valentina/Documents/DHDK/DHARC/PhD/tesi_eduard/dataset/json_artworks_not_really")
 #prepared_entities_list = wikidata_api_data_preparation(entities_list)
