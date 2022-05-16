@@ -1,0 +1,38 @@
+{{#with this as | main | }}
+{{#each labels as |label|}}
+#   wd:{{main.id}}: {{{label.value}}} ({{uc label.language}})
+{{/each}}
+
+{{#each labels as |label|}}
+wd:{{main.id}} rdfs:label "{{{label.value}}}"@{{label.language}} ;
+	skos:prefLabel "{{{label.value}}}"@{{label.language}} ;
+	schema:name "{{{label.value}}}"@{{label.language}} .
+{{/each}}
+
+{{#each descriptions as |d|}}
+wd:{{main.id}} schema:description "{{{d.value}}}"@{{d.language}}.
+{{/each}}
+
+{{#each aliases}}
+{{#each this as | alias |}}
+wd:{{main.id}} skos:altLabel "{{{alias.value}}}"@{{alias.language}}.
+{{/each}}
+{{/each}}
+
+{{#each claims}}
+{{#each this as | statement |}}
+
+GRAPH s:{{rd statement.id}} { 
+wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}} 
+}
+{{#each qualifiers}}
+{{#each this as |q|}}
+s:{{rd statement.id}} ps:{{q.property}} {{{dataValue q.datavalue}}} ; 
+{{/each}}
+{{/each}}
+s:{{rd statement.id}} wikibase:rank wikibase:{{tc rank}}Rank ;
+    rdfs:comment "fake statement" . 
+{{/each}}  
+   
+{{/each}}
+{{/with}}
