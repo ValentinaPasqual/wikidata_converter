@@ -22,13 +22,15 @@ wd:{{main.id}} skos:altLabel "{{{alias.value}}}"@{{alias.language}}.
 {{#each claims}}
 {{#each this as | statement |}}
 
-<< wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}} >> 
+GRAPH s:{{rd statement.id}} { 
+wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}} 
+}
 {{#each qualifiers}}
 {{#each this as |q|}}
-   ps:{{q.property}} {{{dataValue q.datavalue}}} ; 
+s:{{rd statement.id}} ps:{{q.property}} {{{dataValue q.datavalue}}} ; 
 {{/each}}
 {{/each}}
-	wikibase:rank wikibase:{{tc rank}}Rank .
+s:{{rd statement.id}} wikibase:rank wikibase:{{tc rank}}Rank .
 {{/each}}  
    
 {{/each}}
