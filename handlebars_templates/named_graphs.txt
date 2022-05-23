@@ -27,7 +27,7 @@ wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsn
 }
 {{#each qualifiers}}
 {{#each this as |q|}}
-s:{{rd statement.id}} ps:{{q.property}} {{{dataValue q.datavalue}}} ; 
+s:{{rd statement.id}} ps:{{q.property}} {{{dataValue q.datavalue}}} .
 {{/each}}
 {{/each}}
 s:{{rd statement.id}} wikibase:rank wikibase:{{tc rank}}Rank .
