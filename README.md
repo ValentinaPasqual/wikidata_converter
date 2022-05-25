@@ -69,6 +69,11 @@ The results are summarised in the table below.
 | **Folder weight**        | 144.3 GB       | 
 
 ## Dataset C
+
+Dataset C contains a selection of fake statements regarding the creator, author or location of artworks (from dataset A3). Those new statements contain fake randomic information and are ranked as Deprecated in order to increase the number of conjectural statements in the final dataset. 
+
+For example, a fake statement can be the attribution of Mona Lisa to Tim Berners Lee. 
+
 For an in depth documentation of the process of creation of Dataset C, please see ```documentation.md``` in ```DATASET C``` folder.
 
 |                                    | **Fake creators** | **Fake authors** | **Fake locations** | **Total Dataset C** |
