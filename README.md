@@ -51,7 +51,8 @@ The results are summarised in the table below.
 ## Dataset B
 Then we selected 3'000'000 random wikidata entities which are not artworks along with their metadata (Q2).  This process is available at ```get_random_data.py```.
 
-Q2: ```
+Q2: 
+```
 SELECT DISTINCT * WHERE {
     ?entity wdt:P31 ?type. hint:Prior hint:rangeSafe true
     MINUS { ?type (wdt:P279*) wd:Q838948. }
@@ -79,4 +80,10 @@ For an in depth documentation of the process of creation of Dataset C, please se
 
 # LOG DATASETS
 
-Dataset A + B + C 
+Dataset A + B + C constitute our final dataset. From now, we will refer to the final dataset as D4. 
+In order to test Conjectures efficiency, we decided to create 3 additional datasets from D4:
+- D1 is D4 files / 1000 
+- D2 is D4 files / 100
+- D3 is D4 files / 10
+
+D1, D2, D3 contain a selected randomic selection of D4 in order to present the same Dataset in 4 different sizes (logaritmic increment) with a weighted distribution of the files.
