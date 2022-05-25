@@ -47,15 +47,17 @@ This process is available at ```get_artists_and_locs.py```.
 
 
 ## Dataset B
-Entities which are not artworks 
+Then we selected 3'000'000 random wikidata entities which are not artworks along with their metadata (Q2).  This process is available at ```get_random_data.py```.
 
-```
+Q2: ```
 SELECT DISTINCT * WHERE {
     ?entity wdt:P31 ?type. hint:Prior hint:rangeSafe true
     MINUS { ?type (wdt:P279*) wd:Q838948. }
 }
 LIMIT 3000000
 ```
+
+The results are summarised in the table below. 
 
 |                          | **Dataset B**  | 
 |--------------------------|----------------|
@@ -73,8 +75,4 @@ For an in depth documentation of the process of creation of Dataset C, please se
 | **Avg. fake statements x artwork** | 4                 | 4                | 4                  |                     |
 | **Folder weight**                  | 0.621 GB          | 0.551 GB         | 2,35 GB            |                     |
 
-# Description
-
-- ```get_json.py```: first, it retrieves a set of Wikidata entities (defined one of the SPARQL queries depending on dataset A, B or C). Then, it requests to Wikidata API all data related to all selected enitities and saves them into several json files (50 entities with their relative metadata each file).
-- Work in progress, it will be developed as a node.js application --> ```pybars_coverter.py```: takes as input all json files (from ```get_json.py```) and first, gets rid of useless information and second, convert them into several desider RDF models for expressing statements. `templates``` folder. 
-    - The actual conversion fromt json to rdf is hadled with pybars3 templates (python version of javascript handlebars), and they are available in the ```pybars_templates``` folder. 
+# LOG DATASETS
