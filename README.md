@@ -87,3 +87,9 @@ In order to test Conjectures efficiency, we decided to create 3 additional datas
 - D3 is D4 files / 10
 
 D1, D2, D3 contain a selected randomic selection of D4 in order to present the same Dataset in 4 different sizes (logaritmic increment) with a weighted distribution of the files.
+
+The process has been realised with ```log_datasets.py```.
+
+# Additional materials
+- In folder ```handlebars_templates``` has been saved all templates to convert jsons into RDF with https://www.fabiovitali.it/wikidataconverter/
+- In folder ```handlebars_templates_fake```has been saved all templates to convert fake jsons (Dataset C) into RDF https://www.fabiovitali.it/wikidataconverter/
