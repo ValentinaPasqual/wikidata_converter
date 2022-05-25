@@ -29,7 +29,9 @@ Additionally, we selected all creators (```wdt:P170```) (Q2), authors (```wdt:P5
 As in the previous step, we we got all creators, authors and locations related metadata from Wikidata API. 
 This process is available at ```get_artists_and_locs.py```.
 
+We created three Datasets A (namely A1, A2, A3) which differ in their size. We finally decide to maintain in the final dataset the dataset A3. 
 
+The results are summarised in the table below. 
 
 |                          | **Dataset A1** | **Dataset A2** | **Dataset A3**  |
 |--------------------------|----------------|----------------|-----------------|
@@ -76,3 +78,5 @@ For an in depth documentation of the process of creation of Dataset C, please se
 | **Folder weight**                  | 0.621 GB          | 0.551 GB         | 2,35 GB            |                     |
 
 # LOG DATASETS
+
+Dataset A + B + C 
