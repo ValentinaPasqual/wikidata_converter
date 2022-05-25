@@ -15,23 +15,20 @@ The final dataset will be modelled with five different RDF models:
 ## Dataset A
 All artworks with their type and when available their location and creator. 
 
-``` 
-SELECT DISTINCT ?artwork ?artist ?location ?type
-    WHERE {
-        ?artwork wdt:P31 ?type.
-        ?type wdt:P279* wd:Q838948 
-        OPTIONAL {?artwork wdt:P170 ?artist}
-        OPTIONAL {?artwork wdt:P276 ?location}
-        } 
-```
+From Wikidata SPARQL endpoint, we selected all artworks (Q1). Then we got all artworks related metadata from Wikidata API (```wbgetentities``` method). 
+This process is available at ```get_all_artworks.py```.
 
-All artworks from wikidata
+Q1: 
 ```
 SELECT DISTINCT ?artwork ?type WHERE {
     ?artwork wdt:P31 ?type.
     ?type (wdt:P279*) wd:Q838948. hint:Prior hint:rangeSafe true
 }
 ``` 
+Additionally, we selected all creators (```wdt:P170```) (Q2), authors (```wdt:P50```) (Q3), locations (```wdt:P276```) (Q3) of the abovementioned artworks (extracted with Q1).
+As in the previous step, we we got all creators, authors and locations related metadata from Wikidata API. 
+This process is available at ```get_artists_and_locs.py```.
+
 
 
 |                          | **Dataset A1** | **Dataset A2** | **Dataset A3**  |
