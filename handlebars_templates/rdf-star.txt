@@ -22,7 +22,7 @@ wd:{{main.id}} skos:altLabel "{{deldq alias.value}}"@{{alias.language}}.
 {{#each claims}}
 {{#each this as | statement |}}
 
-<<wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}>>
+<<wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValueRDFStar statement.mainsnak.datavalue}}}>>
 {{#each qualifiers}}
 {{#each this as |q|}}
    ps:{{q.property}} {{{dataValue q.datavalue}}} ; 
