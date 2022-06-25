@@ -40,7 +40,8 @@ rdfs:comment "fake statement" ;
    {{else}}
     a wdno:{{statement.mainsnak.property}};
    {{/if}}
-     wikibase:rank wikibase:{{tc rank}}Rank.
+     wikibase:rank wikibase:{{tc rank}}Rank;
+     rdfs:comment "fake statement" . 
 {{/each}}
    
 {{/each}}
