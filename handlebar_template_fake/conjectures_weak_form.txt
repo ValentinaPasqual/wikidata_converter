@@ -25,7 +25,7 @@ wd:{{main.id}} skos:altLabel "{{{deldq alias.value}}}"@{{alias.language}}.
 {{#ifEquals rank 'deprecated' }}
 GRAPH s:{{rd statement.id}}  {
    wd:{{main.id}} conj{{counter1}}:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
-conj{{counter2}}:{{statement.mainsnak.property}} conj:isConjecturalFormOf  wd:{{statement.mainsnak.property}}
+conj{{counter2}}:{{statement.mainsnak.property}} conj:isAConjecturalFormOf  wd:{{statement.mainsnak.property}}
 }
 {{#each qualifiers}}
 {{#each this as |q|}}
