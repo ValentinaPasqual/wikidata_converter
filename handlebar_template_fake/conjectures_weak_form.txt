@@ -1,0 +1,40 @@
+{{#with this as | main | }}
+{{#each labels as |label|}}
+#   wd:{{main.id}}: {{{deldq label.value}}} ({{uc label.language}})
+{{/each}}
+
+{{#each labels as |label|}}
+wd:{{main.id}} rdfs:label "{{{deldq label.value}}}"@{{label.language}} ;
+	skos:prefLabel "{{{deldq label.value}}}"@{{label.language}} ;
+	schema:name "{{{deldq label.value}}}"@{{label.language}} .
+{{/each}}
+
+{{#each descriptions as |d|}}
+wd:{{main.id}} schema:description "{{{deldq d.value}}}"@{{d.language}}.
+{{/each}}
+
+{{#each aliases}}
+{{#each this as | alias |}}
+wd:{{main.id}} skos:altLabel "{{{deldq alias.value}}}"@{{alias.language}}.
+{{/each}}
+{{/each}}
+
+{{#each claims}}
+{{#each this as | statement |}}
+
+{{#ifEquals rank 'deprecated' }}
+GRAPH s:{{rd statement.id}}  {
+   wd:{{main.id}} conj{{counter1}}:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
+conj{{counter2}}:{{statement.mainsnak.property}} conj:isConjecturalFormOf  wd:{{statement.mainsnak.property}}
+}
+{{#each qualifiers}}
+{{#each this as |q|}}
+   s:{{rd statement.id}} ps:{{q.property}} {{{dataValue q.datavalue}}} ; 
+{{/each}}
+{{/each}} 
+rdfs:comment "fake statement" . 
+{{/ifEquals}}
+   
+{{/each}}
+{{/each}}
+{{/with}}
