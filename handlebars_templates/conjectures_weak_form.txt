@@ -33,9 +33,8 @@ GRAPH s:{{rd statement.id}}  {
 {{/ifEquals}}
 {{#ifEquals rank 'deprecated' }}
 GRAPH s:{{rd statement.id}}  {
-
- wd:{{main.id}} &lt;http://w3id.org/conj-wikidata-test/conj/{{main.id}}{{statement.mainsnak.property}}{{@key}}/{{statement.mainsnak.property}}&gt; {{{dataValue statement.mainsnak.datavalue}}}.
- &lt;http://w3id.org/conj-wikidata-test/conj/{{main.id}}{{statement.mainsnak.property}}{{@key}}/{{statement.mainsnak.property}}&gt; conj:isAConjecturalFormOf wd:{{statement.mainsnak.property}} .
+	wd:{{main.id}} &lt;http://w3id.org/conj-wikidata-test/conj/{{main.id}}{{statement.mainsnak.property}}{{@key}}/{{statement.mainsnak.property}}&gt; {{{dataValue statement.mainsnak.datavalue}}}.
+	&lt;http://w3id.org/conj-wikidata-test/conj/{{main.id}}{{statement.mainsnak.property}}{{@key}}/{{statement.mainsnak.property}}&gt; conj:isAConjecturalFormOf wd:{{statement.mainsnak.property}} .
 }
 {{#each qualifiers}}
 {{#each this as |q|}}
