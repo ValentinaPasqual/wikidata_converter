@@ -24,7 +24,7 @@ wd:{{main.id}} skos:altLabel "{{{deldq alias.value}}}"@{{alias.language}}.
 
 wd:{{main.id}} s:{{rd statement.id}} {{{dataValue statement.mainsnak.datavalue}}}.
 s:{{rd statement.id}} wikibase:rank wikibase:{{tc rank}}Rank ;
-    singleton:signletonPropertyOf wdt:{{statement.mainsnak.property}} .
+    singleton:singletonPropertyOf wdt:{{statement.mainsnak.property}} .
 {{#each qualifiers}}
 {{#each this as |q|}}
 s:{{rd statement.id}} p:{{q.property}} {{{dataValue q.datavalue}}}.
