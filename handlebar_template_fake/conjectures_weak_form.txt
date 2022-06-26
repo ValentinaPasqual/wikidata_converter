@@ -29,10 +29,10 @@ conj{{counter2}}:{{statement.mainsnak.property}} conj:isAConjecturalFormOf  wd:{
 }
 {{#each qualifiers}}
 {{#each this as |q|}}
-   s:{{rd statement.id}} ps:{{q.property}} {{{dataValue q.datavalue}}} ; 
+   s:{{rd statement.id}} ps:{{q.property}} {{{dataValue q.datavalue}}} .
 {{/each}}
 {{/each}} 
-rdfs:comment "fake statement" . 
+s:{{rd statement.id}} rdfs:comment "fake statement" . 
 {{/ifEquals}}
    
 {{/each}}
