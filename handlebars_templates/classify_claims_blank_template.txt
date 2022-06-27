@@ -1,0 +1,17 @@
+{{#with this as | main | }}
+
+{{#each claims}}
+{{#each this as | statement |}}
+{{#ifEquals rank 'normal'}}
+{{#with (classify ../this)}}
+{{#ifEquals this 1}}
+asserted
+{{/ifEquals}}
+{{#ifEquals this -1}}
+non asserted
+{{/ifEquals}}
+{{/with}}
+{{/ifEquals}}
+{{/each}}
+{{/each}}
+{{/with}}
