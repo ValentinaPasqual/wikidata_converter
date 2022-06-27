@@ -21,7 +21,7 @@ wd:{{main.id}} skos:altLabel "{{{deldq alias.value}}}"@{{alias.language}}.
 
 {{#each claims}}
 {{#each this as | statement |}}
-{{#ifEquals rank 'normal' }}
+{{#ifEquals rank 'normal'}}
 GRAPH s:{{rd statement.id}}  {
    wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
 {{#each qualifiers}}
@@ -31,7 +31,7 @@ GRAPH s:{{rd statement.id}}  {
 {{/each}}
 }  
 {{/ifEquals}}
-{{#ifEquals rank 'deprecated' }}
+{{#ifEquals rank 'deprecated'}}
 GRAPH s:{{rd statement.id}}  {
 	wd:{{main.id}} &lt;http://w3id.org/conj-wikidata-test/conj/{{main.id}}{{statement.mainsnak.property}}{{@key}}/{{statement.mainsnak.property}}&gt; {{{dataValue statement.mainsnak.datavalue}}}.
 	&lt;http://w3id.org/conj-wikidata-test/conj/{{main.id}}{{statement.mainsnak.property}}{{@key}}/{{statement.mainsnak.property}}&gt; conj:isAConjecturalFormOf wd:{{statement.mainsnak.property}} .
@@ -42,7 +42,7 @@ GRAPH s:{{rd statement.id}}  {
 {{/each}}
 {{/each}} 
 {{/ifEquals}}
-{{#ifEquals rank 'preferred' }}
+{{#ifEquals rank 'preferred'}}
 GRAPH s:{{rd statement.id}}  {
    wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
 }
