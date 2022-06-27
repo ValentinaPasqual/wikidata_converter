@@ -24,12 +24,12 @@ wd:{{main.id}} skos:altLabel "{{{deldq alias.value}}}"@{{alias.language}}.
 {{#ifEquals rank 'normal'}}
 GRAPH s:{{rd statement.id}}  {
    wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
+}
 {{#each qualifiers}}
 {{#each this as |q|}}
    s:{{rd statement.id}} ps:{{q.property}} {{{dataValue q.datavalue}}}.
 {{/each}}
-{{/each}}
-}  
+{{/each}} 
 {{/ifEquals}}
 {{#ifEquals rank 'deprecated'}}
 GRAPH s:{{rd statement.id}}  {
