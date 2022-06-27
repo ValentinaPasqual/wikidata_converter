@@ -106,5 +106,5 @@ The downloaded json files from Wikidata can be trasformed into RDF format with t
 - In the interface, upload the templates (available in folder ```handlebars_templates``` and ```handlebars_templates_fake```) or fill the dedicated forms.
 - Use "Bulk convert" function to upload a .zip archive containing all jsons. 
     - Note. Do not upload a .zip file grater than 2GB. 
-    - Note 2. If the process stops, allocate more RAM space in the cmd with the command ```node --max-old-space-size=12288 app.js``` and run again the application. 
+    - Note 2. If the process stops, allocate more RAM space in the cmd with the command ```node --max-old-space-size=12288 app.js``` to run again the application. 
 - A .zip folder will be automatically downloaded. This archive contains all RDF files converted against your chosen templates. 
