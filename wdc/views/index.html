@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<!--
+File: Wikidata Converter
+Author: Fabio Vitali
+Last change on: 1 April 2022
+
+
+Copyright (c) 2022 by Fabio Vitali, Department of Computer Science, University of Bologna
+
+   Permission to use, copy, modify, and/or distribute this software for any
+   purpose with or without fee is hereby granted, provided that the above
+   copyright notice and this permission notice appear in all copies.
+
+   THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+   WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+   MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY
+   SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+   WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION
+   OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
+   CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+-->
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="//stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="//cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,700;1,400&family=Inconsolata&family=Lemonada&family=Maven+Pro&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Maven Pro";
+      }
+      input,
+      textarea {
+        font-family: "Crimson Pro";
+      }
+      .navbar-brand {
+        font-family: Lemonada;
+      }
+      .red {
+        color: red;
+      }
+      .green {
+        color: green;
+      }
+      .disabled {
+        color: gray;
+        font-style: italic;
+        border: 0px;
+      }
+      .deselected {
+        background-color: rgba(0, 0, 0, 0.125);
+        color: gray;
+        font-style: italic;
+      }
+      .card-header {
+        background-color: rgba(0, 0, 0, 0.125);
+      }
+      .subnav {
+        height: 12sex;
+      }
+      pre {
+        overflow-x: auto;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+      .right {
+        background-color: rgba(230, 255, 230, 0.7);
+      }
+      .wrong {
+        background-color: rgba(255, 230, 230, 0.7);
+      }
+      .menlo {
+        font-family: menlo;
+        font-size: 80%;
+      }
+    </style>
+    <style>
+      /* https://css-tricks.com/the-checkbox-hack/   */
+      .toggle {
+        position: relative;
+        top: 0.4em;
+        display: inline-block;
+      }
+      .toggle input {
+        display: none;
+      }
+      .toggle label {
+        display: block;
+        width: 3em;
+        height: 1em;
+        user-select: none;
+      }
+      .toggle label::before,
+      .toggle label::after {
+        content: "";
+        display: block;
+        position: absolute;
+        cursor: pointer;
+      }
+      .toggle label::before {
+        width: 100%;
+        height: 100%;
+        background-color: #007bff;
+        border-radius: 9em;
+        -webkit-transition: background-color 0.25s ease;
+        transition: background-color 0.25s ease;
+      }
+      .toggle label::after {
+        top: 0.1em;
+        left: 0.1em;
+        width: 1.2em;
+        height: 1.2em;
+        border-radius: 50%;
+        background-color: #fff;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.45);
+        -webkit-transition: left 0.25s ease;
+        transition: left 0.25s ease;
+      }
+      input:checked + label::before {
+        background-color: #89c12d;
+      }
+      input:checked + label::after {
+        left: 1.6em;
+      }
+
+      html,
+      body {
+        height: 100% !important;
+        width: 100% !important ;
+      }
+      #wrapper {
+        height: 100% !important;
+        width: 100% !important ;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        grid-template-areas:
+          "A A"
+          /*								     "B C"   */
+          "D E";
+      }
+
+      #top {
+        grid-area: A;
+      }
+      #ltools {
+        grid-area: B;
+      }
+      #rtools {
+        grid-area: C;
+      }
+      #left {
+        grid-area: D;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        grid-template-areas: "F" "G";
+      }
+      #right {
+        grid-area: E;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        grid-template-areas: "H" "I";
+      }
+
+      .scroll {
+        width: 100%;
+        height: 99%;
+        overflow: auto;
+      }
+
+      .json-container {
+        height: 100%;
+        font-family: menlo !important;
+        overflow: auto;
+      }
+
+      .tab-pane {
+        height: 98% !important;
+      }
+
+      .card {
+        height: 98% !important ;
+        overflow: auto;
+      }
+      .nav-item .oi {
+        font-size: smaller;
+        line-height: unset;
+      }
+      .nav-item a {
+        color: black;
+      }
+    </style>
+
+    <title>Wikidata converter</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <nav id="top" class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Wikidata Converter</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown active">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Services
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a
+                  class="dropdown-item"
+                  href="#"
+                  data-toggle="modal"
+                  data-target="#FileUpload"
+                  @click="loadDialog('template')"
+                  >Load templates</a
+                >
+                <a class="dropdown-item" href="#" @click="saveTemplates()"
+                  >Save templates</a
+                >
+                <div class="dropdown-divider"></div>
+                <a
+                  class="dropdown-item"
+                  href="#"
+                  role="button"
+                  data-toggle="modal"
+                  data-target="#BulkUpload"
+                  >Bulk convert</a
+                >
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav my-2 my-lg-0">
+            <li class="nav-item active">
+              <a
+                class="nav-link"
+                href="#"
+                role="button"
+                data-toggle="modal"
+                data-target="#about"
+                ><span
+                  class="oi oi-question-mark border-light rounded-circle"
+                  title="Info"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">About (current)</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="h-100 pr-1 fs-3 mt-2" id="left">
+        <ul class="nav nav-tabs" id="leftTab" role="tablist">
+          <wdc-source-tab v-for="(q, i) in sources" :key="i" :i="i" :source="q">
+          </wdc-source-tab>
+        </ul>
+        <div class="tab-content" id="leftTabPanels">
+          <wdc-source-pane
+            v-for="(q, i) in sources"
+            :key="i"
+            :i="i"
+            :source="q"
+          >
+          </wdc-source-pane>
+        </div>
+      </div>
+      <div class="fs-9 pl-1 mt-2 h-100" id="right">
+        <ul class="nav nav-tabs" id="rightTab" role="tablist">
+          <wdc-template-tab
+            v-for="(q, i) in templates"
+            :key="i"
+            :i="i"
+            :template="q"
+          >
+          </wdc-template-tab>
+          <li class="nav-item">
+            <span class="nav-link oi oi-plus" @click="insertTemplate"></span>
+          </li>
+        </ul>
+        <div class="tab-content" id="tab">
+          <wdc-template-pane
+            v-for="(q, i) in templates"
+            :key="i"
+            :i="i"
+            :template="q"
+          >
+          </wdc-template-pane>
+        </div>
+      </div>
+      <!-- Modals -->
+
+      <!-- INFO -->
+      <div
+        class="modal fade"
+        id="about"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="aboutLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="aboutLabel">
+                Info su <em>Wikidata converter</em>
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>A small converter from the JSON wikidata format</p>
+              <hr />
+              <p>
+                © 2022 Fabio Vitali, Department of Computer Science, University
+                of Bologna
+              </p>
+
+              <p>
+                <i
+                  >Permission to use, copy, modify, and/or distribute this
+                  software for any purpose with or without fee is hereby
+                  granted, provided that the above copyright notice and this
+                  permission notice appear in all copies.</i
+                >
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-dismiss="modal"
+              >
+                Ok
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- UPLOAD -->
+      <div
+        class="modal fade"
+        id="FileUpload"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="FileUploadLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="FileUploadLabel">
+                {{dialog.heading}}
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p><label for="docFile">{{dialog.description}}</label></p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                @click="prepareLoad(dialog.id)"
+              >
+                Choose file/directory
+              </button>
+              <ul class="fileList">
+                <li class="fileItem" v-for="i in dialog.files">{{i.name}}</li>
+              </ul>
+              <!--					<input type="file" id="docFile" name="docFile" @change="prepareUpload($event, dialog)"/> -->
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-dismiss="modal"
+              >
+                Annulla
+              </button>
+              <button
+                type="button"
+                id="uploadFile"
+                class="btn btn-primary"
+                data-dismiss="modal"
+                @click="loadData(dialog.cb)"
+                :disabled="!importFiles"
+              >
+                Carica
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="BulkUpload"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="BulkUploadLabel"
+        aria-hidden="true"
+      >
+        <form enctype="multipart/form-data" method="post">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="BulkUploadLabel">Bulk upload</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  <label for="docFile"
+                    >Load a ZIP file for bulk conversion</label
+                  >
+                </p>
+                <input type="file" id="docFile" name="docFile" />
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-dismiss="modal"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  id="uploadFile"
+                  class="btn btn-primary"
+                  data-dismiss="modal"
+                  @Click="bulkUpload()"
+                >
+                  Load
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="//code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script
+      src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/popper.min.js"
+      type="module"
+    ></script>
+    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./util/json-view-master/dist/jsonview.js"></script>
+    <script src="./util/handlebars-v4.7.7.js"></script>
+    <script src="server/HBservices.js"></script>
+    <script>
+      Vue.component("wdc-source-tab", {
+        props: ["i", "source"],
+        template: `
+      			  <li class="nav-item">
+      				<a data-toggle="tab" role="tab"
+      					class="nav-link"
+      					:class="(i==0?'active':'')"
+      					:id="'sourceTab-'+i"
+      					:href="'#sourcePane-'+i"
+      					:aria-controls="'sourcePane-'+i"
+      					:aria-selected="(i==0?'true':'false')"
+      				>{{source.label}}</a>
+      			  </li>
+      			  `,
+      }); // wdc-source-tab
+
+      Vue.component("wdc-source-pane", {
+        props: ["i", "source"],
+        template: `
+      			  <div role="tabpanel"
+      			  	class="tab-pane fade"
+      			  	:class="(i==0?'show active':'')"
+      			  	:id="'sourcePane-'+i"
+      			  	:aria-labelledby="'sourceTab-'+i"
+      			  ><div class="card">
+      					<nav class="navbar card-header" :id="'heading'+i">
+      						<button type="button" class="btn" data-toggle="modal" data-target="#FileUpload" @click="$parent.loadDialog(source.id)">
+      							<span class="oi oi-data-transfer-upload" title="load data" aria-hidden="true"></span>
+      						</button>
+      				  		<b>{{source.label}}</b>
+      				  		<span>
+      							<button type="button" class="btn" v-if="source.editable" @click="$parent.saveData(source.id)">
+      								<span class="oi oi-data-transfer-download" title="Save data" aria-hidden="true"></span>
+      							</button>
+      							<button type="button" class="btn"  @click="$parent.clearData(source.id)">
+      								<span class="oi oi-trash" title="Remove all data" aria-hidden="true"></span>
+      							</button>
+      						</span>
+      					</nav>
+      					<div class="card-body">
+      						<div class="form-group">
+      							<textarea v-if="source.editable" v-model="source.data" class="form-control menlo h-100 w-100" :id="'sourceText'+i" rows="3"></textarea>
+      							<div v-if="!source.editable" class="h-100 w-100" :id="'sourceText'+i">{{source.data}}</div>
+      						</div>
+      					</div>
+      				</div>
+      			</div>`,
+      }); // wdc-source-pane
+
+      Vue.component("wdc-template-tab", {
+        props: ["i", "template"],
+        template: `
+      			  <li class="nav-item">
+      				<a data-toggle="tab" role="tab"
+      					class="nav-link"
+      					:class="(i==0?'active':'')"
+      					:id="'templateTab-'+i"
+      					:href="'#templatePane-'+i"
+      					:aria-controls="'templatePane-'+i"
+      					:aria-selected="(i==0?'true':'false')"
+      				>{{template.label}}</a>
+      			  </li>
+      			  `,
+      }); // wdc-template-tab
+
+      Vue.component("wdc-template-pane", {
+        props: ["i", "template"],
+        template: `
+      			  <div role="tabpanel"
+      			  	class="tab-pane fade"
+      			  	:class="(i==0?'show active':'')"
+      			  	:id="'templatePane-'+i"
+      			  	:aria-labelledby="'templateTab-'+i"
+      			  ><div class="card">
+      					<nav class="navbar card-header" :id="'heading'+i">
+      						<span>
+      							<button type="button" class="btn" @click="template.expanded=!template.expanded">
+      								<span :class="'oi oi-caret-'+(template.expanded?'bottom':'right')" title="Expand template" aria-hidden="true"></span>
+      							</button>
+      						</span>
+      						<span>
+      							<button type="button" class="btn" @click="$parent.convert(i)">
+      								<span class="oi oi-arrow-circle-right" title="Convert source" aria-hidden="true"></span>
+      								<span class="sr-only">Convert source</span>
+      								Convert into {{(template.label || 'Senza nome')}}:
+      							</button>
+      						</span>
+      						<span>
+      							<button type="button" class="btn" @click="$parent.saveData(i)">
+      								<span class="oi oi-data-transfer-download" title="Save data" aria-hidden="true"></span>
+      								<span class="sr-only">Save data</span>
+      							</button>
+      							<button type="button" class="btn" @click="$parent.removeTemplate(i)">
+      								<span class="oi oi-trash" title="Remove template and data" aria-hidden="true"></span>
+      								<span class="sr-only">Remove template</span>
+      							</button>
+      						</span>
+      					</nav>
+      					<div :id="'collapse'+i" :class="'collapse '+(template.expanded?'show':'')" :aria-labelledby="'heading'+i">
+      						<div class="card-body">
+      							<div class="form-group row">
+      								<label :for="'templatelabel'+i" class="col-sm-3 col-form-label">Name: </label>
+      								<div class="col-sm-9">
+      									<input type="text" v-model="template.label" class="form-control font-weight-bold" :id="'templatelabel'+i" placeholder="Categoria della domanda"></textarea>
+      								</div>
+      							</div>
+      							<div class="form-group row">
+      								<label :for="'templatelabel'+i" class="col-sm-3 col-form-label">Filename: </label>
+      								<div class="col-sm-9">
+      									<input type="text" v-model="template.fn" class="form-control" :id="'templatefn'+i" placeholder="Filename"></textarea>
+      								</div>
+      							</div>
+      							<div class="form-group row question">
+      								<div class="col-sm-3">
+      								<label :for="'boilerplateText'+i" class="col-form-label">Template: </label>
+      								<br><span class="small">Template use the <a href="https://handlebarsjs.com/guide/" target="_new">Handlerbars</a> syntax.</span>
+      								</div>
+      								<div class="col-sm-9">
+      									<textarea  v-model="template.template" class="form-control menlo"
+      											   :id="'templateText'+i" rows="12"
+      											   placeholder="Testo del template."></textarea>
+      								</div>
+      							</div>
+      						</div>
+      					</div>
+      						<div class="card-body">
+      							<div class="form-group row">
+      								<pre class="col-sm-12" v-html="template.data"></pre>
+      							</div>
+      						</div>
+      				   </div>
+      				</div>`,
+      }); // wdc-template-pane
+
+      Vue.component("wdc-toggle", {
+        template: `<div class="toggle">
+      				<input :id="id" type="checkbox" :checked="value" class="switch-input"
+      					@change="$emit('input', $event.target.checked)">
+      					<label :for="id" class="switch-label">Switch</label>
+      				</div>`,
+        props: ["id", "value"],
+      }); // wdc-toggle
+
+      var defaultTemplates = [
+        {
+          expanded: true,
+          id: "template-0",
+          label: "Wikidata statements",
+          fn: "wikidata",
+          data: "",
+          template: `
+      {{#with this as | main | }}
+      {{#each labels as |label|}}
+      #   {{main.id}}: {{label.value}} ({{uc label.language}})
+      {{/each}}
+
+      {{#each labels as |label|}}
+      {{main.id}} rdfs:label "{{label.value}}"@{{label.language}} ;
+      	skos:prefLabel "{{label.value}}"@{{label.language}} ;
+      	schema:name "{{label.value}}"@{{label.language}} .
+      {{/each}}
+
+      {{#each descriptions as |d|}}
+      {{main.id}} schema:description "{{d.value}}"@{{d.language}}.
+      {{/each}}
+
+      {{#each aliases}}
+      {{#each this as | alias |}}
+      {{main.id}} skos:altLabel "{{alias.value}}"@{{alias.language}}.
+      {{/each}}
+      {{/each}}
+
+      {{#each claims}}
+      {{#each this as | statement |}}
+
+         {{#if statement.mainsnak.datavalue }}
+      wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{dataValue statement.mainsnak.datavalue}}.
+         {{else}}
+      wd:{{main.id}} a wdno:{{statement.mainsnak.property}}.
+         {{/if}}
+      wd:{{main.id}} p:{{statement.mainsnak.property}} s:{{statement.id}} .
+      s:{{statement.id}} a wikibase:Statement;
+          wikibase:rank wikibase:{{tc rank}}Rank;
+      {{#each qualifiers}}
+      {{#each this as |q|}}
+          pq:{{q.property}} {{dataValue q.datavalue}}
+      {{/each}}
+      {{/each}}
+         {{#if statement.mainsnak.datavalue }}
+          ps:{{statement.mainsnak.property}} {{dataValue statement.mainsnak.datavalue}}.
+         {{else}}
+          a wdno:{{statement.mainsnak.property}}.
+         {{/if}}
+      {{/each}}
+
+      {{/each}}
+      {{/with}}
+
+
+
+
+
+
+      `,
+        },
+        {
+          expanded: true,
+          id: "template-1",
+          label: "Named graphs",
+          fn: "ngraphs",
+          data: "",
+          template: `
+      {{#with this as | main | }}
+      {{#each labels as |label|}}
+      #   {{main.id}}: {{label.value}} ({{uc label.language}})
+      {{/each}}
+
+      {{#each labels as |label|}}
+      {{main.id}} rdfs:label "{{label.value}}"@{{label.language}} ;
+      	skos:prefLabel "{{label.value}}"@{{label.language}} ;
+      	schema:name "{{label.value}}"@{{label.language}} .
+      {{/each}}
+
+      {{#each descriptions as |d|}}
+      {{main.id}} schema:description "{{d.value}}"@{{d.language}}.
+      {{/each}}
+
+      {{#each aliases}}
+      {{#each this as | alias |}}
+      {{main.id}} skos:altLabel "{{alias.value}}"@{{alias.language}}.
+      {{/each}}
+      {{/each}}
+
+      {{#each claims}}
+      {{#each this as | statement |}}
+
+      GRAPH s:{{statement.id}}  {
+         wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{dataValue statement.mainsnak.datavalue}}.
+         s:{{statement.id}} wikibase:rank wikibase:{{tc rank}}Rank.
+      {{#each qualifiers}}
+      {{#each this as |q|}}
+         s:{{statement.id}} p:{{q.property}} {{dataValue q.datavalue}}.
+      {{/each}}
+      {{/each}}
+      {{/each}}
+      }
+
+      {{/each}}
+      {{/with}}
+
+
+
+
+
+
+
+
+      `,
+        },
+        {
+          expanded: true,
+          id: "template-2",
+          label: "Conjectures",
+          fn: "conjectures",
+          data: "",
+          template: `
+      {{#with this as | main | }}
+      {{#each labels as |label|}}
+      #   {{main.id}}: {{label.value}} ({{uc label.language}})
+      {{/each}}
+
+      {{#each labels as |label|}}
+      {{main.id}} rdfs:label "{{label.value}}"@{{label.language}} ;
+      	skos:prefLabel "{{label.value}}"@{{label.language}} ;
+      	schema:name "{{label.value}}"@{{label.language}} .
+      {{/each}}
+
+      {{#each descriptions as |d|}}
+      {{main.id}} schema:description "{{d.value}}"@{{d.language}}.
+      {{/each}}
+
+      {{#each aliases}}
+      {{#each this as | alias |}}
+      {{main.id}} skos:altLabel "{{alias.value}}"@{{alias.language}}.
+      {{/each}}
+      {{/each}}
+
+      {{#each claims}}
+      {{#each this as | statement |}}
+
+      {{#ifEquals rank 'normal' }}
+      GRAPH s:{{statement.id}}  {
+         wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{dataValue statement.mainsnak.datavalue}}.
+      {{#each qualifiers}}
+      {{#each this as |q|}}
+         s:{{statement.id}} p:{{q.property}} {{dataValue q.datavalue}}.
+      {{/each}}
+      {{/each}}
+      }
+      {{/ifEquals}}
+      {{#ifEquals rank 'deprecated' }}
+      CONJECTURE s:{{statement.id}}  {
+         wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{dataValue statement.mainsnak.datavalue}}.
+      {{#each qualifiers}}
+      {{#each this as |q|}}
+         s:{{statement.id}} p:{{q.property}} {{dataValue q.datavalue}}.
+      {{/each}}
+      {{/each}}
+      }
+      {{/ifEquals}}
+      {{#ifEquals rank 'preferred' }}
+      COLLAPSED CONJECTURE s:{{statement.id}}  {
+         wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{dataValue statement.mainsnak.datavalue}}.
+      {{#each qualifiers}}
+      {{#each this as |q|}}
+         s:{{statement.id}} p:{{q.property}} {{dataValue q.datavalue}}.
+      {{/each}}
+      {{/each}}
+      }
+      {{/ifEquals}}
+
+      {{/each}}
+      {{/each}}
+      {{/with}}
+
+
+
+
+
+
+
+
+      `,
+        },
+      ];
+
+      var defaultDialogs = {
+        json: {
+          id: "json",
+          pos: 0,
+          heading: "Load JSON data",
+          canBeSaved: false,
+          description:
+            "Select a single JSON wikidata file or a folder containing JSON wikidata files",
+          files: [],
+          callback: "prepareData",
+        },
+        prefixes: {
+          id: "prefixes",
+          pos: 1,
+          heading: "Load prefix data",
+          canBeSaved: true,
+          description:
+            "Select a single text file containing default prefixes for conversion",
+          files: [],
+          callback: "preparePrefixes",
+        },
+        template: {
+          id: "template",
+          pos: 1,
+          heading: "Load templates",
+          canBeSaved: true,
+          description: "Select a JSON file containing ready-made templates",
+          files: [],
+          callback: "loadTemplates",
+        },
+      };
+
+      var defaultSources = [
+        {
+          expanded: true,
+          id: "json",
+          label: "JSON data",
+          editable: false,
+          data: null,
+        },
+        {
+          expanded: false,
+          id: "prefixes",
+          label: "Prefixes",
+          editable: true,
+          data: null,
+        },
+      ];
+
+      var app = new Vue({
+        el: "#wrapper",
+        data: {
+          dialogs: defaultDialogs,
+          templates: defaultTemplates,
+          sources: defaultSources,
+          dialog: {
+            id: "null",
+            pos: 0,
+            heading: "fake",
+            canBeSaved: false,
+            description: "fake",
+            files: [],
+            cb: null,
+          },
+          languages: ["en"],
+          bulkConverter: "http://127.0.0.1:3000/wdconvert",
+          importFiles: {},
+        },
+        mounted: function () {
+          if (!this.dialog) this.dialog = this.dialogs.json;
+          if (localStorage.WDCTemplates) {
+            var x = JSON.parse(localStorage.WDCTemplates).templates;
+            if (x.length > 0) this.templates = x;
+          }
+        },
+        watch: {
+          templates: {
+            deep: true,
+            handler: function (newData) {
+              localStorage.WDCTemplates = JSON.stringify({
+                templates: this.emptyTemplates(newData),
+              });
+            },
+          },
+        },
+        methods: {
+          loadDialog: function (i) {
+            this.dialog = this.dialogs[i];
+            this.dialog.files = [];
+          },
+          prepareLoad: async function (i) {
+            this.dialog.files = await getFiles();
+          },
+          loadData: async function () {
+            if (!this.importFiles[this.dialog.id])
+              this.importFiles[this.dialog.id] = [];
+            this.importFiles[this.dialog.id].concat(this.dialog.files);
+
+            var promises = [];
+            var result = {};
+            for (var i in this.dialog.files) {
+              promises.push(read(this.dialog.files[i]));
+            }
+            Promise.all(promises).then((e) => {
+              for (var j in e) {
+                try {
+                  result[e[j].name] = e[j].target.result;
+                } catch (e) {
+                  result[e[j].name] = e;
+                }
+              }
+
+              if (this.dialog.callback) {
+                this[this.dialog.callback].bind(this);
+                this[this.dialog.callback](result);
+              }
+            });
+          },
+          clearData: function (i) {
+            if (
+              confirm(
+                "You are about to clear aprefixesll data in this tab. Continue?"
+              )
+            ) {
+              this.importFiles[i] = [];
+            }
+          },
+          emptyTemplates: function (t) {
+            var newTemplates = JSON.parse(JSON.stringify(t));
+            for (var i in newTemplates) {
+              newTemplates[i].data = "";
+            }
+            return newTemplates;
+          },
+          insertTemplate: function () {
+            var n = this.templates.length;
+            this.templates.push({
+              expanded: true,
+              id: "template-" + n,
+              label: "Template #" + n,
+              template: ``,
+              data: "",
+            });
+            setTimeout(() => {
+              document.getElementById("templateTab-" + n).click();
+            }, 100);
+          },
+          removeTemplate: function (i) {
+            this.templates.splice(i, 1);
+            document.getElementById("templateTab-0").click();
+          },
+          saveTemplates: function () {
+            debugger;
+            var now = new Date();
+            var fn = "WDCTemplates-" + now.toJSON().split("T")[0];
+            var message = "Save templates as?";
+            var filename = prompt(message, fn);
+            if (filename) {
+              var data = JSON.stringify(
+                this.emptyTemplates(this.templates),
+                null,
+                2
+              );
+              var ext = ".json";
+              var format = "application/json";
+              download(filename, data, format, ext);
+            }
+          },
+          loadTemplates: function (result) {
+            var templates = [];
+            for (var j in result) {
+              var d = JSON.parse(result[j]);
+              for (var i in d) {
+                if (d[i] && d[i].template) templates.push(d[i]);
+              }
+            }
+            this.templates = templates;
+          },
+          saveData: function (i) {
+            var now = new Date();
+            var fn = "WDCData-" + now.toJSON().split("T")[0];
+            var message = "Save converted data as?";
+            var filename = prompt(message, fn);
+            if (filename) {
+              var data = this.templates[i].data;
+              var ext = ".ttl";
+              var format = "text/plain";
+              download(filename, data, format, ext);
+            }
+          },
+          prepareData: function (result) {
+            var languages = this.languages;
+            for (var j in result) {
+              var d = JSON.parse(result[j]);
+              if (d) {
+                for (var i in d.entities) {
+                  d.entities[i].labels = HBservices.filterLanguages(
+                    d.entities[i].labels,
+                    languages
+                  );
+                  d.entities[i].descriptions = HBservices.filterLanguages(
+                    d.entities[i].descriptions,
+                    languages
+                  );
+                  d.entities[i].aliases = HBservices.filterLanguages(
+                    d.entities[i].aliases,
+                    languages,
+                    true
+                  );
+                }
+                if (!this.sources[this.dialog.pos].data)
+                  this.sources[this.dialog.pos].data = {};
+                this.sources[this.dialog.pos].data[j] = d.entities;
+              }
+            }
+            const tree = jsonview.create(
+              JSON.stringify(this.sources[this.dialog.pos].data)
+            );
+            var destination = document.querySelector(
+              "#sourceText" + this.dialog.pos
+            );
+            destination.innerHTML = "";
+            jsonview.render(tree, destination);
+            //	jsonview.expand(tree);
+          },
+          convert: function (p) {
+            var prefixes = this.sources.filter((i) => i.id == "prefixes"); // array!
+            var data = this.sources.filter((i) => i.id == "json"); // array
+            var template = Handlebars.compile(this.templates[p].template);
+            this.templates[p].data = "";
+
+            for (var i in data) {
+              for (var j in data[i].data) {
+                for (var k in data[i].data[j]) {
+                  var e = data[i].data[j][k];
+                  var x = template(e);
+                  this.templates[p].data += x;
+                }
+              }
+            }
+          },
+          bulkUpload: async function (t) {
+            var a = document.createElement("a");
+            document.body.appendChild(a);
+            a.style = "display: none";
+            var form = $("form")[0];
+            var formData = new FormData(form);
+            formData.append("t", JSON.stringify(this.templates));
+            $.ajax({
+              url: this.bulkConverter,
+              data: formData,
+              type: "POST",
+              contentType: false,
+              processData: false,
+              xhrFields: {
+                responseType: "blob",
+              },
+              success: function (data, state, response) {
+                var file = window.URL.createObjectURL(data);
+                var filename = response
+                  .getResponseHeader("content-disposition")
+                  .match(/filename="([^"]+)"/)[1];
+                //						window.location.assign(file);
+                a.href = file;
+                a.download = filename;
+                a.click();
+                window.URL.revokeObjectURL(file);
+              },
+              error: function (a, b, c) {
+                debugger;
+              },
+            });
+          },
+        },
+      });
+
+      /* Altro  */
+
+      for (var i in HBservices.helpers) {
+        Handlebars.registerHelper(i, HBservices.helpers[i]);
+      }
+
+      /*
+      Handlebars.registerHelper('tc', function (aString) { return aString[0].toUpperCase()+aString.substr(1).toLowerCase() })
+      Handlebars.registerHelper('uc', function (aString) { return aString.toUpperCase() })
+      Handlebars.registerHelper('p', function (aString) { return aString.substr(1) })
+      Handlebars.registerHelper('ifEquals', function(arg1, arg2, options) {
+      	return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
+      });
+      Handlebars.registerHelper('dataValue', function(arg) {
+      	if (!arg || !arg.type) {
+      		console.log("NO ARG")
+      		return '   # WARNING No type'
+      	}
+      	if (arg.type == 'wikibase-entityid') return 'wd:'+arg.value.id
+      	if (arg.type == 'monolingualtext') return '"'+ arg.value.text + '"@' + arg.value.language
+      	if (arg.type == 'string') return '"'+ arg.value + '"'
+      	if (arg.type == 'time') return '"'+ arg.value.time.substr(1) + '"^^xsd:dateTime'
+      	if (arg.type == 'quantity') return '"'+ arg.value.amount + '"^^xsd:decimal'
+      	if (arg.type == 'globecoordinate') return '"Point('+arg.value.longitude + ' ' + arg.value.latitude+')"^^geo:wktLiteral'
+      	return arg.value + '   # WARNING Unmanaged value'
+      });
+
+
+       function filterLanguages(items,languages,strict=false) {
+      	var residuals = {}
+      	var r = 0;
+      	for (var o in items) {
+      		if (Array.isArray(items[o])) {
+      			var x = filterLanguages(items[o],languages,true)
+      			if (x) {
+      				residuals[o] = x
+      				r++
+      			}
+      		} else if (languages.indexOf(items[o].language) !== -1) {
+      			residuals[o] = items[o]
+      			r++
+      		}
+      	}
+      	return r>0?residuals:(strict?null:items)
+      }
+
+      */
+      function oldread(file, cb) {
+        var reader = new FileReader();
+        reader.onloadend = cb;
+        reader.readAsText(file);
+      }
+
+      function read(file) {
+        var reader = new FileReader();
+        return new Promise((resolve, reject) => {
+          reader.onloadend = (data) => {
+            data.name = file.name;
+            resolve(data);
+          };
+          reader.readAsText(file);
+        });
+      }
+      async function getFiles() {
+        let fileHandle = await window.showOpenFilePicker({ multiple: true });
+        //	let fileHandle = await window.showDirectoryPicker({multiple:true});
+        let fileList = [];
+
+        for (var i in fileHandle) {
+          if (fileHandle[i].kind === "file") {
+            fileList.push(await fileHandle[i].getFile());
+          } else if (fileHandle.kind === "directory") {
+            // non riesco a farlo funzionare!
+
+            let dirs = await fileHandle.resolve();
+            fileList = [...fileList, ...dirs];
+          }
+        }
+        return fileList;
+      }
+
+      // https://ourcodeworld.com/articles/read/189/how-to-create-a-file-and-generate-a-download-with-javascript-in-the-browser-without-a-server
+      function download(fn, text, format, ext) {
+        var filename = fn.camelize() + ext;
+        var element = document.createElement("a");
+        element.setAttribute(
+          "href",
+          "data:" + format + ";charset=utf-8," + encodeURIComponent(text)
+        );
+        element.setAttribute("download", filename);
+
+        element.style.display = "none";
+        document.body.appendChild(element);
+
+        element.click();
+
+        document.body.removeChild(element);
+      }
+
+      // https://stackoverflow.com/questions/2970525/converting-any-string-into-camel-case
+      String.prototype.camelize = function () {
+        return this.replace(/(?:^\w|[A-Z]|\b\w)/g, function (word, index) {
+          return word.toUpperCase();
+        }).replace(/\s+/g, "");
+      };
+
+      // the poor man's interpolation function for templates. ©FV
+      String.prototype.tplPlain = function (o, removeAll) {
+        let r = this;
+        for (let i in o) {
+          r = r.replace(new RegExp("\\{\\$" + i + "\\}", "g"), o[i]);
+        }
+        if (removeAll) {
+          r = r.replace(new RegExp("\\{\\$[^\}]+\\}", "g"), "");
+        }
+        return r;
+      };
+
+      // slightly more complex interpolation function for templates. ©FV
+      String.prototype.tpl = function (o, removeAll) {
+        let r = this;
+        for (let i in o) {
+          r = r.replace(new RegExp("\\{\\$" + i + "\\}", "g"), o[i]);
+        }
+        if (removeAll) {
+          r = r.replace(new RegExp("\\{\\$[^\}]+\\}", "g"), "");
+        }
+        var evals = r.match(/\{\{(.+)(?=\}\})\}\}/g);
+        for (i in evals) {
+          try {
+            var thisEval = evals[i].slice(2, -2);
+            var res = eval(thisEval);
+          } catch (e) {
+            var res = `<span style="color:red;">` + e + `</span>`;
+          }
+          r = r.replace(evals[i], res);
+        }
+        return r;
+      };
+    </script>
+  </body>
+</html>
