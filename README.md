@@ -97,4 +97,14 @@ The process has been realised with ```log_datasets.py```.
 
 # Additional materials
 - In folder ```handlebars_templates``` has been saved all templates to convert jsons into RDF with https://www.fabiovitali.it/wikidataconverter/
-- In folder ```handlebars_templates_fake```has been saved all templates to convert fake jsons (Dataset C) into RDF https://www.fabiovitali.it/wikidataconverter/
+- In folder ```handlebars_templates_fake``` has been saved all templates to convert fake jsons (Dataset C) into RDF https://www.fabiovitali.it/wikidataconverter/
+
+# Converting files via Wikidata Converter App
+The downloaded json files from Wikidata can be trasformed into RDF format with the online converter 
+- Download the application from  [LINK AL COVERTER AGGIORNATO].
+- Start the application by simply starting node with the command ```node app.js```, the interface will be available in your browser at port ```3000```.
+- In the interface, upload the templates (available in folder ```handlebars_templates``` and ```handlebars_templates_fake```) or fill the dedicated forms.
+- Use "Bulk convert" function to upload a .zip archive containing all jsons. 
+    - Note. Do not upload a .zip file grater than 2GB. 
+    - Note 2. If the process stops, allocate more RAM space in the cmd with the command ```node --max-old-space-size=12288 app.js``` and run again the application. 
+- A .zip folder will be automatically downloaded. This archive contains all RDF files converted against your chosen templates. 
