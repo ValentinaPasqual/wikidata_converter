@@ -19,16 +19,46 @@ wd:{{main.id}} skos:altLabel "{{{deldq alias.value}}}"@{{alias.language}}.
 {{/each}}
 {{/each}}
 
-{{#each claims}}
-{{#each this as | statement |}}
-
-   {{#if statement.mainsnak.datavalue }}
+   {{#each claims}}
+      {{#if (allNormals this) }}
+        {{#each this as | statement |}}
+      {{#if statement.mainsnak.datavalue }}
 wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
-   {{else}}
+      {{else}}
 wd:{{main.id}} a wdno:{{statement.mainsnak.property}}.
-   {{/if}}
-wd:{{main.id}} p:{{statement.mainsnak.property}} s:{{rd statement.id}} .
-s:{{rd statement.id}} a wikibase:Statement; 
+      {{/if}}
+   {{/each}}
+{{/if}}
+
+{{#if (hasDeprecated this) }}
+   {{#each this as | statement |}}
+      {{#if (isNormal statement) }}
+        {{#if statement.mainsnak.datavalue }}
+wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
+        {{else}}
+wd:{{main.id}} a wdno:{{statement.mainsnak.property}}.
+        {{/if}}
+      {{/if}}
+   {{/each}}
+{{/if}}
+
+{{#if (hasPreferred this) }}
+   {{#each this as | statement |}}
+      {{#if (isPreferred statement) }}
+        {{#if statement.mainsnak.datavalue }}
+wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
+        {{else}}
+wd:{{main.id}} a wdno:{{statement.mainsnak.property}}.
+        {{/if}}
+      {{/if}}
+   {{/each}}
+{{/if}}
+
+
+{{#each this as | statement |}}
+wd:{{main.id}} p:{{statement.mainsnak.property}} s:{{statement.id}} .
+s:{{statement.id}} a wikibase:Statement; 
+    wikibase:rank wikibase:{{tc rank}}Rank;
 {{#each qualifiers}}
 {{#each this as |q|}}
     pq:{{q.property}} {{{dataValue q.datavalue}}};
@@ -44,3 +74,5 @@ s:{{rd statement.id}} a wikibase:Statement;
    
 {{/each}}
 {{/with}}
+
+
