@@ -67,7 +67,7 @@ def wikidata_api_requestor(prepared_list, output_partial_path=None):
 
 # REMOVE COMMENTS BELOW TO GET ENTITIES
 
-#entities_list = select_data_from_json("C:/Users/Valentina/Documents/DHDK/DHARC/PhD/tesi_eduard/dataset/json_artworks_not_really")
+#entities_list = select_data_from_json("FILE PATH")
 #prepared_entities_list = wikidata_api_data_preparation(entities_list)
-#wikidata_api_requestor(prepared_entities_list, "C:/Users/Valentina/Documents/DHDK/DHARC/PhD/tesi_eduard/dataset/new_loc_and_artists/")
+#wikidata_api_requestor(prepared_entities_list, "FILE PATH")
 
