@@ -124,6 +124,16 @@ The downloaded json files from Wikidata can be trasformed into RDF format with t
 - A .zip folder will be automatically downloaded. This archive contains all RDF files converted against your chosen templates. 
 
 # Example output RDF files out of handlebars templates
+A conversion test has been run agaist the templates. In the folder ```conversion_test``` can be found input and output data. Each output RDF dataset has been validated with Blazegraph. Below a summary:
+
+|                      | Upload time (ms) | Query Time (ms) | Triples |
+|----------------------|------------------|-----------------|---------|
+| Wikidata Statement   | 1340             | 773             | 6487    |
+| Singleton Properties | 1304             | 681             | 5385    |
+| Named Graphs         | 1239             | 3334            | 611     |
+| RDF-star             |                  |                 |         |
+| Conjectures          |                  |                 |         |
+
 
 ### Wikidata
 
