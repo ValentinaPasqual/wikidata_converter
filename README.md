@@ -130,7 +130,7 @@ A conversion test has been run agaist the templates. In the folder ```conversion
 |----------------------|------------------|-----------------|---------|
 | Wikidata Statement   | 1340             | 773             | 6487    |
 | Singleton Properties | 1304             | 681             | 5385    |
-| Named Graphs         | 1239             | 3334            | 611     |
+| Named Graphs         | 1239             | 611             | 3334    |
 | RDF-star             |                  |                 |         |
 | Conjectures          |                  |                 |         |
 
