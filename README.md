@@ -95,9 +95,23 @@ D1, D2, D3 contain a selected randomic selection of D4 in order to present the s
 
 The process has been realised with ```log_datasets.py```.
 
+# Asserted and Non-asserted statements in Wikidata
+In Wikidata, assertion or non assertion of claims is strictly dependent from their rankings. 
+
+For example, the triples (1)```wd:Q10743 wdt:P214 "249422654"``` and (2)```wd:Q10743 wdt:P214 "315523483"``` share the same subject-predicate values, but differ wrt their objects. 
+
+- If both triples (1 and 2) are ranked as Normal, they are both asserted.
+- If both triples (1 and 2) are ranked as Preferred, they are both asserted.
+- If both triples (1 and 2) are ranked as Normal, they are both non-asserted.
+- If triple (1) is ranked as Preferred and triple (2) is ranked as Normal, the first (1) is asserted and the second (2) is non-asserted. 
+- If triple (1) is ranked as Deprecated and triple (2) is ranked as Noraml, the first (1) in non-asserted and the second (2) is asserted. 
+- If triple (1) is ranked as Deprecated and triples (2) is ranked as Preferred, the first (1) is non-asserted and the second (2) is asserted. 
+
 # Additional materials
 - In folder ```handlebars_templates``` has been saved all templates to convert jsons into RDF with https://www.fabiovitali.it/wikidataconverter/
 - In folder ```handlebars_templates_fake``` has been saved all templates to convert fake jsons (Dataset C) into RDF https://www.fabiovitali.it/wikidataconverter/
+- In folder ```handlebars_templates``` you can find an additional set of helpers called ```helper.js```, this is meant to be use in data conversions since it reproduces the assertion - non assertion of the statements in the json files (a more in the depth explanation of the topic is in the section above).
+
 
 # Converting files via Wikidata Converter App
 The downloaded json files from Wikidata can be trasformed into RDF format with the online converter 
