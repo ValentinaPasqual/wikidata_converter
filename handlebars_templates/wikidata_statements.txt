@@ -56,8 +56,8 @@ wd:{{main.id}} a wdno:{{statement.mainsnak.property}}.
 
 
 {{#each this as | statement |}}
-wd:{{main.id}} p:{{statement.mainsnak.property}} s:{{statement.id}} .
-s:{{statement.id}} a wikibase:Statement; 
+wd:{{main.id}} p:{{statement.mainsnak.property}} s:{{rd statement.id}} .
+s:{{rd statement.id}} a wikibase:Statement; 
     wikibase:rank wikibase:{{tc rank}}Rank;
 {{#each qualifiers}}
 {{#each this as |q|}}
