@@ -127,6 +127,49 @@ The downloaded json files from Wikidata can be trasformed into RDF format with t
 
 ### Wikidata
 
+```
+## Two statements ranked as normal ##
+
+wd:Q183 p:P1705 s:Q183-d657d418-4a25-98d6-5180-a3659a11fbcd .
+s:Q183-d657d418-4a25-98d6-5180-a3659a11fbcd a wikibase:Statement; 
+    wikibase:rank wikibase:NormalRank;
+    ps:P1705 "Bundesrepublik Deutschland"@de;
+    wikibase:rank wikibase:NormalRank.
+    
+wd:Q183 p:P1705 s:Q183$E2A638D7-78B7-424D-9F63-AF49F5DCAE84 .
+s:Q183-E2A638D7-78B7-424D-9F63-AF49F5DCAE84 a wikibase:Statement; 
+    wikibase:rank wikibase:NormalRank;
+    ps:P1705 "Deutschland"@de;
+    wikibase:rank wikibase:NormalRank.
+    
+#### Three statements ranked respectively as normal, deprecated and preferred. ####
+
+wd:Q183 p:P530 s:Q183-DF432913-CEBA-49ED-BCA4-7214957E6CDA .
+s:Q183-DF432913-CEBA-49ED-BCA4-7214957E6CDA a wikibase:Statement; 
+    wikibase:rank wikibase:NormalRank;
+    pq:P805 wd:Q15910813;
+    pq:P582 "1972-00-00T00:00:00Z"^^xsd:dateTime;
+    pq:P2241 wd:Q26256296;
+    ps:P530 wd:Q865;
+    wikibase:rank wikibase:NormalRank.
+
+wd:Q183 p:P530 s:Q183-a6aa383f-4c30-79bf-0767-dcf4ea80f8d6 .
+s:Q183-a6aa383f-4c30-79bf-0767-dcf4ea80f8d6 a wikibase:Statement; 
+    wikibase:rank wikibase:DeprecatedRank;
+    pq:P805 wd:Q1201896;
+    pq:P2241 wd:Q28831311;
+    ps:P530 wd:Q917;
+    wikibase:rank wikibase:DeprecatedRank.
+     
+wd:Q183 p:P530 s:Q183-0B26503A-A8BF-4B40-9F0A-CAE242AE03A1 .
+s:Q183-0B26503A-A8BF-4B40-9F0A-CAE242AE03A1 a wikibase:Statement; 
+    wikibase:rank wikibase:PreferredRank;
+    pq:P805 wd:Q28498636;
+    pq:P531 wd:Q58003162;
+    ps:P530 wd:Q1011;
+    wikibase:rank wikibase:PreferredRank.
+```
+
 ### Named Graphs
 With named graphs all statements are asserted. Rankings has been mantained with each graph in order to retrieve their confidence. 
 
@@ -143,7 +186,7 @@ GRAPH s:Q183-E2A638D7-78B7-424D-9F63-AF49F5DCAE84 {
 }
 s:Q183-E2A638D7-78B7-424D-9F63-AF49F5DCAE84 wikibase:rank wikibase:NormalRank.
 
-#### Three statements ranked respectively as normal, deprecated and preferred. ####
+#### Three statements ranked respectively as normal, deprecated and preferred. ####  
 
 GRAPH s:Q183-DF432913-CEBA-49ED-BCA4-7214957E6CDA { 
 wd:Q183 wdt:P530 wd:Q865 
