@@ -35,16 +35,16 @@ The results are summarised in the table below.
 
 |                          | **Dataset A1** | **Dataset A2** | **Dataset A3**  |
 |--------------------------|----------------|----------------|-----------------|
-| **Artworks Entities**    | 996679         | 1989191        | 3537045         |
-| **Artworks Statements**  | 12737671       | 23043346       | 39868568        |
-| **Locations Entities**   | 25282          | 76159          | 1233369         |
-| **Locations Statements** | 906008         | 3376693        | 24189262        |
-| **Authors Entities**     | //             | //             | 765350          |
-| **Authors Statements**   | //             | //             | 24389391        |
-| **Creators Entities**    | 19865          | 88663          | 1377454         |
-| **Creators Statements**  | 1235069        | 5988387        | 53738223        |
-| **Total Entities**       | 1041826        | 2154013        | 6913218         |
-| **Total Statements**     | 23032748       | 32408426       | 142185444       |
+| **Artworks Entities**    | 996,679        | 1,989,191      | 3,537,045       |
+| **Artworks Statements**  | 12,737,671     | 23,043,346     | 39,868,568      |
+| **Locations Entities**   | 25,282         | 76,159         | 1,233,369       |
+| **Locations Statements** | 906,008        | 3,376,693      | 24,189,262      |
+| **Authors Entities**     | //             | //             | 765,350         |
+| **Authors Statements**   | //             | //             | 24,389,391      |
+| **Creators Entities**    | 19,865         | 88,663         | 1,377,454       |
+| **Creators Statements**  | 1,235,069      | 5,988,387      | 53,738,223      |
+| **Total Entities**       | 1,041,826      | 2,154,013      | 6,913,218       |
+| **Total Statements**     | 23,032,748     | 32,408,426     | 14,2185,444     |
 | **Folder weight**        | 31.7 GB        | 74.6 GB        | 359,2 GB        |
 
 
@@ -64,8 +64,8 @@ The results are summarised in the table below.
 
 |                          | **Dataset B**  | 
 |--------------------------|----------------|
-| **Entities**             | 2999999        |
-| **Statements**           | 62102993       |
+| **Entities**             | 2,999,999      |
+| **Statements**           | 62,102,993     |
 | **Folder weight**        | 144.3 GB       | 
 
 ## Dataset C
@@ -78,8 +78,8 @@ For an in depth documentation of the process of creation of Dataset C, please se
 
 |                                    | **Fake creators** | **Fake authors** | **Fake locations** | **Total Dataset C** |
 |------------------------------------|-------------------|------------------|--------------------|---------------------|
-| **Entities (artworks)**            | 996679            | 153070           | 203236             |                     |
-| **Statements (fake)**              | 12737671          | 612387           | 813050             |                     |
+| **Entities (artworks)**            | 996,679           | 153,070          | 203,236            |                     |
+| **Statements (fake)**              | 12,737,671        | 612,387          | 813,050            |                     |
 | **Avg. fake statements x artwork** | 4                 | 4                | 4                  |                     |
 | **Folder weight**                  | 0.621 GB          | 0.551 GB         | 2,35 GB            |                     |
 
@@ -104,7 +104,7 @@ For example, the triples (1)```wd:Q10743 wdt:P214 "249422654"``` and (2)```wd:Q1
 - If both triples (1 and 2) are ranked as Preferred, they are both asserted.
 - If both triples (1 and 2) are ranked as Deprecated, they are both non-asserted.
 - If triple (1) is ranked as Preferred and triple (2) is ranked as Normal, the first (1) is asserted and the second (2) is non-asserted. 
-- If triple (1) is ranked as Deprecated and triple (2) is ranked as Noraml, the first (1) in non-asserted and the second (2) is asserted. 
+- If triple (1) is ranked as Deprecated and triple (2) is ranked as Normal, the first (1) in non-asserted and the second (2) is asserted. 
 - If triple (1) is ranked as Deprecated and triples (2) is ranked as Preferred, the first (1) is non-asserted and the second (2) is asserted. 
 
 # Additional materials
@@ -128,11 +128,11 @@ A conversion test has been run agaist the templates. In the folder ```conversion
 
 |                      | Upload time (ms) | Query Time (ms) | Triples |
 |----------------------|------------------|-----------------|---------|
-| Wikidata Statement   | 1340             | 773             | 6487    |
-| Singleton Properties | 1304             | 681             | 5385    |
-| Named Graphs         | 1239             | 611             | 3334    |
-| RDF-star             | 1089             | 201             | 3354    |
-| Conjectures          | 1120             | 849             | 4121    |
+| Wikidata Statement   | 1340             | 773             | 6,487   |
+| Singleton Properties | 1304             | 681             | 5,385   |
+| Named Graphs         | 1239             | 611             | 3,334   |
+| RDF-star             | 1089             | 201             | 3,354   |
+| Conjectures          | 1120             | 849             | 4,121   |
 
 * The _Query Time (ms)_ has been calculated over the query: ```SELECT * WHERE {?s ?p ?o}```
 
