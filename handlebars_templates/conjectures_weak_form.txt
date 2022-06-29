@@ -19,43 +19,110 @@ wd:{{main.id}} skos:altLabel "{{{deldq alias.value}}}"@{{alias.language}}.
 {{/each}}
 {{/each}}
 
-{{#each claims}}
-{{#each this as | statement |}}
-{{#ifEquals rank 'normal'}}
+        {{#each claims}}
+                {{#if (allNormals this) }}
+                        {{#each this as | statement |}}
+                                {{#if statement.mainsnak.datavalue }}
 GRAPH s:{{rd statement.id}}  {
-   wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
+wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
 }
-{{#each qualifiers}}
-{{#each this as |q|}}
-   s:{{rd statement.id}} ps:{{q.property}} {{{dataValue q.datavalue}}}.
-{{/each}}
-{{/each}} 
-{{/ifEquals}}
-{{#ifEquals rank 'deprecated'}}
-GRAPH s:{{rd statement.id}}  {
-	wd:{{main.id}} &lt;http://w3id.org/conj-wikidata-test/conj/{{main.id}}{{statement.mainsnak.property}}{{@key}}/{{statement.mainsnak.property}}&gt; {{{dataValue statement.mainsnak.datavalue}}}.
-	&lt;http://w3id.org/conj-wikidata-test/conj/{{main.id}}{{statement.mainsnak.property}}{{@key}}/{{statement.mainsnak.property}}&gt; conj:isAConjecturalFormOf wd:{{statement.mainsnak.property}} .
+                                {{else}}
+GRAPH s:{{rd statement.id}} {
+wd:{{main.id}} a wdno:{{statement.mainsnak.property}}.
 }
-{{#each qualifiers}}
-{{#each this as |q|}}
-   s:{{rd statement.id}} ps:{{q.property}} {{{dataValue q.datavalue}}}.
-{{/each}}
-{{/each}} 
-{{/ifEquals}}
-{{#ifEquals rank 'preferred'}}
-GRAPH s:{{rd statement.id}}  {
-   wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
-}
+                                {{/if}}
+                        {{/each}}
+                {{/if}}
 
+                {{#if (hasPreferred this) }}
+                        {{#each this as | statement |}}
+                                {{#if (isPreferred statement) }}
+                                        {{#if statement.mainsnak.datavalue }}
+GRAPH s:{{rd statement.id}}  {
+        wd:{{main.id}} <http://w3id.org/conj-wikidata-test/conj/{{main.id}}{{statement.mainsnak.property}}{{@key}}/{{statement.mainsnak.property}}> {{{dataValue statement.mainsnak.datavalue}}}.
+	<http://w3id.org/conj-wikidata-test/conj/{{main.id}}{{statement.mainsnak.property}}{{@key}}/{{statement.mainsnak.property}}> conj:isAConjecturalFormOf wd:{{statement.mainsnak.property}} .  
+}                                             
 GRAPH s:collapseOf{{rd statement.id}}{
-s:collapseOf{{rd statement.id}} conj:collapses s:{{rd statement.id}}.}
-{{#each qualifiers}}
-{{#each this as |q|}}
-     s:{{rd statement.id}} ps:{{q.property}} {{{dataValue q.datavalue}}}.
-{{/each}}
-{{/each}} 
-{{/ifEquals}}
-   
-{{/each}}
-{{/each}}
+        wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
+        s:collapseOf{{rd statement.id}} conj:collapses s:{{rd statement.id}} 
+}
+                                        {{else}}
+GRAPH s:{{rd statement.id}}  {
+        wd:{{main.id}} <http://w3id.org/conj-wikidata-test/conj/{{main.id}}{{statement.mainsnak.property}}{{@key}}/type> wdno:{{statement.mainsnak.property}}.
+	<http://w3id.org/conj-wikidata-test/conj/{{main.id}}{{statement.mainsnak.property}}{{@key}}/type> conj:isAConjecturalFormOf rdf:type .
+}                                             
+GRAPH s:collapseOf{{rd statement.id}}{
+        wd:{{main.id}} a wdno:{{statement.mainsnak.property}}.
+        s:collapseOf{{rd statement.id}} conj:collapses s:{{rd statement.id}} 
+}
+                                        {{/if}}
+                                {{/if}}
+                                {{#if (isNormal statement) }}
+                                        {{#if statement.mainsnak.datavalue }}
+GRAPH s:{{rd statement.id}}  {
+	wd:{{main.id}} <http://w3id.org/conj-wikidata-test/conj/{{main.id}}{{statement.mainsnak.property}}{{@key}}/{{statement.mainsnak.property}}> {{{dataValue statement.mainsnak.datavalue}}}.
+	<http://w3id.org/conj-wikidata-test/conj/{{main.id}}{{statement.mainsnak.property}}{{@key}}/{{statement.mainsnak.property}}> conj:isAConjecturalFormOf wd:{{statement.mainsnak.property}} .
+}
+                                        {{else}}
+GRAPH s:{{rd statement.id}}  {
+	wd:{{main.id}} <http://w3id.org/conj-wikidata-test/conj/{{main.id}}{{statement.mainsnak.property}}{{@key}}/type> wdno:{{statement.mainsnak.property}}.
+	<http://w3id.org/conj-wikidata-test/conj/{{main.id}}{{statement.mainsnak.property}}{{@key}}/type> conj:isAConjecturalFormOf rdf:type .
+}
+                                                CONJ wd:{{main.id}} a wdno:{{statement.mainsnak.property}}.
+                                        {{/if}}
+                                {{/if}}
+                                        {{#if (isDeprecated statement) }}
+                                                {{#if statement.mainsnak.datavalue }}
+GRAPH s:{{rd statement.id}}  {
+	wd:{{main.id}} <http://w3id.org/conj-wikidata-test/conj/{{main.id}}{{statement.mainsnak.property}}{{@key}}/{{statement.mainsnak.property}}> {{{dataValue statement.mainsnak.datavalue}}}.
+	<http://w3id.org/conj-wikidata-test/conj/{{main.id}}{{statement.mainsnak.property}}{{@key}}/{{statement.mainsnak.property}}> conj:isAConjecturalFormOf wd:{{statement.mainsnak.property}} .
+}
+                                        {{else}}
+GRAPH s:{{rd statement.id}}  {
+	wd:{{main.id}} <http://w3id.org/conj-wikidata-test/conj/{{main.id}}{{statement.mainsnak.property}}{{@key}}/type> wdno:{{statement.mainsnak.property}}.
+	<http://w3id.org/conj-wikidata-test/conj/{{main.id}}{{statement.mainsnak.property}}{{@key}}/type> conj:isAConjecturalFormOf rdf:type .
+}
+                                        {{/if}}
+                                {{/if}}
+                        {{/each}}
+                {{else}}
+                        {{#if (hasDeprecated this) }}
+                                {{#each this as | statement |}}
+                                        {{#if (isNormal statement) }}
+                                                {{#if statement.mainsnak.datavalue }}
+GRAPH s:{{rd statement.id}}  {
+        wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
+}                                                   {{else}}
+GRAPH GRAPH s:{{rd statement.id}} { 
+        wd:{{main.id}} a wdno:{{statement.mainsnak.property}}.
+}
+                                                {{/if}}
+                                        {{/if}}
+                                        {{#if (isDeprecated statement) }}
+                                                {{#if statement.mainsnak.datavalue }}
+GRAPH s:{{rd statement.id}}  {
+        wd:{{main.id}} <http://w3id.org/conj-wikidata-test/conj/{{main.id}}{{statement.mainsnak.property}}{{@key}}/{{statement.mainsnak.property}}> {{{dataValue statement.mainsnak.datavalue}}}.
+        <http://w3id.org/conj-wikidata-test/conj/{{main.id}}{{statement.mainsnak.property}}{{@key}}/{{statement.mainsnak.property}}> conj:isAConjecturalFormOf wd:{{statement.mainsnak.property}} .
+}
+                                                {{else}}
+GRAPH s:{{rd statement.id}}  {
+        wd:{{main.id}} <http://w3id.org/conj-wikidata-test/conj/{{main.id}}{{statement.mainsnak.property}}{{@key}}/type> wdno:{{statement.mainsnak.property}}.
+        <http://w3id.org/conj-wikidata-test/conj/{{main.id}}{{statement.mainsnak.property}}{{@key}}/type> conj:isAConjecturalFormOf rdf:type .
+}
+                                                {{/if}}
+                                        {{/if}}
+                                {{/each}}
+                        {{/if}}
+                {{/if}}
+
+
+                {{#each this as | statement |}}
+                        {{#each qualifiers}}
+                                {{#each this as |q|}}
+s:{{rd statement.id}} pq:{{q.property}} {{{dataValue q.datavalue}}}.
+                                {{/each}}
+                        {{/each}}
+s:{{rd statement.id}} wikibase:rank wikibase:{{tc rank}}Rank.                
+                {{/each}}
+        {{/each}}
 {{/with}}
