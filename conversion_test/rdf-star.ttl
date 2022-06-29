@@ -1,0 +1,6571 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix data: <https://www.wikidata.org/wiki/Special:EntityData/> .
+@prefix s: <http://www.wikidata.org/entity/statement/> .
+@prefix ref: <http://www.wikidata.org/reference/> .
+@prefix v: <http://www.wikidata.org/value/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix wdtn: <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix p: <http://www.wikidata.org/prop/> .
+@prefix ps: <http://www.wikidata.org/prop/statement/> .
+@prefix psv: <http://www.wikidata.org/prop/statement/value/> .
+@prefix psn: <http://www.wikidata.org/prop/statement/value-normalized/> .
+@prefix pq: <http://www.wikidata.org/prop/qualifier/> .
+@prefix pqv: <http://www.wikidata.org/prop/qualifier/value/> .
+@prefix pqn: <http://www.wikidata.org/prop/qualifier/value-normalized/> .
+@prefix pr: <http://www.wikidata.org/prop/reference/> .
+@prefix prv: <http://www.wikidata.org/prop/reference/value/> .
+@prefix prn: <http://www.wikidata.org/prop/reference/value-normalized/> .
+@prefix wdno: <http://www.wikidata.org/prop/novalue/> .
+@prefix sng: <http://example.org/> . 
+@prefix conj: <https://w3id.org/conjectures/> . 
+
+
+#   wd:Q7835481: Transylvania Panorama (EN)
+
+wd:Q7835481 rdfs:label "Transylvania Panorama"@en ;
+	skos:prefLabel "Transylvania Panorama"@en ;
+	schema:name "Transylvania Panorama"@en .
+
+wd:Q7835481 schema:description "painting by Jan Styka (under his direction)"@en.
+
+wd:Q7835481 skos:altLabel "Panorama of the Battle of Sibiu"@en.
+wd:Q7835481 skos:altLabel "Panorama Siedmiogrodzka"@en.
+
+wd:Q7835481 wdt:P31 wd:Q3305213.
+
+
+
+<<wd:Q7835481 wdt:P31 wd:Q3305213>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q7835481 wdt:P170 wd:Q708238.
+wd:Q7835481 wdt:P170 wd:Q1165093.
+wd:Q7835481 wdt:P170 wd:Q1461574.
+wd:Q7835481 wdt:P170 wd:Q15277865.
+wd:Q7835481 wdt:P170 wd:Q9354747.
+wd:Q7835481 wdt:P170 wd:Q9393086.
+wd:Q7835481 wdt:P170 wd:Q4145937.
+wd:Q7835481 wdt:P170 wd:Q84561653.
+
+
+
+<<wd:Q7835481 wdt:P170 wd:Q708238>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q7835481 wdt:P170 wd:Q1165093>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q7835481 wdt:P170 wd:Q1461574>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q7835481 wdt:P170 wd:Q15277865>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q7835481 wdt:P170 wd:Q9354747>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q7835481 wdt:P170 wd:Q9393086>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q7835481 wdt:P170 wd:Q4145937>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q7835481 wdt:P170 wd:Q84561653>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q7835481 wdt:P136 wd:Q742333.
+
+
+
+<<wd:Q7835481 wdt:P136 wd:Q742333>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q7835481 wdt:P921 wd:Q473716.
+
+
+
+<<wd:Q7835481 wdt:P921 wd:Q473716>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q7835481 wdt:P571 "1897-00-00T00:00:00Z"^^xsd:dateTime.
+
+
+
+<<wd:Q7835481 wdt:P571 "1897-00-00T00:00:00Z"^^xsd:dateTime>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q7835481 wdt:P373 "Panorama siedmiogrodzka".
+
+
+
+<<wd:Q7835481 wdt:P373 "Panorama siedmiogrodzka">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q7835481 wdt:P18 "Panorama Siedmiogrodzka.jpg".
+
+
+
+<<wd:Q7835481 wdt:P18 "Panorama Siedmiogrodzka.jpg">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q7835481 wdt:P6216 wd:Q19652.
+
+
+
+<<wd:Q7835481 wdt:P6216 wd:Q19652>>
+    pq:P1001 wd:Q60332278;
+    pq:P459 wd:Q29940705;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q7835481 wdt:P244 "n98069260".
+
+
+
+<<wd:Q7835481 wdt:P244 "n98069260">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q7835481 wdt:P214 "175914548".
+
+
+
+<<wd:Q7835481 wdt:P214 "175914548">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q7835481 wdt:P646 "/m/0bs92n5".
+
+
+
+<<wd:Q7835481 wdt:P646 "/m/0bs92n5">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q7835481 wdt:P7293 "9810656116105606".
+
+
+
+<<wd:Q7835481 wdt:P7293 "9810656116105606">>
+     wikibase:rank wikibase:NormalRank.
+
+#   wd:Q575248: Jesus (EN)
+
+wd:Q575248 rdfs:label "Jesus"@en ;
+	skos:prefLabel "Jesus"@en ;
+	schema:name "Jesus"@en .
+
+wd:Q575248 schema:description "1979 film by Peter Sykes, John Krish"@en.
+
+wd:Q575248 skos:altLabel "Word-for-Word, the Bible on Video: Gospel of Luke"@en.
+
+wd:Q575248 wdt:P345 "tt0079368".
+
+
+
+<<wd:Q575248 wdt:P345 "tt0079368">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P31 wd:Q11424.
+
+
+
+<<wd:Q575248 wdt:P31 wd:Q11424>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P161 wd:Q912067.
+wd:Q575248 wdt:P161 wd:Q657077.
+wd:Q575248 wdt:P161 wd:Q7338955.
+wd:Q575248 wdt:P161 wd:Q929891.
+wd:Q575248 wdt:P161 wd:Q458589.
+wd:Q575248 wdt:P161 wd:Q5360191.
+wd:Q575248 wdt:P161 wd:Q1226174.
+
+
+
+<<wd:Q575248 wdt:P161 wd:Q912067>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q575248 wdt:P161 wd:Q657077>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q575248 wdt:P161 wd:Q7338955>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q575248 wdt:P161 wd:Q929891>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q575248 wdt:P161 wd:Q458589>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q575248 wdt:P161 wd:Q5360191>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q575248 wdt:P161 wd:Q1226174>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P364 wd:Q1860.
+
+
+
+<<wd:Q575248 wdt:P364 wd:Q1860>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P162 wd:Q6239175.
+
+
+
+<<wd:Q575248 wdt:P162 wd:Q6239175>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P646 "/m/01plcx".
+
+
+
+<<wd:Q575248 wdt:P646 "/m/01plcx">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P227 "4241450-7".
+
+
+
+<<wd:Q575248 wdt:P227 "4241450-7">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P577 "1979-10-19T00:00:00Z"^^xsd:dateTime.
+wd:Q575248 wdt:P577 "1980-03-27T00:00:00Z"^^xsd:dateTime.
+wd:Q575248 wdt:P577 "1980-04-03T00:00:00Z"^^xsd:dateTime.
+wd:Q575248 wdt:P577 "1981-04-09T00:00:00Z"^^xsd:dateTime.
+wd:Q575248 wdt:P577 "1984-09-28T00:00:00Z"^^xsd:dateTime.
+wd:Q575248 wdt:P577 "1985-11-01T00:00:00Z"^^xsd:dateTime.
+wd:Q575248 wdt:P577 "1986-03-14T00:00:00Z"^^xsd:dateTime.
+wd:Q575248 wdt:P577 "1990-12-13T00:00:00Z"^^xsd:dateTime.
+wd:Q575248 wdt:P577 "1991-04-08T00:00:00Z"^^xsd:dateTime.
+
+
+
+<<wd:Q575248 wdt:P577 "1979-10-19T00:00:00Z"^^xsd:dateTime>>
+    pq:P291 wd:Q30;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q575248 wdt:P577 "1980-03-27T00:00:00Z"^^xsd:dateTime>>
+    pq:P291 wd:Q96;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q575248 wdt:P577 "1980-04-03T00:00:00Z"^^xsd:dateTime>>
+    pq:P291 wd:Q408;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q575248 wdt:P577 "1981-04-09T00:00:00Z"^^xsd:dateTime>>
+    pq:P291 wd:Q36433;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q575248 wdt:P577 "1984-09-28T00:00:00Z"^^xsd:dateTime>>
+    pq:P291 wd:Q183;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q575248 wdt:P577 "1985-11-01T00:00:00Z"^^xsd:dateTime>>
+    pq:P291 wd:Q34;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q575248 wdt:P577 "1986-03-14T00:00:00Z"^^xsd:dateTime>>
+    pq:P291 wd:Q33;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q575248 wdt:P577 "1990-12-13T00:00:00Z"^^xsd:dateTime>>
+    pq:P291 wd:Q28;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q575248 wdt:P577 "1991-04-08T00:00:00Z"^^xsd:dateTime>>
+    pq:P291 wd:Q15180;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P214 "64145858024423022480".
+
+
+
+<<wd:Q575248 wdt:P214 "64145858024423022480">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P495 wd:Q30.
+
+
+
+<<wd:Q575248 wdt:P495 wd:Q30>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P57 wd:Q6243454.
+wd:Q575248 wdt:P57 wd:Q964832.
+
+
+
+<<wd:Q575248 wdt:P57 wd:Q6243454>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q575248 wdt:P57 wd:Q964832>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P1562 "v26086".
+
+
+
+<<wd:Q575248 wdt:P1562 "v26086">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P136 wd:Q130232.
+wd:Q575248 wdt:P136 wd:Q645928.
+
+
+
+<<wd:Q575248 wdt:P136 wd:Q130232>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q575248 wdt:P136 wd:Q645928>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P1476 "Jesus"@en.
+
+
+
+<<wd:Q575248 wdt:P1476 "Jesus">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P2438 wd:Q458589.
+
+
+
+<<wd:Q575248 wdt:P2438 wd:Q458589>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P1970 "4343".
+
+
+
+<<wd:Q575248 wdt:P1970 "4343">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P1874 "60029125".
+
+
+
+<<wd:Q575248 wdt:P1874 "60029125">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P2047 "+120"^^xsd:decimal.
+
+
+
+<<wd:Q575248 wdt:P2047 "+120"^^xsd:decimal>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P2603 "61135".
+
+
+
+<<wd:Q575248 wdt:P2603 "61135">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P3107 "43299".
+
+
+
+<<wd:Q575248 wdt:P3107 "43299">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P3138 "39377".
+
+
+
+<<wd:Q575248 wdt:P3138 "39377">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P462 wd:Q22006653.
+
+
+
+<<wd:Q575248 wdt:P462 wd:Q22006653>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P1981 wd:Q20644795.
+
+
+
+<<wd:Q575248 wdt:P1981 wd:Q20644795>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P2747 wd:Q23830576.
+
+
+
+<<wd:Q575248 wdt:P2747 wd:Q23830576>>
+    pq:P2676 "F/4541/J";
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P905 "83282".
+
+
+
+<<wd:Q575248 wdt:P905 "83282">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P3143 "79178".
+
+
+
+<<wd:Q575248 wdt:P3143 "79178">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P2631 "79744".
+
+
+
+<<wd:Q575248 wdt:P2631 "79744">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P2529 "159876".
+
+
+
+<<wd:Q575248 wdt:P2529 "159876">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P2638 "movies/jesus-2000".
+
+
+
+<<wd:Q575248 wdt:P2638 "movies/jesus-2000">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P2334 "6801".
+
+
+
+<<wd:Q575248 wdt:P2334 "6801">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P2346 "196133".
+
+
+
+<<wd:Q575248 wdt:P2346 "196133">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P2704 "10.5240/E30C-089B-A340-69B8-351B-2".
+
+
+
+<<wd:Q575248 wdt:P2704 "10.5240/E30C-089B-A340-69B8-351B-2">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P1258 "m/1011025-jesus".
+
+
+
+<<wd:Q575248 wdt:P1258 "m/1011025-jesus">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P3302 "107237".
+
+
+
+<<wd:Q575248 wdt:P3302 "107237">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P3593 "56823".
+
+
+
+<<wd:Q575248 wdt:P3593 "56823">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P1265 "49555".
+
+
+
+<<wd:Q575248 wdt:P1265 "49555">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P2508 "33950".
+
+
+
+<<wd:Q575248 wdt:P2508 "33950">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P2465 "85214".
+
+
+
+<<wd:Q575248 wdt:P2465 "85214">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P58 wd:Q50826747.
+
+
+
+<<wd:Q575248 wdt:P58 wd:Q50826747>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P4665 "158180".
+
+
+
+<<wd:Q575248 wdt:P4665 "158180">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P5032 "119842".
+
+
+
+<<wd:Q575248 wdt:P5032 "119842">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P86 wd:Q7217815.
+
+
+
+<<wd:Q575248 wdt:P86 wd:Q7217815>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P5786 "jesus".
+
+
+
+<<wd:Q575248 wdt:P5786 "jesus">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P856 "http://www.jesusfilm.org/".
+
+
+
+<<wd:Q575248 wdt:P856 "http://www.jesusfilm.org/">>
+    pq:P407 wd:Q1860;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P840 wd:Q1747689.
+
+
+
+<<wd:Q575248 wdt:P840 wd:Q1747689>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P4947 "45139".
+
+
+
+<<wd:Q575248 wdt:P4947 "45139">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P480 "483862".
+
+
+
+<<wd:Q575248 wdt:P480 "483862">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P6127 "jesus".
+
+
+
+<<wd:Q575248 wdt:P6127 "jesus">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P7132 "2733".
+
+
+
+<<wd:Q575248 wdt:P7132 "2733">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P1651 "z59y1bkgaOk".
+wd:Q575248 wdt:P1651 "o-o2JHhHXys".
+wd:Q575248 wdt:P1651 "aIJgVn1FKs8".
+wd:Q575248 wdt:P1651 "-kGeJ8bC_pg".
+
+
+
+<<wd:Q575248 wdt:P1651 "z59y1bkgaOk">>
+    pq:P407 wd:Q652;
+    pq:P1810 "JESUS (Italian) 🎬";
+    pq:P577 "2019-12-13T00:00:00Z"^^xsd:dateTime;
+    pq:P2047 "+7674.0"^^xsd:decimal;
+    pq:P2397 "UCCtcQHR6-mQHQh6G06IPlDA";
+    pq:P5436 "+10460"^^xsd:decimal;
+    pq:P585 "2022-02-02T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q575248 wdt:P1651 "o-o2JHhHXys">>
+    pq:P1476 "JESUS | The JESUS Film 🎬 English | Official Full Movie"@en;
+    pq:P577 "2012-01-30T00:00:00Z"^^xsd:dateTime;
+    pq:P407 wd:Q1860;
+    pq:P2047 "+7674.0"^^xsd:decimal;
+    pq:P2397 "UCCtcQHR6-mQHQh6G06IPlDA";
+    pq:P5436 "+7400573"^^xsd:decimal;
+    pq:P585 "2022-02-02T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q575248 wdt:P1651 "aIJgVn1FKs8">>
+    pq:P1476 "JESUS (Tamil) 🎬"@ta;
+    pq:P577 "2019-10-25T00:00:00Z"^^xsd:dateTime;
+    pq:P407 wd:Q1860;
+    pq:P2047 "+7674.0"^^xsd:decimal;
+    pq:P2397 "UCCtcQHR6-mQHQh6G06IPlDA";
+    pq:P5436 "+2845205"^^xsd:decimal;
+    pq:P585 "2022-02-02T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q575248 wdt:P1651 "-kGeJ8bC_pg">>
+    pq:P1476 "JESUS (Urdu) 🎬"@ur;
+    pq:P577 "2019-12-03T00:00:00Z"^^xsd:dateTime;
+    pq:P407 wd:Q1860;
+    pq:P2047 "+7674.0"^^xsd:decimal;
+    pq:P2397 "UCCtcQHR6-mQHQh6G06IPlDA";
+    pq:P5436 "+4057241"^^xsd:decimal;
+    pq:P585 "2022-02-02T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P9215 wd:Q21196.
+
+
+
+<<wd:Q575248 wdt:P9215 wd:Q21196>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P4529 "1441399".
+
+
+
+<<wd:Q575248 wdt:P4529 "1441399">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P437 wd:Q723685.
+
+
+
+<<wd:Q575248 wdt:P437 wd:Q723685>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P2397 "UCCtcQHR6-mQHQh6G06IPlDA".
+
+
+
+<<wd:Q575248 wdt:P2397 "UCCtcQHR6-mQHQh6G06IPlDA">>
+    pq:P1810 "Jesus Film";
+    pq:P3744 "+874000"^^xsd:decimal;
+    pq:P3740 "+4684"^^xsd:decimal;
+    pq:P5436 "+177237188"^^xsd:decimal;
+    pq:P580 "2007-11-17T00:00:00Z"^^xsd:dateTime;
+    pq:P585 "2021-09-26T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+
+wd:Q575248 wdt:P8687 "+1110000"^^xsd:decimal.
+
+<<wd:Q575248 wdt:P8687 "+879000"^^xsd:decimal>>
+    pq:P2397 "UCCtcQHR6-mQHQh6G06IPlDA";
+    pq:P585 "2021-09-29T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q575248 wdt:P8687 "+1110000"^^xsd:decimal>>
+    pq:P2397 "UCCtcQHR6-mQHQh6G06IPlDA";
+    pq:P585 "2022-03-17T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:PreferredRank.
+
+wd:Q575248 wdt:P9022 "mf-tt-4368027829".
+
+
+
+<<wd:Q575248 wdt:P9022 "mf-tt-4368027829">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q575248 wdt:P4015 "120845098".
+
+
+
+<<wd:Q575248 wdt:P4015 "120845098">>
+    pq:P1476 "Фильм Иисуc"@ru;
+     wikibase:rank wikibase:NormalRank.
+
+#   wd:Q183: Germany (EN)
+
+wd:Q183 rdfs:label "Germany"@en ;
+	skos:prefLabel "Germany"@en ;
+	schema:name "Germany"@en .
+
+wd:Q183 schema:description "country in Central Europe"@en.
+
+wd:Q183 skos:altLabel "Federal Republic of Germany"@en.
+wd:Q183 skos:altLabel "Deutschland"@en.
+wd:Q183 skos:altLabel "GER"@en.
+wd:Q183 skos:altLabel "BR Deutschland"@en.
+wd:Q183 skos:altLabel "DE"@en.
+wd:Q183 skos:altLabel "BRD"@en.
+wd:Q183 skos:altLabel "Bundesrepublik Deutschland"@en.
+wd:Q183 skos:altLabel "de"@en.
+wd:Q183 skos:altLabel "GFR"@en.
+
+wd:Q183 wdt:P2924 "2354371".
+
+
+
+<<wd:Q183 wdt:P2924 "2354371">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1333 "Point(10.17844677 47.2700279)"^^geo:wktLiteral.
+
+
+
+<<wd:Q183 wdt:P1333 "Point(10.17844677 47.2700279)"^^geo:wktLiteral>>
+    pq:P805 wd:Q1489790;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P3221 "destination/germany".
+
+
+
+<<wd:Q183 wdt:P3221 "destination/germany">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P227 "4011882-4".
+
+
+
+<<wd:Q183 wdt:P227 "4011882-4">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1792 wd:Q3919754.
+wd:Q183 wdt:P1792 wd:Q7605094.
+
+
+
+<<wd:Q183 wdt:P1792 wd:Q3919754>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1792 wd:Q7605094>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P2852 wd:Q1061257.
+wd:Q183 wdt:P2852 wd:Q25648823.
+
+
+
+<<wd:Q183 wdt:P2852 wd:Q1061257>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2852 wd:Q25648823>>
+    pq:P366 wd:Q35535;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P2853 wd:Q1123613.
+wd:Q183 wdt:P2853 wd:Q1378312.
+
+
+
+<<wd:Q183 wdt:P2853 wd:Q1123613>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2853 wd:Q1378312>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P395 "D".
+
+
+
+<<wd:Q183 wdt:P395 "D">>
+    pq:P580 "1909-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P2572 "Deutschland".
+wd:Q183 wdt:P2572 "Germany".
+
+
+
+<<wd:Q183 wdt:P2572 "Deutschland">>
+    pq:P407 wd:Q188;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2572 "Germany">>
+    pq:P407 wd:Q1860;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P2581 "00026684n".
+
+
+
+<<wd:Q183 wdt:P2581 "00026684n">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1943 "Germany adm location map.svg".
+
+
+
+<<wd:Q183 wdt:P1943 "Germany adm location map.svg">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1313 wd:Q4970706.
+
+
+
+<<wd:Q183 wdt:P1313 wd:Q4970706>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P417 wd:Q45581.
+
+
+
+<<wd:Q183 wdt:P417 wd:Q45581>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P998 "Regional/Europe/Germany/".
+
+
+
+<<wd:Q183 wdt:P998 "Regional/Europe/Germany/">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1705 "Bundesrepublik Deutschland"@de.
+wd:Q183 wdt:P1705 "Deutschland"@de.
+
+
+
+<<wd:Q183 wdt:P1705 "Bundesrepublik Deutschland">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1705 "Deutschland">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P982 "85752fda-13c4-31a3-bee5-0e5cb1f51dad".
+
+
+
+<<wd:Q183 wdt:P982 "85752fda-13c4-31a3-bee5-0e5cb1f51dad">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P832 wd:Q157582.
+wd:Q183 wdt:P832 wd:Q2544.
+wd:Q183 wdt:P832 wd:Q40317.
+wd:Q183 wdt:P832 wd:Q19809.
+wd:Q183 wdt:P832 wd:Q51638.
+wd:Q183 wdt:P832 wd:Q209663.
+wd:Q183 wdt:P832 wd:Q15113728.
+wd:Q183 wdt:P832 wd:Q196627.
+
+
+
+<<wd:Q183 wdt:P832 wd:Q157582>>
+    pq:P580 "1990-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P837 wd:Q2931;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P832 wd:Q2544>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P832 wd:Q40317>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P832 wd:Q19809>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P832 wd:Q51638>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P832 wd:Q209663>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P832 wd:Q15113728>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P832 wd:Q196627>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P2981 "D".
+
+
+
+<<wd:Q183 wdt:P2981 "D">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P5905 "4020-55777".
+
+
+
+<<wd:Q183 wdt:P5905 "4020-55777">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P3422 "99109".
+
+
+
+<<wd:Q183 wdt:P3422 "99109">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P2855 "+19"^^xsd:decimal.
+wd:Q183 wdt:P2855 "+7"^^xsd:decimal.
+
+
+
+<<wd:Q183 wdt:P2855 "+19"^^xsd:decimal>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2855 "+7"^^xsd:decimal>>
+    pq:P805 wd:Q24259013;
+    pq:P518 wd:Q27686;
+    pq:P518 wd:Q571;
+    pq:P518 wd:Q2095;
+    pq:P518 wd:Q976338;
+    pq:P518 wd:Q1187930;
+     wikibase:rank wikibase:NormalRank.
+
+
+wd:Q183 wdt:P530 wd:Q30.
+wd:Q183 wdt:P530 wd:Q155.
+wd:Q183 wdt:P530 wd:Q801.
+wd:Q183 wdt:P530 wd:Q142.
+wd:Q183 wdt:P530 wd:Q145.
+wd:Q183 wdt:P530 wd:Q39.
+wd:Q183 wdt:P530 wd:Q40.
+wd:Q183 wdt:P530 wd:Q32.
+wd:Q183 wdt:P530 wd:Q31.
+wd:Q183 wdt:P530 wd:Q55.
+wd:Q183 wdt:P530 wd:Q36.
+wd:Q183 wdt:P530 wd:Q213.
+wd:Q183 wdt:P530 wd:Q35.
+wd:Q183 wdt:P530 wd:Q20.
+wd:Q183 wdt:P530 wd:Q34.
+wd:Q183 wdt:P530 wd:Q33.
+wd:Q183 wdt:P530 wd:Q159.
+wd:Q183 wdt:P530 wd:Q214.
+wd:Q183 wdt:P530 wd:Q215.
+wd:Q183 wdt:P530 wd:Q28.
+wd:Q183 wdt:P530 wd:Q224.
+wd:Q183 wdt:P530 wd:Q403.
+wd:Q183 wdt:P530 wd:Q41.
+wd:Q183 wdt:P530 wd:Q218.
+wd:Q183 wdt:P530 wd:Q219.
+wd:Q183 wdt:P530 wd:Q45.
+wd:Q183 wdt:P530 wd:Q29.
+wd:Q183 wdt:P530 wd:Q27.
+wd:Q183 wdt:P530 wd:Q222.
+wd:Q183 wdt:P530 wd:Q189.
+wd:Q183 wdt:P530 wd:Q212.
+wd:Q183 wdt:P530 wd:Q43.
+wd:Q183 wdt:P530 wd:Q230.
+wd:Q183 wdt:P530 wd:Q227.
+wd:Q183 wdt:P530 wd:Q810.
+wd:Q183 wdt:P530 wd:Q851.
+wd:Q183 wdt:P530 wd:Q878.
+wd:Q183 wdt:P530 wd:Q796.
+wd:Q183 wdt:P530 wd:Q794.
+wd:Q183 wdt:P530 wd:Q843.
+wd:Q183 wdt:P530 wd:Q668.
+wd:Q183 wdt:P530 wd:Q232.
+wd:Q183 wdt:P530 wd:Q265.
+wd:Q183 wdt:P530 wd:Q889.
+wd:Q183 wdt:P530 wd:Q148.
+wd:Q183 wdt:P530 wd:Q711.
+wd:Q183 wdt:P530 wd:Q884.
+wd:Q183 wdt:P530 wd:Q423.
+wd:Q183 wdt:P530 wd:Q17.
+wd:Q183 wdt:P530 wd:Q881.
+wd:Q183 wdt:P530 wd:Q252.
+wd:Q183 wdt:P530 wd:Q869.
+wd:Q183 wdt:P530 wd:Q902.
+wd:Q183 wdt:P530 wd:Q408.
+wd:Q183 wdt:P530 wd:Q664.
+wd:Q183 wdt:P530 wd:Q334.
+wd:Q183 wdt:P530 wd:Q833.
+wd:Q183 wdt:P530 wd:Q79.
+wd:Q183 wdt:P530 wd:Q262.
+wd:Q183 wdt:P530 wd:Q948.
+wd:Q183 wdt:P530 wd:Q1028.
+wd:Q183 wdt:P530 wd:Q1049.
+wd:Q183 wdt:P530 wd:Q958.
+wd:Q183 wdt:P530 wd:Q115.
+wd:Q183 wdt:P530 wd:Q114.
+wd:Q183 wdt:P530 wd:Q971.
+wd:Q183 wdt:P530 wd:Q929.
+wd:Q183 wdt:P530 wd:Q1033.
+wd:Q183 wdt:P530 wd:Q1008.
+wd:Q183 wdt:P530 wd:Q1041.
+wd:Q183 wdt:P530 wd:Q1005.
+wd:Q183 wdt:P530 wd:Q965.
+wd:Q183 wdt:P530 wd:Q983.
+wd:Q183 wdt:P530 wd:Q1036.
+wd:Q183 wdt:P530 wd:Q924.
+wd:Q183 wdt:P530 wd:Q1037.
+wd:Q183 wdt:P530 wd:Q916.
+wd:Q183 wdt:P530 wd:Q963.
+wd:Q183 wdt:P530 wd:Q954.
+wd:Q183 wdt:P530 wd:Q1029.
+wd:Q183 wdt:P530 wd:Q258.
+wd:Q183 wdt:P530 wd:Q16.
+wd:Q183 wdt:P530 wd:Q96.
+wd:Q183 wdt:P530 wd:Q242.
+wd:Q183 wdt:P530 wd:Q774.
+wd:Q183 wdt:P530 wd:Q783.
+wd:Q183 wdt:P530 wd:Q241.
+wd:Q183 wdt:P530 wd:Q811.
+wd:Q183 wdt:P530 wd:Q800.
+wd:Q183 wdt:P530 wd:Q804.
+wd:Q183 wdt:P530 wd:Q739.
+wd:Q183 wdt:P530 wd:Q717.
+wd:Q183 wdt:P530 wd:Q734.
+wd:Q183 wdt:P530 wd:Q730.
+wd:Q183 wdt:P530 wd:Q736.
+wd:Q183 wdt:P530 wd:Q419.
+wd:Q183 wdt:P530 wd:Q750.
+wd:Q183 wdt:P530 wd:Q733.
+wd:Q183 wdt:P530 wd:Q77.
+wd:Q183 wdt:P530 wd:Q414.
+wd:Q183 wdt:P530 wd:Q298.
+wd:Q183 wdt:P530 wd:Q228.
+wd:Q183 wdt:P530 wd:Q217.
+wd:Q183 wdt:P530 wd:Q225.
+wd:Q183 wdt:P530 wd:Q235.
+wd:Q183 wdt:P530 wd:Q229.
+wd:Q183 wdt:P530 wd:Q233.
+wd:Q183 wdt:P530 wd:Q184.
+wd:Q183 wdt:P530 wd:Q238.
+wd:Q183 wdt:P530 wd:Q1011.
+wd:Q183 wdt:P530 wd:Q1013.
+wd:Q183 wdt:P530 wd:Q837.
+wd:Q183 wdt:P530 wd:Q928.
+wd:Q183 wdt:P530 wd:Q236.
+wd:Q183 wdt:P530 wd:Q1246.
+wd:Q183 wdt:P530 wd:Q399.
+wd:Q183 wdt:P530 wd:Q244.
+wd:Q183 wdt:P530 wd:Q191.
+wd:Q183 wdt:P530 wd:Q921.
+wd:Q183 wdt:P530 wd:Q424.
+wd:Q183 wdt:P530 wd:Q398.
+wd:Q183 wdt:P530 wd:Q778.
+wd:Q183 wdt:P530 wd:Q977.
+wd:Q183 wdt:P530 wd:Q792.
+wd:Q183 wdt:P530 wd:Q712.
+wd:Q183 wdt:P530 wd:Q790.
+wd:Q183 wdt:P530 wd:Q766.
+wd:Q183 wdt:P530 wd:Q846.
+wd:Q183 wdt:P530 wd:Q813.
+wd:Q183 wdt:P530 wd:Q817.
+wd:Q183 wdt:P530 wd:Q211.
+wd:Q183 wdt:P530 wd:Q37.
+wd:Q183 wdt:P530 wd:Q1014.
+wd:Q183 wdt:P530 wd:Q819.
+wd:Q183 wdt:P530 wd:Q836.
+wd:Q183 wdt:P530 wd:Q702.
+wd:Q183 wdt:P530 wd:Q221.
+wd:Q183 wdt:P530 wd:Q1025.
+wd:Q183 wdt:P530 wd:Q1027.
+wd:Q183 wdt:P530 wd:Q709.
+wd:Q183 wdt:P530 wd:Q1020.
+wd:Q183 wdt:P530 wd:Q826.
+wd:Q183 wdt:P530 wd:Q697.
+wd:Q183 wdt:P530 wd:Q574.
+wd:Q183 wdt:P530 wd:Q842.
+wd:Q183 wdt:P530 wd:Q695.
+wd:Q183 wdt:P530 wd:Q691.
+wd:Q183 wdt:P530 wd:Q1050.
+wd:Q183 wdt:P530 wd:Q854.
+wd:Q183 wdt:P530 wd:Q1044.
+wd:Q183 wdt:P530 wd:Q683.
+wd:Q183 wdt:P530 wd:Q685.
+wd:Q183 wdt:P530 wd:Q863.
+wd:Q183 wdt:P530 wd:Q678.
+wd:Q183 wdt:P530 wd:Q754.
+wd:Q183 wdt:P530 wd:Q874.
+wd:Q183 wdt:P530 wd:Q686.
+wd:Q183 wdt:P530 wd:Q1039.
+wd:Q183 wdt:P530 wd:Q822.
+wd:Q183 wdt:P530 wd:Q805.
+
+<<wd:Q183 wdt:P530 wd:Q30>>
+    pq:P805 wd:Q895688;
+    pq:P580 "1955-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q324833;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q155>>
+    pq:P805 wd:Q10359063;
+    pq:P580 "1951-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q5369693;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q801>>
+    pq:P805 wd:Q44962;
+    pq:P580 "1965-05-12T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q5369700;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q142>>
+    pq:P805 wd:Q567497;
+    pq:P531 wd:Q15953187;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q145>>
+    pq:P805 wd:Q5552216;
+    pq:P580 "1871-01-18T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q835031;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q38>>
+    pq:P580 "1871-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P805 wd:Q3424084;
+    pq:P531 wd:Q22226879;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P530 wd:Q39>>
+    pq:P580 "1871-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q26980117;
+    pq:P805 wd:Q3424089;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q40>>
+    pq:P580 "1871-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P805 wd:Q3424081;
+    pq:P531 wd:Q1202238;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q32>>
+    pq:P805 wd:Q14548201;
+    pq:P531 wd:Q58924865;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q347>>
+    pq:P805 wd:Q14548666;
+    pq:P531 wd:Q26980117;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P530 wd:Q31>>
+    pq:P805 wd:Q14549279;
+    pq:P531 wd:Q58294115;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q55>>
+    pq:P580 "1871-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P805 wd:Q321628;
+    pq:P531 wd:Q60231056;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q36>>
+    pq:P805 wd:Q3424088;
+    pq:P531 wd:Q9149551;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q213>>
+    pq:P805 wd:Q5201793;
+    pq:P531 wd:Q834465;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q35>>
+    pq:P805 wd:Q1201901;
+    pq:P531 wd:Q58494168;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q20>>
+    pq:P805 wd:Q5552203;
+    pq:P580 "1905-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q19393656;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q34>>
+    pq:P531 wd:Q1202240;
+    pq:P805 wd:Q10650719;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q33>>
+    pq:P805 wd:Q5450506;
+    pq:P580 "1973-01-07T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q25451942;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q159>>
+    pq:P805 wd:Q83168;
+    pq:P531 wd:Q4373990;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q214>>
+    pq:P580 "1992-02-27T00:00:00Z"^^xsd:dateTime;
+    pq:P805 wd:Q5552208;
+    pq:P531 wd:Q53205257;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q215>>
+    pq:P580 "1992-01-15T00:00:00Z"^^xsd:dateTime;
+    pq:P805 wd:Q5552211;
+    pq:P531 wd:Q60044496;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q28>>
+    pq:P805 wd:Q4411026;
+    pq:P580 "1973-12-21T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q5369694;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q224>>
+    pq:P580 "1992-01-15T00:00:00Z"^^xsd:dateTime;
+    pq:P805 wd:Q5187215;
+    pq:P531 wd:Q58876415;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q403>>
+    pq:P805 wd:Q5552206;
+    pq:P580 "1951-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q60149042;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q41>>
+    pq:P805 wd:Q1201911;
+    pq:P531 wd:Q14906554;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q218>>
+    pq:P805 wd:Q15805367;
+    pq:P580 "1872-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q60165016;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q219>>
+    pq:P805 wd:Q4996346;
+    pq:P531 wd:Q58491509;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q45>>
+    pq:P805 wd:Q14906553;
+    pq:P531 wd:Q1403220;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q29>>
+    pq:P805 wd:Q6104923;
+    pq:P531 wd:Q26839065;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q27>>
+    pq:P805 wd:Q5405508;
+    pq:P580 "1922-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q58647392;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q222>>
+    pq:P531 wd:Q15109295;
+    pq:P805 wd:Q14549377;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q189>>
+    pq:P805 wd:Q1201907;
+    pq:P531 wd:Q58652656;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q212>>
+    pq:P805 wd:Q180883;
+    pq:P580 "1992-02-01T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q387050;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q43>>
+    pq:P805 wd:Q824405;
+    pq:P531 wd:Q1202231;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q230>>
+    pq:P805 wd:Q5547311;
+    pq:P580 "1992-04-13T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q58612807;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q227>>
+    pq:P580 "1992-02-20T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q16415875;
+    pq:P805 wd:Q12861425;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q810>>
+    pq:P805 wd:Q15989639;
+    pq:P531 wd:Q58699755;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q851>>
+    pq:P805 wd:Q15805368;
+    pq:P580 "1929-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q60150742;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q878>>
+    pq:P805 wd:Q5552213;
+    pq:P580 "1972-05-01T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q59278010;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q796>>
+    pq:P805 wd:Q5552191;
+    pq:P531 wd:Q58644340;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q794>>
+    pq:P805 wd:Q3424083;
+    pq:P580 "1952-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q20110427;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q843>>
+    pq:P805 wd:Q5552204;
+    pq:P580 "1951-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q60168849;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q668>>
+    pq:P805 wd:Q5552189;
+    pq:P531 wd:Q58206068;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q232>>
+    pq:P580 "1992-02-11T00:00:00Z"^^xsd:dateTime;
+    pq:P805 wd:Q39046628;
+    pq:P531 wd:Q58751291;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q265>>
+    pq:P805 wd:Q16042206;
+    pq:P580 "1991-12-31T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q59278564;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q889>>
+    pq:P805 wd:Q4689205;
+    pq:P580 "1919-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q58205703;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q148>>
+    pq:P805 wd:Q633298;
+    pq:P580 "1972-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q15916341;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q711>>
+    pq:P805 wd:Q16071058;
+    pq:P580 "1974-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q33309283;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q884>>
+    pq:P805 wd:Q5552210;
+    pq:P580 "1955-12-01T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q60036416;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q423>>
+    pq:P580 "2001-03-01T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q1202236;
+    pq:P805 wd:Q1201913;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q17>>
+    pq:P805 wd:Q529551;
+    pq:P580 "1951-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q16061535;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q881>>
+    pq:P805 wd:Q16267434;
+    pq:P580 "1975-09-23T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q59277899;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q252>>
+    pq:P805 wd:Q16275133;
+    pq:P580 "1952-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q31886708;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q869>>
+    pq:P805 wd:Q929566;
+    pq:P531 wd:Q13021892;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q902>>
+    pq:P805 wd:Q15948938;
+    pq:P580 "1972-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q24948072;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q408>>
+    pq:P805 wd:Q15948857;
+    pq:P580 "1952-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q5369695;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q664>>
+    pq:P805 wd:Q16335118;
+    pq:P580 "1953-11-10T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q5369702;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q334>>
+    pq:P805 wd:Q5552207;
+    pq:P531 wd:Q60143853;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q833>>
+    pq:P805 wd:Q5552196;
+    pq:P531 wd:Q58944931;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q79>>
+    pq:P805 wd:Q4120726;
+    pq:P580 "1957-12-01T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q58207668;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q1016>>
+    pq:P805 wd:Q5552193;
+    pq:P531 wd:Q58897429;
+    pq:P2241 wd:Q26256296;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P530 wd:Q262>>
+    pq:P805 wd:Q16481601;
+    pq:P531 wd:Q58212405;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q948>>
+    pq:P805 wd:Q16505673;
+    pq:P580 "1950-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q59339709;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q1028>>
+    pq:P805 wd:Q12227585;
+    pq:P580 "1956-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q60298884;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q912>>
+    pq:P580 "1960-09-01T00:00:00Z"^^xsd:dateTime;
+    pq:P805 wd:Q16575253;
+    pq:P531 wd:Q59100146;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P530 wd:Q657>>
+    pq:P580 "1960-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P805 wd:Q16621749;
+    pq:P531 wd:Q59273683;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P530 wd:Q1049>>
+    pq:P805 wd:Q16649022;
+    pq:P531 wd:Q60036494;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q958>>
+    pq:P805 wd:Q16678041;
+    pq:P580 "2011-07-09T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q60036352;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q115>>
+    pq:P580 "1905-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P805 wd:Q14549295;
+    pq:P531 wd:Q58278700;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q986>>
+    pq:P531 wd:Q58605907;
+    pq:P805 wd:Q55655279;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P530 wd:Q1045>>
+    pq:P805 wd:Q16737070;
+    pq:P582 "1990-00-00T00:00:00Z"^^xsd:dateTime;
+    pq:P2241 wd:Q26256296;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P530 wd:Q114>>
+    pq:P805 wd:Q16739257;
+    pq:P580 "1963-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q58868647;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q974>>
+    pq:P580 "1960-06-30T00:00:00Z"^^xsd:dateTime;
+    pq:P805 wd:Q16740956;
+    pq:P531 wd:Q58873669;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P530 wd:Q971>>
+    pq:P805 wd:Q16743756;
+    pq:P531 wd:Q58874225;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q929>>
+    pq:P805 wd:Q16744659;
+    pq:P531 wd:Q58737314;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q1009>>
+    pq:P805 wd:Q16744683;
+    pq:P531 wd:Q58737314;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P530 wd:Q1032>>
+    pq:P580 "1962-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P805 wd:Q16746849;
+    pq:P531 wd:Q28473843;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P530 wd:Q1033>>
+    pq:P805 wd:Q16753217;
+    pq:P531 wd:Q5369691;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q1008>>
+    pq:P805 wd:Q16766093;
+    pq:P531 wd:Q58603930;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q1006>>
+    pq:P805 wd:Q16773625;
+    pq:P531 wd:Q58634729;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P530 wd:Q1007>>
+    pq:P580 "1975-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P805 wd:Q16782004;
+    pq:P531 wd:Q58003162;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P530 wd:Q1041>>
+    pq:P805 wd:Q16797912;
+    pq:P531 wd:Q58003162;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q1005>>
+    pq:P805 wd:Q16825741;
+    pq:P580 "1965-02-18T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q58003162;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q965>>
+    pq:P805 wd:Q16855770;
+    pq:P580 "1960-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q58492031;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q962>>
+    pq:P580 "1960-08-01T00:00:00Z"^^xsd:dateTime;
+    pq:P805 wd:Q16863166;
+    pq:P531 wd:Q58288867;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P530 wd:Q945>>
+    pq:P805 wd:Q16867955;
+    pq:P531 wd:Q59785365;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P530 wd:Q117>>
+    pq:P580 "1957-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P805 wd:Q16874242;
+    pq:P531 wd:Q58613729;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P530 wd:Q1000>>
+    pq:P580 "1960-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P805 wd:Q16879024;
+    pq:P531 wd:Q58608207;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P530 wd:Q983>>
+    pq:P805 wd:Q16887064;
+    pq:P531 wd:Q58268489;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q1036>>
+    pq:P580 "1962-10-09T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q59291689;
+    pq:P805 wd:Q55655274;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q924>>
+    pq:P805 wd:Q16905858;
+    pq:P531 wd:Q60035875;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q1037>>
+    pq:P805 wd:Q16911130;
+    pq:P531 wd:Q60165363;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q967>>
+    pq:P580 "1962-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P805 wd:Q16913548;
+    pq:P531 wd:Q58492167;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P530 wd:Q953>>
+    pq:P580 "1964-10-24T00:00:00Z"^^xsd:dateTime;
+    pq:P805 wd:Q16919064;
+    pq:P531 wd:Q60151676;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P530 wd:Q916>>
+    pq:P805 wd:Q16928095;
+    pq:P531 wd:Q21042235;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q1030>>
+    pq:P580 "1990-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P805 wd:Q5552198;
+    pq:P531 wd:Q478156;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P530 wd:Q963>>
+    pq:P531 wd:Q58490877;
+    pq:P805 wd:Q55655283;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q954>>
+    pq:P805 wd:Q16947254;
+    pq:P580 "1980-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q60145764;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q1029>>
+    pq:P805 wd:Q16963507;
+    pq:P580 "1976-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q20873909;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q1019>>
+    pq:P805 wd:Q16976471;
+    pq:P531 wd:Q58925129;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P530 wd:Q258>>
+    pq:P805 wd:Q5552209;
+    pq:P531 wd:Q60043850;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q16>>
+    pq:P805 wd:Q1861028;
+    pq:P531 wd:Q5369697;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q96>>
+    pq:P805 wd:Q5552192;
+    pq:P580 "1952-04-16T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q60263931;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q242>>
+    pq:P805 wd:Q17117433;
+    pq:P580 "1982-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q60315412;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q774>>
+    pq:P805 wd:Q17121856;
+    pq:P580 "1887-09-20T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q60315412;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q783>>
+    pq:P805 wd:Q17126389;
+    pq:P580 "1960-01-20T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q58643251;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q241>>
+    pq:P805 wd:Q17135541;
+    pq:P531 wd:Q58888269;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q811>>
+    pq:P805 wd:Q17142621;
+    pq:P531 wd:Q60242456;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q800>>
+    pq:P805 wd:Q17144270;
+    pq:P531 wd:Q58492492;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q804>>
+    pq:P805 wd:Q15805365;
+    pq:P580 "1951-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q60168520;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q786>>
+    pq:P805 wd:Q17149689;
+    pq:P531 wd:Q58563562;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P530 wd:Q739>>
+    pq:P805 wd:Q17156580;
+    pq:P580 "1882-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q58869927;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q717>>
+    pq:P805 wd:Q17164894;
+    pq:P531 wd:Q59278158;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q734>>
+    pq:P805 wd:Q17167321;
+    pq:P531 wd:Q59755495;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q730>>
+    pq:P805 wd:Q17181839;
+    pq:P531 wd:Q59755495;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q736>>
+    pq:P805 wd:Q17195350;
+    pq:P531 wd:Q58581912;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q419>>
+    pq:P805 wd:Q17199589;
+    pq:P531 wd:Q60168158;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q750>>
+    pq:P805 wd:Q17233283;
+    pq:P531 wd:Q58488069;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q733>>
+    pq:P805 wd:Q17257386;
+    pq:P580 "1860-08-01T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q60168294;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q77>>
+    pq:P805 wd:Q5552215;
+    pq:P531 wd:Q1202237;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q414>>
+    pq:P805 wd:Q4789335;
+    pq:P580 "1857-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P580 "1871-05-07T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q58270639;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q298>>
+    pq:P805 wd:Q16987123;
+    pq:P531 wd:Q58492288;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q16957>>
+    pq:P805 wd:Q1663980;
+    pq:P580 "1973-06-21T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "1990-10-03T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q873267;
+    pq:P2241 wd:Q110770329;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P530 wd:Q228>>
+    pq:P805 wd:Q15783270;
+    pq:P580 "1994-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q26839065;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q159583>>
+    pq:P580 "1933-07-20T00:00:00Z"^^xsd:dateTime;
+    pq:P805 wd:Q4558706;
+    pq:P531 wd:Q1860153;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P530 wd:Q217>>
+    pq:P805 wd:Q4411757;
+    pq:P580 "1992-04-30T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q5369696;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q225>>
+    pq:P805 wd:Q14549267;
+    pq:P580 "1992-11-01T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q58488501;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q235>>
+    pq:P805 wd:Q15805363;
+    pq:P531 wd:Q15953187;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q229>>
+    pq:P805 wd:Q5200539;
+    pq:P580 "1960-08-20T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q31887327;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q233>>
+    pq:P805 wd:Q14548663;
+    pq:P580 "1965-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q60300848;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q184>>
+    pq:P805 wd:Q4082765;
+    pq:P580 "1992-03-01T00:00:00Z"^^xsd:dateTime;
+    pq:P531 wd:Q33113461;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q238>>
+    pq:P805 wd:Q15906088;
+    pq:P531 wd:Q22226879;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q917>>
+    pq:P805 wd:Q1201896;
+    pq:P2241 wd:Q28831311;
+     wikibase:rank wikibase:DeprecatedRank.
+
+<<wd:Q183 wdt:P530 wd:Q1011>>
+    pq:P805 wd:Q28498636;
+    pq:P531 wd:Q58003162;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q1013>>
+    pq:P805 wd:Q18068814;
+    pq:P531 wd:Q60043850;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q837>>
+    pq:P805 wd:Q18011081;
+    pq:P531 wd:Q60243033;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q865>>
+    pq:P805 wd:Q15910813;
+    pq:P582 "1972-00-00T00:00:00Z"^^xsd:dateTime;
+    pq:P2241 wd:Q26256296;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P530 wd:Q928>>
+    pq:P805 wd:Q15948928;
+    pq:P531 wd:Q60167779;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q236>>
+    pq:P805 wd:Q4411751;
+    pq:P531 wd:Q60257621;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q1246>>
+    pq:P805 wd:Q5552200;
+    pq:P531 wd:Q58874705;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q399>>
+    pq:P805 wd:Q4793357;
+    pq:P531 wd:Q31193882;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q244>>
+    pq:P805 wd:Q4858660;
+    pq:P531 wd:Q59755495;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q191>>
+    pq:P805 wd:Q5401707;
+    pq:P531 wd:Q42313748;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q921>>
+    pq:P805 wd:Q15949087;
+    pq:P531 wd:Q58491304;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q424>>
+    pq:P805 wd:Q23786589;
+    pq:P531 wd:Q58731951;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q398>>
+    pq:P805 wd:Q57307019;
+    pq:P531 wd:Q58282782;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q778>>
+    pq:P805 wd:Q57307047;
+    pq:P531 wd:Q58654954;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q977>>
+    pq:P805 wd:Q18150668;
+    pq:P531 wd:Q58577956;
+    pq:P580 "1978-01-23T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q792>>
+    pq:P805 wd:Q57314518;
+    pq:P531 wd:Q58588651;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q712>>
+    pq:P805 wd:Q27793018;
+    pq:P531 wd:Q5369702;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q790>>
+    pq:P805 wd:Q57315177;
+    pq:P531 wd:Q58642922;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q36704>>
+    pq:P805 wd:Q57315889;
+    pq:P2241 wd:Q110770329;
+    pq:P531 wd:Q60149042;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P530 wd:Q766>>
+    pq:P805 wd:Q15948905;
+    pq:P531 wd:Q58654954;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q846>>
+    pq:P805 wd:Q25497174;
+    pq:P531 wd:Q58754429;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q813>>
+    pq:P805 wd:Q23786581;
+    pq:P531 wd:Q58869045;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q817>>
+    pq:P805 wd:Q57316748;
+    pq:P531 wd:Q58894562;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q211>>
+    pq:P805 wd:Q14549966;
+    pq:P531 wd:Q1202233;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q37>>
+    pq:P805 wd:Q14548664;
+    pq:P531 wd:Q58898825;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q1014>>
+    pq:P805 wd:Q57317388;
+    pq:P531 wd:Q1202234;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q819>>
+    pq:P805 wd:Q57317446;
+    pq:P531 wd:Q58894963;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q836>>
+    pq:P805 wd:Q23786521;
+    pq:P531 wd:Q60247130;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q702>>
+    pq:P805 wd:Q27973061;
+    pq:P531 wd:Q60167779;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q221>>
+    pq:P805 wd:Q14549953;
+    pq:P531 wd:Q60260517;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q1025>>
+    pq:P805 wd:Q57358339;
+    pq:P531 wd:Q60265424;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q1027>>
+    pq:P805 wd:Q57359483;
+    pq:P531 wd:Q58925129;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q709>>
+    pq:P805 wd:Q27973052;
+    pq:P531 wd:Q60167779;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q1020>>
+    pq:P805 wd:Q57361337;
+    pq:P531 wd:Q58926855;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q826>>
+    pq:P805 wd:Q57362415;
+    pq:P531 wd:Q59127103;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q697>>
+    pq:P805 wd:Q57368576;
+    pq:P531 wd:Q5369695;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q574>>
+    pq:P805 wd:Q28498639;
+    pq:P531 wd:Q31886708;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q842>>
+    pq:P805 wd:Q57377827;
+    pq:P531 wd:Q60228194;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q695>>
+    pq:P805 wd:Q15805364;
+    pq:P531 wd:Q60167779;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q691>>
+    pq:P531 wd:Q5369695;
+    pq:P805 wd:Q55655159;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q1050>>
+    pq:P805 wd:Q27973009;
+    pq:P531 wd:Q60043850;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q858>>
+    pq:P805 wd:Q57546267;
+    pq:P531 wd:Q60036015;
+    pq:P2241 wd:Q26256296;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P530 wd:Q854>>
+    pq:P805 wd:Q23786584;
+    pq:P531 wd:Q59127103;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q1044>>
+    pq:P805 wd:Q57546863;
+    pq:P531 wd:Q58639128;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q683>>
+    pq:P805 wd:Q57548246;
+    pq:P531 wd:Q5369702;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q685>>
+    pq:P805 wd:Q57548666;
+    pq:P531 wd:Q5369695;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q15180>>
+    pq:P805 wd:Q57548843;
+    pq:P531 wd:Q4373990;
+    pq:P2241 wd:Q110770329;
+     wikibase:rank wikibase:DeprecatedRank.
+
+<<wd:Q183 wdt:P530 wd:Q33946>>
+    pq:P805 wd:Q57578041;
+    pq:P531 wd:Q834465;
+    pq:P580 "1973-00-00T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "1992-12-31T00:00:00Z"^^xsd:dateTime;
+    pq:P2241 wd:Q110770329;
+     wikibase:rank wikibase:DeprecatedRank.
+
+<<wd:Q183 wdt:P530 wd:Q863>>
+    pq:P805 wd:Q23786560;
+    pq:P531 wd:Q60035968;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q678>>
+    pq:P805 wd:Q15805369;
+    pq:P531 wd:Q5369702;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q754>>
+    pq:P805 wd:Q57641065;
+    pq:P531 wd:Q59755495;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q874>>
+    pq:P531 wd:Q59338125;
+    pq:P805 wd:Q56306532;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q686>>
+    pq:P805 wd:Q57654744;
+    pq:P531 wd:Q5369695;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q1039>>
+    pq:P805 wd:Q28498629;
+    pq:P531 wd:Q58608207;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q822>>
+    pq:P805 wd:Q57317205;
+    pq:P531 wd:Q58895700;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q805>>
+    pq:P805 wd:Q57316054;
+    pq:P531 wd:Q58571627;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P530 wd:Q29999>>
+    pq:P805 wd:Q321628;
+    pq:P531 wd:Q60231056;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P530 wd:Q16957>>
+    pq:P805 wd:Q1663980;
+    pq:P580 "1972-12-21T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "1990-10-02T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+
+wd:Q183 wdt:P41 "Flag of Germany.svg".
+
+<<wd:Q183 wdt:P41 "Flag of Germany.svg">>
+    pq:P580 "1949-05-23T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P41 "Flag of Germany (1935–1945).svg">>
+    pq:P580 "1935-09-16T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "1945-05-08T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P41 "Flag of Germany (1867–1918).svg">>
+    pq:P580 "1933-03-13T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "1935-09-15T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P41 "Flag of Germany (3-2 aspect ratio).svg">>
+    pq:P580 "1919-04-11T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "1933-03-12T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P41 "Flag of Germany (1867–1918).svg">>
+    pq:P580 "1867-07-01T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "1918-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P41 "unknown value">>
+    pq:P580 "1945-05-23T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "1949-05-23T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P41 "Flag of Germany (3-2 aspect ratio).svg">>
+    pq:P580 "1848-03-09T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "1966-08-23T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P935 "Deutschland".
+
+
+
+<<wd:Q183 wdt:P935 "Deutschland">>
+     wikibase:rank wikibase:NormalRank.
+
+
+wd:Q183 wdt:P214 "189116956".
+
+
+<<wd:Q183 wdt:P214 "189116956">>
+    pq:P2241 wd:Q28091153;
+     wikibase:rank wikibase:DeprecatedRank.
+
+<<wd:Q183 wdt:P214 "135446758">>
+    pq:P2241 wd:Q28091153;
+     wikibase:rank wikibase:DeprecatedRank.
+
+<<wd:Q183 wdt:P214 "189116956">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P2184 wd:Q122131.
+
+
+
+<<wd:Q183 wdt:P2184 wd:Q122131>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P206 wd:Q545.
+wd:Q183 wdt:P206 wd:Q1693.
+
+
+
+<<wd:Q183 wdt:P206 wd:Q545>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P206 wd:Q1693>>
+     wikibase:rank wikibase:NormalRank.
+
+
+wd:Q183 wdt:P36 wd:Q64.
+
+<<wd:Q183 wdt:P36 wd:Q586>>
+    pq:P580 "1949-11-29T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "1990-10-02T00:00:00Z"^^xsd:dateTime;
+    pq:P805 wd:Q1589634;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P36 wd:Q64>>
+    pq:P580 "1990-10-03T00:00:00Z"^^xsd:dateTime;
+    pq:P580 "1994-05-07T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:PreferredRank.
+
+wd:Q183 wdt:P3984 "deutschland".
+wd:Q183 wdt:P3984 "Germany".
+wd:Q183 wdt:P3984 "de".
+
+
+
+<<wd:Q183 wdt:P3984 "deutschland">>
+    pq:P407 wd:Q188;
+    pq:P580 "2008-01-25T00:00:00Z"^^xsd:dateTime;
+    pq:P1810 "Deutschland";
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P3984 "Germany">>
+    pq:P407 wd:Q1860;
+    pq:P580 "2008-05-27T00:00:00Z"^^xsd:dateTime;
+    pq:P1810 "Germany";
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P3984 "de">>
+    pq:P580 "2006-02-20T00:00:00Z"^^xsd:dateTime;
+    pq:P1810 "r/de - Extraordinär gut!";
+    pq:P407 wd:Q188;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P950 "XX450924".
+
+
+
+<<wd:Q183 wdt:P950 "XX450924">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P402 "51477".
+
+
+
+<<wd:Q183 wdt:P402 "51477">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P4725 "12628".
+
+
+
+<<wd:Q183 wdt:P4725 "12628">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P2258 "262".
+
+
+
+<<wd:Q183 wdt:P2258 "262">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P2979 "211".
+wd:Q183 wdt:P2979 "218".
+
+
+
+<<wd:Q183 wdt:P2979 "211">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2979 "218">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P691 "ge135889".
+
+
+
+<<wd:Q183 wdt:P691 "ge135889">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P5198 "294913572".
+
+
+
+<<wd:Q183 wdt:P5198 "294913572">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P3000 "+18"^^xsd:decimal.
+
+
+
+<<wd:Q183 wdt:P3000 "+18"^^xsd:decimal>>
+    pq:P518 wd:Q27177113;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1081 "+0.915"^^xsd:decimal.
+wd:Q183 wdt:P1081 "+0.801"^^xsd:decimal.
+wd:Q183 wdt:P1081 "+0.830"^^xsd:decimal.
+wd:Q183 wdt:P1081 "+0.855"^^xsd:decimal.
+wd:Q183 wdt:P1081 "+0.887"^^xsd:decimal.
+wd:Q183 wdt:P1081 "+0.906"^^xsd:decimal.
+wd:Q183 wdt:P1081 "+0.911"^^xsd:decimal.
+wd:Q183 wdt:P1081 "+0.915"^^xsd:decimal.
+wd:Q183 wdt:P1081 "+0.916"^^xsd:decimal.
+wd:Q183 wdt:P1081 "+0.926"^^xsd:decimal.
+wd:Q183 wdt:P1081 "+0.809"^^xsd:decimal.
+wd:Q183 wdt:P1081 "+0.814"^^xsd:decimal.
+wd:Q183 wdt:P1081 "+0.824"^^xsd:decimal.
+wd:Q183 wdt:P1081 "+0.829"^^xsd:decimal.
+wd:Q183 wdt:P1081 "+0.834"^^xsd:decimal.
+wd:Q183 wdt:P1081 "+0.839"^^xsd:decimal.
+wd:Q183 wdt:P1081 "+0.844"^^xsd:decimal.
+wd:Q183 wdt:P1081 "+0.850"^^xsd:decimal.
+wd:Q183 wdt:P1081 "+0.855"^^xsd:decimal.
+wd:Q183 wdt:P1081 "+0.868"^^xsd:decimal.
+wd:Q183 wdt:P1081 "+0.877"^^xsd:decimal.
+wd:Q183 wdt:P1081 "+0.883"^^xsd:decimal.
+wd:Q183 wdt:P1081 "+0.889"^^xsd:decimal.
+wd:Q183 wdt:P1081 "+0.897"^^xsd:decimal.
+wd:Q183 wdt:P1081 "+0.903"^^xsd:decimal.
+wd:Q183 wdt:P1081 "+0.911"^^xsd:decimal.
+wd:Q183 wdt:P1081 "+0.915"^^xsd:decimal.
+wd:Q183 wdt:P1081 "+0.917"^^xsd:decimal.
+wd:Q183 wdt:P1081 "+0.917"^^xsd:decimal.
+wd:Q183 wdt:P1081 "+0.921"^^xsd:decimal.
+wd:Q183 wdt:P1081 "+0.926"^^xsd:decimal.
+wd:Q183 wdt:P1081 "+0.928"^^xsd:decimal.
+wd:Q183 wdt:P1081 "+0.928"^^xsd:decimal.
+wd:Q183 wdt:P1081 "+0.930"^^xsd:decimal.
+wd:Q183 wdt:P1081 "+0.933"^^xsd:decimal.
+wd:Q183 wdt:P1081 "+0.934"^^xsd:decimal.
+wd:Q183 wdt:P1081 "+0.936"^^xsd:decimal.
+
+
+
+<<wd:Q183 wdt:P1081 "+0.915"^^xsd:decimal>>
+    pq:P585 "2013-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1081 "+0.801"^^xsd:decimal>>
+    pq:P585 "1990-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1081 "+0.830"^^xsd:decimal>>
+    pq:P585 "1995-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1081 "+0.855"^^xsd:decimal>>
+    pq:P585 "2000-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1081 "+0.887"^^xsd:decimal>>
+    pq:P585 "2005-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1081 "+0.906"^^xsd:decimal>>
+    pq:P585 "2010-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1081 "+0.911"^^xsd:decimal>>
+    pq:P585 "2011-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1081 "+0.915"^^xsd:decimal>>
+    pq:P585 "2012-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1081 "+0.916"^^xsd:decimal>>
+    pq:P585 "2014-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1081 "+0.926"^^xsd:decimal>>
+    pq:P585 "2015-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1081 "+0.809"^^xsd:decimal>>
+    pq:P585 "1991-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1081 "+0.814"^^xsd:decimal>>
+    pq:P585 "1992-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1081 "+0.824"^^xsd:decimal>>
+    pq:P585 "1993-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1081 "+0.829"^^xsd:decimal>>
+    pq:P585 "1994-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1081 "+0.834"^^xsd:decimal>>
+    pq:P585 "1995-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1081 "+0.839"^^xsd:decimal>>
+    pq:P585 "1996-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1081 "+0.844"^^xsd:decimal>>
+    pq:P585 "1997-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1081 "+0.850"^^xsd:decimal>>
+    pq:P585 "1998-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1081 "+0.855"^^xsd:decimal>>
+    pq:P585 "1999-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1081 "+0.868"^^xsd:decimal>>
+    pq:P585 "2000-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1081 "+0.877"^^xsd:decimal>>
+    pq:P585 "2001-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1081 "+0.883"^^xsd:decimal>>
+    pq:P585 "2002-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1081 "+0.889"^^xsd:decimal>>
+    pq:P585 "2003-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1081 "+0.897"^^xsd:decimal>>
+    pq:P585 "2004-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1081 "+0.903"^^xsd:decimal>>
+    pq:P585 "2005-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1081 "+0.911"^^xsd:decimal>>
+    pq:P585 "2006-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1081 "+0.915"^^xsd:decimal>>
+    pq:P585 "2007-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1081 "+0.917"^^xsd:decimal>>
+    pq:P585 "2008-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1081 "+0.917"^^xsd:decimal>>
+    pq:P585 "2009-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1081 "+0.921"^^xsd:decimal>>
+    pq:P585 "2010-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1081 "+0.926"^^xsd:decimal>>
+    pq:P585 "2011-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1081 "+0.928"^^xsd:decimal>>
+    pq:P585 "2012-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1081 "+0.928"^^xsd:decimal>>
+    pq:P585 "2013-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1081 "+0.930"^^xsd:decimal>>
+    pq:P585 "2014-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1081 "+0.933"^^xsd:decimal>>
+    pq:P585 "2015-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1081 "+0.934"^^xsd:decimal>>
+    pq:P585 "2016-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1081 "+0.936"^^xsd:decimal>>
+    pq:P585 "2017-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1791 wd:Q9385337.
+
+
+
+<<wd:Q183 wdt:P1791 wd:Q9385337>>
+     wikibase:rank wikibase:NormalRank.
+
+
+wd:Q183 wdt:P1451 "Einigkeit und Recht und Freiheit"@de.
+
+<<wd:Q183 wdt:P1451 "Einigkeit und Recht und Freiheit">>
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P1451 "Unity and Justice and Freedom">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1451 "Единство и справедливост, и свобода">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1451 "Simply inspiring">>
+    pq:P3831 wd:Q96036107;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P3896 "Data:Germany.map".
+
+
+
+<<wd:Q183 wdt:P3896 "Data:Germany.map">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1334 "Point(15.04178122 51.27279981)"^^geo:wktLiteral.
+
+
+
+<<wd:Q183 wdt:P1334 "Point(15.04178122 51.27279981)"^^geo:wktLiteral>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1549 "Duitser"@nl.
+wd:Q183 wdt:P1549 "Deutscher"@de.
+wd:Q183 wdt:P1549 "Deutsche"@de.
+wd:Q183 wdt:P1549 "tysker"@nb.
+wd:Q183 wdt:P1549 "tyskar"@nn.
+wd:Q183 wdt:P1549 "Němec"@cs.
+wd:Q183 wdt:P1549 "Němka"@cs.
+wd:Q183 wdt:P1549 "German"@en.
+wd:Q183 wdt:P1549 "Duitse"@nl.
+wd:Q183 wdt:P1549 "немец"@ru.
+wd:Q183 wdt:P1549 "немка"@ru.
+wd:Q183 wdt:P1549 "alemão"@pt-br.
+wd:Q183 wdt:P1549 "alemã"@pt-br.
+wd:Q183 wdt:P1549 "Немац"@sr.
+wd:Q183 wdt:P1549 "Немица"@sr.
+wd:Q183 wdt:P1549 "Немци"@sr.
+wd:Q183 wdt:P1549 "german"@ro.
+wd:Q183 wdt:P1549 "német"@hu.
+wd:Q183 wdt:P1549 "tysker"@da.
+wd:Q183 wdt:P1549 "germano"@eo.
+wd:Q183 wdt:P1549 "немцы"@ru.
+wd:Q183 wdt:P1549 "немски"@bg.
+wd:Q183 wdt:P1549 "alemany"@ca.
+wd:Q183 wdt:P1549 "allemand"@fr.
+wd:Q183 wdt:P1549 "allemande"@fr.
+wd:Q183 wdt:P1549 "Germaniano"@io.
+wd:Q183 wdt:P1549 "Deutänan"@vo.
+wd:Q183 wdt:P1549 "alemanya"@ca.
+wd:Q183 wdt:P1549 "tysk"@sv.
+wd:Q183 wdt:P1549 "გერმანელი"@ka.
+wd:Q183 wdt:P1549 "Döüdschä"@vmf.
+wd:Q183 wdt:P1549 "ألماني"@ar.
+wd:Q183 wdt:P1549 "ألمانية"@ar.
+wd:Q183 wdt:P1549 "ألمان"@ar.
+wd:Q183 wdt:P1549 "німець"@uk.
+wd:Q183 wdt:P1549 "німкеня"@uk.
+wd:Q183 wdt:P1549 "німці"@uk.
+wd:Q183 wdt:P1549 "alemanys"@ca.
+wd:Q183 wdt:P1549 "גרמני"@he.
+wd:Q183 wdt:P1549 "גרמנייה"@he.
+wd:Q183 wdt:P1549 "γερμανός"@el.
+wd:Q183 wdt:P1549 "γερμανίδα"@el.
+wd:Q183 wdt:P1549 "γερμανοί"@el.
+wd:Q183 wdt:P1549 "γερμανίδες"@el.
+wd:Q183 wdt:P1549 "germani"@ro.
+wd:Q183 wdt:P1549 "nemțoaică"@ro.
+wd:Q183 wdt:P1549 "জার্মান"@bn.
+wd:Q183 wdt:P1549 "tedesco"@it.
+wd:Q183 wdt:P1549 "tedesca"@it.
+wd:Q183 wdt:P1549 "tedeschi"@it.
+wd:Q183 wdt:P1549 "tedesche"@it.
+wd:Q183 wdt:P1549 "deutx"@lfn.
+wd:Q183 wdt:P1549 "alemán"@ast.
+wd:Q183 wdt:P1549 "alemana"@ast.
+wd:Q183 wdt:P1549 "Němcy"@hsb.
+wd:Q183 wdt:P1549 "Němka"@hsb.
+wd:Q183 wdt:P1549 "Němc"@hsb.
+wd:Q183 wdt:P1549 "sakslased"@et.
+wd:Q183 wdt:P1549 "tyskarinne"@nn.
+wd:Q183 wdt:P1549 "Almaenwr"@cy.
+wd:Q183 wdt:P1549 "Almaenes"@cy.
+wd:Q183 wdt:P1549 "Almaenwyr"@cy.
+wd:Q183 wdt:P1549 "Allemande"@fr.
+wd:Q183 wdt:P1549 "Allemand"@fr.
+wd:Q183 wdt:P1549 "todesca"@vec.
+wd:Q183 wdt:P1549 "todesche"@vec.
+wd:Q183 wdt:P1549 "todeschi"@vec.
+wd:Q183 wdt:P1549 "todesco"@vec.
+
+
+
+<<wd:Q183 wdt:P1549 "Duitser">>
+    pq:P518 wd:Q499327;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "Deutscher">>
+    pq:P518 wd:Q499327;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "Deutsche">>
+    pq:P518 wd:Q1775415;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "tysker">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "tyskar">>
+    pq:P518 wd:Q47088290;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "Němec">>
+    pq:P518 wd:Q499327;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "Němka">>
+    pq:P518 wd:Q1775415;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "German">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "Duitse">>
+    pq:P518 wd:Q1775415;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "немец">>
+    pq:P518 wd:Q47088290;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "немка">>
+    pq:P518 wd:Q47088293;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "alemão">>
+    pq:P518 wd:Q499327;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "alemã">>
+    pq:P518 wd:Q1775415;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "Немац">>
+    pq:P518 wd:Q47088290;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "Немица">>
+    pq:P518 wd:Q47088293;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "Немци">>
+    pq:P518 wd:Q146786;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "german">>
+    pq:P518 wd:Q499327;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "német">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "tysker">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "germano">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "немцы">>
+    pq:P518 wd:Q146786;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "немски">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "alemany">>
+    pq:P518 wd:Q499327;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "allemand">>
+    pq:P518 wd:Q499327;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "allemande">>
+    pq:P518 wd:Q1775415;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "Germaniano">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "Deutänan">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "alemanya">>
+    pq:P518 wd:Q1775415;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "tysk">>
+    pq:P518 wd:Q1305037;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "გერმანელი">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "Döüdschä">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "ألماني">>
+    pq:P518 wd:Q47088290;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "ألمانية">>
+    pq:P518 wd:Q47088293;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "ألمان">>
+    pq:P518 wd:Q146786;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "німець">>
+    pq:P518 wd:Q47088290;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "німкеня">>
+    pq:P518 wd:Q47088295;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "німці">>
+    pq:P518 wd:Q146786;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "alemanys">>
+    pq:P518 wd:Q146786;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "גרמני">>
+    pq:P518 wd:Q499327;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "גרמנייה">>
+    pq:P518 wd:Q1775415;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "γερμανός">>
+    pq:P518 wd:Q47088290;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "γερμανίδα">>
+    pq:P518 wd:Q47088293;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "γερμανοί">>
+    pq:P518 wd:Q47088292;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "γερμανίδες">>
+    pq:P518 wd:Q47088295;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "germani">>
+    pq:P518 wd:Q146786;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "nemțoaică">>
+    pq:P518 wd:Q1775415;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "জার্মান">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "tedesco">>
+    pq:P518 wd:Q47088290;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "tedesca">>
+    pq:P518 wd:Q47088293;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "tedeschi">>
+    pq:P518 wd:Q47088292;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "tedesche">>
+    pq:P518 wd:Q47088295;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "deutx">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "alemán">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "alemana">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "Němcy">>
+    pq:P518 wd:Q47088292;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "Němka">>
+    pq:P518 wd:Q1775415;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "Němc">>
+    pq:P518 wd:Q499327;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "sakslased">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "tyskarinne">>
+    pq:P518 wd:Q47088293;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "Almaenwr">>
+    pq:P518 wd:Q47088290;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "Almaenes">>
+    pq:P518 wd:Q47088293;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "Almaenwyr">>
+    pq:P518 wd:Q146786;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "Allemande">>
+    pq:P518 wd:Q47088293;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "Allemand">>
+    pq:P518 wd:Q47088290;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "todesca">>
+    pq:P518 wd:Q47088293;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "todesche">>
+    pq:P518 wd:Q47088295;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "todeschi">>
+    pq:P518 wd:Q47088292;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1549 "todesco">>
+    pq:P518 wd:Q47088290;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P3612 "pays/allemagne".
+
+
+
+<<wd:Q183 wdt:P3612 "pays/allemagne">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P3006 "2101".
+
+
+
+<<wd:Q183 wdt:P3006 "2101">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P3001 "+65.25"^^xsd:decimal.
+
+
+
+<<wd:Q183 wdt:P3001 "+65.25"^^xsd:decimal>>
+    pq:P585 "2015-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P463 wd:Q7825.
+wd:Q183 wdt:P463 wd:Q458.
+wd:Q183 wdt:P463 wd:Q7184.
+wd:Q183 wdt:P463 wd:Q41550.
+wd:Q183 wdt:P463 wd:Q8908.
+wd:Q183 wdt:P463 wd:Q37143.
+wd:Q183 wdt:P463 wd:Q42262.
+wd:Q183 wdt:P463 wd:Q7825.
+wd:Q183 wdt:P463 wd:Q141720.
+wd:Q183 wdt:P463 wd:Q566397.
+wd:Q183 wdt:P463 wd:Q789769.
+wd:Q183 wdt:P463 wd:Q2595976.
+wd:Q183 wdt:P463 wd:Q1065.
+wd:Q183 wdt:P463 wd:Q1667341.
+wd:Q183 wdt:P463 wd:Q699466.
+wd:Q183 wdt:P463 wd:Q208645.
+wd:Q183 wdt:P463 wd:Q194284.
+wd:Q183 wdt:P463 wd:Q8919.
+wd:Q183 wdt:P463 wd:Q186444.
+wd:Q183 wdt:P463 wd:Q1067802.
+wd:Q183 wdt:P463 wd:Q182814.
+wd:Q183 wdt:P463 wd:Q183191.
+wd:Q183 wdt:P463 wd:Q376150.
+wd:Q183 wdt:P463 wd:Q7809.
+wd:Q183 wdt:P463 wd:Q7817.
+wd:Q183 wdt:P463 wd:Q7164.
+wd:Q183 wdt:P463 wd:Q17495.
+wd:Q183 wdt:P463 wd:Q217398.
+wd:Q183 wdt:P463 wd:Q177773.
+wd:Q183 wdt:P463 wd:Q54129.
+wd:Q183 wdt:P463 wd:Q82151.
+wd:Q183 wdt:P463 wd:Q125761.
+wd:Q183 wdt:P463 wd:Q201054.
+wd:Q183 wdt:P463 wd:Q7804.
+wd:Q183 wdt:P463 wd:Q386120.
+wd:Q183 wdt:P463 wd:Q689859.
+wd:Q183 wdt:P463 wd:Q170424.
+wd:Q183 wdt:P463 wd:Q61923.
+wd:Q183 wdt:P463 wd:Q41984.
+wd:Q183 wdt:P463 wd:Q356694.
+wd:Q183 wdt:P463 wd:Q842490.
+wd:Q183 wdt:P463 wd:Q1069706.
+wd:Q183 wdt:P463 wd:Q331520.
+wd:Q183 wdt:P463 wd:Q19771.
+wd:Q183 wdt:P463 wd:Q189946.
+wd:Q183 wdt:P463 wd:Q151991.
+wd:Q183 wdt:P463 wd:Q81299.
+wd:Q183 wdt:P463 wd:Q191384.
+wd:Q183 wdt:P463 wd:Q827525.
+wd:Q183 wdt:P463 wd:Q656801.
+wd:Q183 wdt:P463 wd:Q1043527.
+wd:Q183 wdt:P463 wd:Q899770.
+wd:Q183 wdt:P463 wd:Q340195.
+wd:Q183 wdt:P463 wd:Q384535.
+wd:Q183 wdt:P463 wd:Q188822.
+wd:Q183 wdt:P463 wd:Q782942.
+wd:Q183 wdt:P463 wd:Q3772571.
+wd:Q183 wdt:P463 wd:Q161549.
+wd:Q183 wdt:P463 wd:Q1377612.
+wd:Q183 wdt:P463 wd:Q663492.
+wd:Q183 wdt:P463 wd:Q1928989.
+wd:Q183 wdt:P463 wd:Q1072120.
+wd:Q183 wdt:P463 wd:Q8475.
+wd:Q183 wdt:P463 wd:Q1480793.
+wd:Q183 wdt:P463 wd:Q3866537.
+wd:Q183 wdt:P463 wd:Q521227.
+wd:Q183 wdt:P463 wd:Q233611.
+wd:Q183 wdt:P463 wd:Q826700.
+wd:Q183 wdt:P463 wd:Q5611262.
+wd:Q183 wdt:P463 wd:Q1969730.
+wd:Q183 wdt:P463 wd:Q8268.
+wd:Q183 wdt:P463 wd:Q1654951.
+wd:Q183 wdt:P463 wd:Q45177.
+wd:Q183 wdt:P463 wd:Q1065.
+
+
+
+<<wd:Q183 wdt:P463 wd:Q7825>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q458>>
+    pq:P580 "1957-03-25T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q7184>>
+    pq:P580 "1955-05-09T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q41550>>
+    pq:P580 "1961-09-27T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q8908>>
+    pq:P580 "1950-07-13T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q37143>>
+    pq:P580 "1998-05-18T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q42262>>
+    pq:P580 "1977-05-31T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q7825>>
+    pq:P580 "1995-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q141720>>
+    pq:P580 "2010-07-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q566397>>
+    pq:P580 "1991-08-28T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q789769>>
+    pq:P580 "1992-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q2595976>>
+    pq:P580 "1990-07-01T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "1990-10-02T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q1065>>
+    pq:P580 "1973-09-18T00:00:00Z"^^xsd:dateTime;
+    pq:P805 wd:Q1206304;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q1667341>>
+    pq:P580 "1999-04-12T00:00:00Z"^^xsd:dateTime;
+    pq:P805 wd:Q15858952;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q699466>>
+    pq:P580 "1998-10-22T00:00:00Z"^^xsd:dateTime;
+    pq:P805 wd:Q15858449;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q208645>>
+    pq:P580 "1994-03-21T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q194284>>
+    pq:P580 "1951-10-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q8919>>
+    pq:P580 "1957-03-25T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "2009-12-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q186444>>
+    pq:P580 "1975-05-02T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q1067802>>
+    pq:P580 "1990-11-21T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q182814>>
+    pq:P580 "1979-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q183191>>
+    pq:P580 "1953-09-03T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q376150>>
+    pq:P580 "1866-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q7809>>
+    pq:P580 "1951-07-11T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q7817>>
+    pq:P580 "1951-05-29T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q7164>>
+    pq:P580 "1952-08-14T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q17495>>
+    pq:P580 "1875-07-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q217398>>
+    pq:P580 "1887-12-05T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q177773>>
+    pq:P580 "1970-09-19T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q54129>>
+    pq:P580 "1919-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q82151>>
+    pq:P580 "1950-11-07T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q125761>>
+    pq:P580 "1956-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q201054>>
+    pq:P580 "1959-01-07T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q7804>>
+    pq:P580 "1952-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q386120>>
+    pq:P580 "1985-06-21T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q689859>>
+    pq:P580 "1977-10-14T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q170424>>
+    pq:P580 "1954-06-10T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q61923>>
+    pq:P580 "1976-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q41984>>
+    pq:P580 "1957-10-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q356694>>
+    pq:P580 "1998-08-20T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q842490>>
+    pq:P580 "1997-04-29T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q1069706>>
+    pq:P580 "2009-02-24T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q331520>>
+    pq:P580 "1996-07-10T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q19771>>
+    pq:P580 "1999-09-26T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q189946>>
+    pq:P580 "1954-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "2011-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q151991>>
+    pq:P580 "1962-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q81299>>
+    pq:P580 "1973-06-25T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q191384>>
+    pq:P580 "1952-08-14T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q827525>>
+    pq:P580 "1960-09-24T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q656801>>
+    pq:P580 "1956-07-20T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q1043527>>
+    pq:P580 "1988-04-12T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q899770>>
+    pq:P580 "1969-05-18T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q340195>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q384535>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q188822>>
+    pq:P580 "1966-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q782942>>
+    pq:P580 "1985-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q3772571>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q161549>>
+    pq:P580 "1951-00-00T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "2002-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q1377612>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q663492>>
+    pq:P580 "1960-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q1928989>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q1072120>>
+    pq:P580 "1987-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q8475>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q1480793>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q3866537>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q521227>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q233611>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q826700>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q5611262>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q1969730>>
+    pq:P580 "1995-03-26T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q8268>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q1654951>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q45177>>
+    pq:P580 "1989-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P463 wd:Q1065>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1198 "+5"^^xsd:decimal.
+
+
+
+<<wd:Q183 wdt:P1198 "+5"^^xsd:decimal>>
+    pq:P585 "2014-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P5658 wd:Q14565199.
+
+
+
+<<wd:Q183 wdt:P5658 wd:Q14565199>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P2503 "object_149273".
+
+
+
+<<wd:Q183 wdt:P2503 "object_149273">>
+     wikibase:rank wikibase:NormalRank.
+
+
+wd:Q183 wdt:P421 wd:Q6655.
+
+<<wd:Q183 wdt:P421 wd:Q56640598>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P421 wd:Q6655>>
+    pq:P1264 wd:Q1777301;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P421 wd:Q6723>>
+    pq:P1264 wd:Q36669;
+    pq:P805 wd:Q207020;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P421 wd:Q5412096>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1465 wd:Q6430198.
+
+
+
+<<wd:Q183 wdt:P1465 wd:Q6430198>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P2347 "105087".
+
+
+
+<<wd:Q183 wdt:P2347 "105087">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1906 wd:Q25223.
+
+
+
+<<wd:Q183 wdt:P1906 wd:Q25223>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P373 "Germany".
+
+
+
+<<wd:Q183 wdt:P373 "Germany">>
+     wikibase:rank wikibase:NormalRank.
+
+
+wd:Q183 wdt:P47 wd:Q35.
+wd:Q183 wdt:P47 wd:Q36.
+wd:Q183 wdt:P47 wd:Q39.
+wd:Q183 wdt:P47 wd:Q142.
+wd:Q183 wdt:P47 wd:Q32.
+wd:Q183 wdt:P47 wd:Q31.
+wd:Q183 wdt:P47 wd:Q55.
+wd:Q183 wdt:P47 wd:Q40.
+wd:Q183 wdt:P47 wd:Q213.
+
+<<wd:Q183 wdt:P47 wd:Q35>>
+    pq:P805 wd:Q2422197;
+    pq:P654 wd:Q659;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P47 wd:Q36>>
+    pq:P805 wd:Q160928;
+    pq:P805 wd:Q15214996;
+    pq:P805 wd:Q650979;
+    pq:P654 wd:Q684;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P47 wd:Q39>>
+    pq:P805 wd:Q1991810;
+    pq:P654 wd:Q12258966;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P47 wd:Q142>>
+    pq:P805 wd:Q1991225;
+    pq:P654 wd:Q2381698;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P47 wd:Q32>>
+    pq:P805 wd:Q3088708;
+    pq:P654 wd:Q679;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P47 wd:Q31>>
+    pq:P805 wd:Q3088698;
+    pq:P654 wd:Q679;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P47 wd:Q55>>
+    pq:P805 wd:Q3088701;
+    pq:P654 wd:Q679;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P47 wd:Q40>>
+    pq:P805 wd:Q1991986;
+    pq:P654 wd:Q12258965;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P47 wd:Q213>>
+    pq:P805 wd:Q2457112;
+    pq:P580 "1993-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P47 wd:Q33946>>
+    pq:P582 "1992-12-31T00:00:00Z"^^xsd:dateTime;
+    pq:P580 "1918-10-28T00:00:00Z"^^xsd:dateTime;
+    pq:P805 wd:Q1405089;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P47 wd:Q16957>>
+    pq:P580 "1949-10-07T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "1990-10-03T00:00:00Z"^^xsd:dateTime;
+    pq:P805 wd:Q700754;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P47 wd:Q310293>>
+    pq:P582 "1956-12-31T00:00:00Z"^^xsd:dateTime;
+    pq:P580 "1947-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P47 wd:Q29999>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P47 wd:Q756617>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P47 wd:Q13116>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1225 "10044480".
+
+
+
+<<wd:Q183 wdt:P1225 "10044480">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 a wdno:P3086.
+wd:Q183 wdt:P3086 "+100"^^xsd:decimal.
+wd:Q183 wdt:P3086 "+50"^^xsd:decimal.
+
+
+
+<<wd:Q183 wdt:P3086 "unknown value">>
+    pq:P3005 wd:Q313301;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P3086 "+100"^^xsd:decimal>>
+    pq:P3005 wd:Q23011975;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P3086 "+50"^^xsd:decimal>>
+    pq:P3005 wd:Q79007;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P2927 "+2.3"^^xsd:decimal.
+
+
+
+<<wd:Q183 wdt:P2927 "+2.3"^^xsd:decimal>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P4672 "688c9343-7208-41cb-8997-a4c2d3a429e6".
+
+
+
+<<wd:Q183 wdt:P4672 "688c9343-7208-41cb-8997-a4c2d3a429e6">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P2004 "15494".
+
+
+
+<<wd:Q183 wdt:P2004 "15494">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P3183 "subject/G/germany/2767".
+
+
+
+<<wd:Q183 wdt:P3183 "subject/G/germany/2767">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P3365 "germania".
+
+
+
+<<wd:Q183 wdt:P3365 "germania">>
+    pq:P1810 "Germania";
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P898 "ˈtʏsklɑn".
+wd:Q183 wdt:P898 "ˈdɔɪ̯ʧlant".
+
+
+
+<<wd:Q183 wdt:P898 "ˈtʏsklɑn">>
+    pq:P407 wd:Q9043;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P898 "ˈdɔɪ̯ʧlant">>
+    pq:P407 wd:Q188;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P299 "276".
+
+
+
+<<wd:Q183 wdt:P299 "276">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1335 "Point(5.86636662 51.05110016)"^^geo:wktLiteral.
+
+
+
+<<wd:Q183 wdt:P1335 "Point(5.86636662 51.05110016)"^^geo:wktLiteral>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P474 "+49".
+
+
+
+<<wd:Q183 wdt:P474 "+49">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P3911 "18012-3".
+
+
+
+<<wd:Q183 wdt:P3911 "18012-3">>
+    pq:P4390 wd:Q39893449;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P3175 "ude".
+
+
+
+<<wd:Q183 wdt:P3175 "ude">>
+     wikibase:rank wikibase:NormalRank.
+
+
+wd:Q183 wdt:P138 wd:Q62646.
+
+<<wd:Q183 wdt:P138 wd:Q62646>>
+    pq:P407 wd:Q1860;
+    pq:P407 wd:Q7737;
+    pq:P407 wd:Q9129;
+    pq:P407 wd:Q8748;
+    pq:P407 wd:Q8785;
+    pq:P407 wd:Q9610;
+    pq:P407 wd:Q7918;
+    pq:P407 wd:Q143;
+    pq:P407 wd:Q8108;
+    pq:P407 wd:Q56475;
+    pq:P407 wd:Q9288;
+    pq:P407 wd:Q1568;
+    pq:P407 wd:Q35224;
+    pq:P407 wd:Q9240;
+    pq:P407 wd:Q35934;
+    pq:P407 wd:Q9142;
+    pq:P407 wd:Q652;
+    pq:P407 wd:Q33569;
+    pq:P407 wd:Q9211;
+    pq:P407 wd:Q397;
+    pq:P407 wd:Q9296;
+    pq:P407 wd:Q9091;
+    pq:P805 wd:Q778726;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P138 wd:Q132990>>
+    pq:P407 wd:Q150;
+    pq:P407 wd:Q1321;
+    pq:P407 wd:Q13955;
+    pq:P407 wd:Q9292;
+    pq:P407 wd:Q29507;
+    pq:P407 wd:Q8752;
+    pq:P407 wd:Q9307;
+    pq:P407 wd:Q7026;
+    pq:P407 wd:Q36368;
+    pq:P407 wd:Q13300;
+    pq:P407 wd:Q9168;
+    pq:P407 wd:Q5146;
+    pq:P407 wd:Q256;
+    pq:P407 wd:Q9309;
+    pq:P805 wd:Q778726;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P138 wd:Q101985>>
+    pq:P407 wd:Q9072;
+    pq:P407 wd:Q1412;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P138 wd:Q38872>>
+    pq:P407 wd:Q34128;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P138 wd:Q291495>>
+    pq:P407 wd:Q188;
+    pq:P407 wd:Q9035;
+    pq:P407 wd:Q9043;
+    pq:P407 wd:Q9027;
+    pq:P407 wd:Q25433;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P138 wd:Q473741>>
+    pq:P407 wd:Q8798;
+    pq:P407 wd:Q7737;
+    pq:P805 wd:Q778726;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P138 wd:Q671776>>
+    pq:P407 wd:Q9056;
+    pq:P407 wd:Q809;
+    pq:P407 wd:Q9058;
+    pq:P407 wd:Q13248;
+    pq:P407 wd:Q13286;
+    pq:P407 wd:Q6654;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P163 wd:Q48160.
+
+
+
+<<wd:Q183 wdt:P163 wd:Q48160>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P901 "GM".
+
+
+
+<<wd:Q183 wdt:P901 "GM">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P3509 "tyskland".
+
+
+
+<<wd:Q183 wdt:P3509 "tyskland">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P213 "0000 0001 2285 4945".
+
+
+
+<<wd:Q183 wdt:P213 "0000 0001 2285 4945">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P6150 "5497".
+
+
+
+<<wd:Q183 wdt:P6150 "5497">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P3222 "tyskland".
+wd:Q183 wdt:P3222 "deutschland".
+
+
+
+<<wd:Q183 wdt:P3222 "tyskland">>
+    pq:P1810 "Tyskland";
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P3222 "deutschland">>
+    pq:P1810 "Deutschland";
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P6104 wd:Q6871603.
+
+
+
+<<wd:Q183 wdt:P6104 wd:Q6871603>>
+     wikibase:rank wikibase:NormalRank.
+
+
+wd:Q183 wdt:P1082 "+83149300"^^xsd:decimal.
+
+<<wd:Q183 wdt:P1082 "+80500000"^^xsd:decimal>>
+    pq:P585 "2012-12-31T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1082 "+81752000"^^xsd:decimal>>
+    pq:P585 "2010-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1082 "+82002000"^^xsd:decimal>>
+    pq:P585 "2008-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1082 "+82315000"^^xsd:decimal>>
+    pq:P585 "2006-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1082 "+82501000"^^xsd:decimal>>
+    pq:P585 "2004-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1082 "+82537000"^^xsd:decimal>>
+    pq:P585 "2002-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1082 "+82260000"^^xsd:decimal>>
+    pq:P585 "2000-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1082 "+82037000"^^xsd:decimal>>
+    pq:P585 "1998-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1082 "+82012000"^^xsd:decimal>>
+    pq:P585 "1996-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1082 "+81539000"^^xsd:decimal>>
+    pq:P585 "1994-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1082 "+80975000"^^xsd:decimal>>
+    pq:P585 "1992-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1082 "+79753000"^^xsd:decimal>>
+    pq:P585 "1990-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1082 "+78390000"^^xsd:decimal>>
+    pq:P585 "1988-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1082 "+77780000"^^xsd:decimal>>
+    pq:P585 "1986-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1082 "+77709000"^^xsd:decimal>>
+    pq:P585 "1984-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1082 "+78248000"^^xsd:decimal>>
+    pq:P585 "1982-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1082 "+78397000"^^xsd:decimal>>
+    pq:P585 "1980-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1082 "+78073000"^^xsd:decimal>>
+    pq:P585 "1978-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1082 "+78209000"^^xsd:decimal>>
+    pq:P585 "1976-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1082 "+78882000"^^xsd:decimal>>
+    pq:P585 "1974-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1082 "+78821000"^^xsd:decimal>>
+    pq:P585 "1972-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1082 "+78069000"^^xsd:decimal>>
+    pq:P585 "1970-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1082 "+77550000"^^xsd:decimal>>
+    pq:P585 "1968-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1082 "+76864000"^^xsd:decimal>>
+    pq:P585 "1966-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1082 "+75591000"^^xsd:decimal>>
+    pq:P585 "1964-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1082 "+74383000"^^xsd:decimal>>
+    pq:P585 "1962-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1082 "+73147000"^^xsd:decimal>>
+    pq:P585 "1960-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1082 "+72031000"^^xsd:decimal>>
+    pq:P585 "1958-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1082 "+70943000"^^xsd:decimal>>
+    pq:P585 "1956-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1082 "+70945000"^^xsd:decimal>>
+    pq:P585 "1954-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1082 "+81083600"^^xsd:decimal>>
+    pq:P585 "2014-09-30T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1082 "+81292400"^^xsd:decimal>>
+    pq:P585 "2015-03-31T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1082 "+82175700"^^xsd:decimal>>
+    pq:P585 "2015-12-31T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1082 "+82521653"^^xsd:decimal>>
+    pq:P585 "2016-12-31T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1082 "+82695000"^^xsd:decimal>>
+    pq:P585 "2017-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1082 "+82979100"^^xsd:decimal>>
+    pq:P585 "2018-09-30T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1082 "+83149300"^^xsd:decimal>>
+    pq:P585 "2019-09-30T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:PreferredRank.
+
+wd:Q183 wdt:P1667 "7000084".
+
+
+
+<<wd:Q183 wdt:P1667 "7000084">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1151 wd:Q3802786.
+
+
+
+<<wd:Q183 wdt:P1151 wd:Q3802786>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P5125 wd:Q7112271.
+
+
+
+<<wd:Q183 wdt:P5125 wd:Q7112271>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P349 "00561571".
+
+
+
+<<wd:Q183 wdt:P349 "00561571">>
+     wikibase:rank wikibase:NormalRank.
+
+
+wd:Q183 wdt:P38 wd:Q4916.
+
+<<wd:Q183 wdt:P38 wd:Q4916>>
+    pq:P580 "2002-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P38 wd:Q16068>>
+    pq:P582 "2001-12-31T00:00:00Z"^^xsd:dateTime;
+    pq:P580 "1948-06-21T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1566 "2921044".
+
+
+
+<<wd:Q183 wdt:P1566 "2921044">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P487 "🇩🇪".
+
+
+
+<<wd:Q183 wdt:P487 "🇩🇪">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P3916 "concept904".
+
+
+
+<<wd:Q183 wdt:P3916 "concept904">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P172 wd:Q42884.
+wd:Q183 wdt:P172 wd:Q84072.
+
+
+
+<<wd:Q183 wdt:P172 wd:Q42884>>
+    pq:P1107 "+0.915"^^xsd:decimal;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P172 wd:Q84072>>
+    pq:P1107 "+0.024"^^xsd:decimal;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P4223 "germania".
+
+
+
+<<wd:Q183 wdt:P4223 "germania">>
+    pq:P1810 "GERMANIA";
+    pq:P2093 "Arrigo Lorenzi, Arthur Haberlandt, Claudia Merlo, Pino Fortini, Francesco Tommasini, Anna Maria Ratti, Peter Goessler, Pietro Romanelli, Ottorino Bertolini, Ernesto Sestan, Rodolfo Bottacchiari, Carlo Battisti, Hans Tietze, Hans Joachim Moser, Giuseppe Gabetti, Arrigo Solmi,  * ,  B. V. L. Vin.";
+    pq:P577 "1932-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P5357 "germany".
+
+
+
+<<wd:Q183 wdt:P5357 "germany">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P2633 wd:Q154124.
+
+
+
+<<wd:Q183 wdt:P2633 wd:Q154124>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P298 "DEU".
+
+
+
+<<wd:Q183 wdt:P298 "DEU">>
+     wikibase:rank wikibase:NormalRank.
+
+
+wd:Q183 wdt:P1448 "Bundesrepublik Deutschland"@de.
+
+<<wd:Q183 wdt:P1448 "Bundesrepublik Deutschland">>
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P1448 "Federal Republic of Germany">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1448 "Repubblica Federale di Germania">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1448 "République fédérale d'Allemagne">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1448 "Федеративная Республика Германия">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1448 "República Federal da Alemanha">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1448 "Republica Federală Germania">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1448 "Federacia Respubliko Germanujo">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1448 "جمهورية ألمانيا الاتحادية">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1448 "Republika Federalna Niemiec">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1448 "德意志联邦共和国">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1448 "Saksan liittotasavalta">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1448 "הרפובליקה הפדרלית של גרמניה">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1448 "გერმანიის ფედერალური რესპუბლიკა">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1448 "Федеративна Республіка Німеччина">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1448 "Ομοσπονδιακή Δημοκρατία της Γερμανίας">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1448 "Spolková republika Německo">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1448 "Федерална република Германия">>
+    pq:P580 "1949-05-23T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1448 "Zwjazkowa republika Němska">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1448 "Zwězkowa republika Nimska">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1448 "Saksamaa Liitvabariik">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1448 "Савезна Република Немачка">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1448 "Deutschland">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1448 "la République fédérale d’Allemagne">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1448 "Nemecká spolková republika">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P3417 "Germany".
+
+
+
+<<wd:Q183 wdt:P3417 "Germany">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P3065 "02-A000050560".
+
+
+
+<<wd:Q183 wdt:P3065 "02-A000050560">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1482 "https://travel.stackexchange.com/tags/germany".
+
+
+
+<<wd:Q183 wdt:P1482 "https://travel.stackexchange.com/tags/germany">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P486 "D005858".
+
+
+
+<<wd:Q183 wdt:P486 "D005858">>
+    pq:P1810 "Germany";
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P2959 wd:Q23653930.
+wd:Q183 wdt:P2959 wd:Q20825355.
+wd:Q183 wdt:P2959 wd:Q27868447.
+wd:Q183 wdt:P2959 wd:Q25681485.
+wd:Q183 wdt:P2959 wd:Q30277432.
+wd:Q183 wdt:P2959 wd:Q53673262.
+
+
+
+<<wd:Q183 wdt:P2959 wd:Q23653930>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2959 wd:Q20825355>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2959 wd:Q27868447>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2959 wd:Q25681485>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2959 wd:Q30277432>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2959 wd:Q53673262>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P3106 "world/germany".
+
+
+
+<<wd:Q183 wdt:P3106 "world/germany">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P122 wd:Q5440547.
+
+
+
+<<wd:Q183 wdt:P122 wd:Q5440547>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P94 "Coat of arms of Germany.svg".
+
+
+
+<<wd:Q183 wdt:P94 "Coat of arms of Germany.svg">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1944 "Relief Map of Germany.svg".
+
+
+
+<<wd:Q183 wdt:P1944 "Relief Map of Germany.svg">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P793 wd:Q56045.
+wd:Q183 wdt:P793 wd:Q512451.
+wd:Q183 wdt:P793 wd:Q1201.
+wd:Q183 wdt:P793 wd:Q2307326.
+wd:Q183 wdt:P793 wd:Q274811.
+wd:Q183 wdt:P793 wd:Q5086.
+wd:Q183 wdt:P793 wd:Q672112.
+wd:Q183 wdt:P793 wd:Q2595976.
+wd:Q183 wdt:P793 wd:Q159644.
+wd:Q183 wdt:P793 wd:Q8438.
+wd:Q183 wdt:P793 wd:Q56039.
+wd:Q183 wdt:P793 wd:Q242352.
+wd:Q183 wdt:P793 wd:Q182865.
+
+
+
+<<wd:Q183 wdt:P793 wd:Q56045>>
+    pq:P580 "1949-05-23T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P793 wd:Q512451>>
+    pq:P580 "1949-05-12T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "1955-05-05T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P793 wd:Q1201>>
+    pq:P580 "1957-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P793 wd:Q2307326>>
+    pq:P580 "1958-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P793 wd:Q274811>>
+    pq:P580 "1963-01-22T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P793 wd:Q5086>>
+    pq:P580 "1961-08-13T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "1989-11-09T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P793 wd:Q672112>>
+    pq:P580 "1973-06-21T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "1990-10-03T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P793 wd:Q2595976>>
+    pq:P580 "1990-07-01T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "1990-10-03T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P793 wd:Q159644>>
+    pq:P580 "1991-03-15T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P793 wd:Q8438>>
+    pq:P276 wd:Q1726;
+    pq:P580 "1972-08-26T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "1972-09-11T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P793 wd:Q56039>>
+    pq:P580 "1989-11-09T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "1990-09-20T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P793 wd:Q242352>>
+    pq:P805 wd:Q313577;
+    pq:P580 "1995-12-00T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "2012-09-28T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P793 wd:Q182865>>
+    pq:P580 "2001-12-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P3743 "2.16.276".
+
+
+
+<<wd:Q183 wdt:P3743 "2.16.276">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P194 wd:Q146138.
+wd:Q183 wdt:P194 wd:Q154797.
+
+
+
+<<wd:Q183 wdt:P194 wd:Q146138>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P194 wd:Q154797>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P3238 "0".
+
+
+
+<<wd:Q183 wdt:P3238 "0">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P605 "DE".
+
+
+
+<<wd:Q183 wdt:P605 "DE">>
+    pq:P805 wd:Q823052;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P646 "/m/0345h".
+
+
+
+<<wd:Q183 wdt:P646 "/m/0345h">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P37 wd:Q188.
+
+
+
+<<wd:Q183 wdt:P37 wd:Q188>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1365 wd:Q713750.
+wd:Q183 wdt:P1365 wd:Q16957.
+wd:Q183 wdt:P1365 wd:Q1206012.
+wd:Q183 wdt:P1365 wd:Q569998.
+wd:Q183 wdt:P1365 wd:Q1206012.
+
+
+
+<<wd:Q183 wdt:P1365 wd:Q713750>>
+    pq:P585 "1990-10-03T00:00:00Z"^^xsd:dateTime;
+    pq:P92 wd:Q451546;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1365 wd:Q16957>>
+    pq:P585 "1990-10-03T00:00:00Z"^^xsd:dateTime;
+    pq:P92 wd:Q451546;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1365 wd:Q1206012>>
+    pq:P585 "1991-03-15T00:00:00Z"^^xsd:dateTime;
+    pq:P5102 wd:Q132555;
+    pq:P92 wd:Q159644;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1365 wd:Q569998>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1365 wd:Q1206012>>
+    pq:P585 "1949-05-23T00:00:00Z"^^xsd:dateTime;
+    pq:P5102 wd:Q712144;
+    pq:P92 wd:Q56045;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P30 wd:Q46.
+
+
+
+<<wd:Q183 wdt:P30 wd:Q46>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P237 wd:Q133018.
+
+
+
+<<wd:Q183 wdt:P237 wd:Q133018>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 a wdno:P3271.
+
+
+
+<<wd:Q183 wdt:P3271 "unknown value">>
+    pq:P805 wd:Q1582320;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P2997 "+18"^^xsd:decimal.
+
+
+
+<<wd:Q183 wdt:P2997 "+18"^^xsd:decimal>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P949 "000981369".
+
+
+
+<<wd:Q183 wdt:P949 "000981369">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P5008 wd:Q5460604.
+wd:Q183 wdt:P5008 wd:Q54439832.
+
+
+
+<<wd:Q183 wdt:P5008 wd:Q5460604>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P5008 wd:Q54439832>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P3068 "DE".
+
+
+
+<<wd:Q183 wdt:P3068 "DE">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1332 "Point(8.66919994 54.91120841)"^^geo:wktLiteral.
+
+
+
+<<wd:Q183 wdt:P1332 "Point(8.66919994 54.91120841)"^^geo:wktLiteral>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1552 wd:Q3174312.
+
+
+
+<<wd:Q183 wdt:P1552 wd:Q3174312>>
+    pq:P3680 wd:Q1417780;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P297 "DE".
+
+
+
+<<wd:Q183 wdt:P297 "DE">>
+     wikibase:rank wikibase:NormalRank.
+
+
+wd:Q183 wdt:P4841 "+1.39"^^xsd:decimal.
+
+<<wd:Q183 wdt:P4841 "+1.36"^^xsd:decimal>>
+    pq:P459 wd:Q791801;
+    pq:P585 "1999-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P4841 "+1.38"^^xsd:decimal>>
+    pq:P459 wd:Q791801;
+    pq:P585 "2000-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P4841 "+1.35"^^xsd:decimal>>
+    pq:P459 wd:Q791801;
+    pq:P585 "2001-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P4841 "+1.34"^^xsd:decimal>>
+    pq:P459 wd:Q791801;
+    pq:P585 "2002-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P4841 "+1.34"^^xsd:decimal>>
+    pq:P459 wd:Q791801;
+    pq:P585 "2003-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P4841 "+1.36"^^xsd:decimal>>
+    pq:P459 wd:Q791801;
+    pq:P585 "2004-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P4841 "+1.34"^^xsd:decimal>>
+    pq:P459 wd:Q791801;
+    pq:P585 "2005-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P4841 "+1.33"^^xsd:decimal>>
+    pq:P459 wd:Q791801;
+    pq:P585 "2006-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P4841 "+1.37"^^xsd:decimal>>
+    pq:P459 wd:Q791801;
+    pq:P585 "2007-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P4841 "+1.38"^^xsd:decimal>>
+    pq:P459 wd:Q791801;
+    pq:P585 "2008-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P4841 "+1.36"^^xsd:decimal>>
+    pq:P459 wd:Q791801;
+    pq:P585 "2009-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P4841 "+1.39"^^xsd:decimal>>
+    pq:P459 wd:Q791801;
+    pq:P585 "2010-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P4841 "+1.36"^^xsd:decimal>>
+    pq:P459 wd:Q791801;
+    pq:P585 "2011-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P4841 "+1.38"^^xsd:decimal>>
+    pq:P459 wd:Q791801;
+    pq:P585 "2012-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P4841 "+1.39"^^xsd:decimal>>
+    pq:P459 wd:Q791801;
+    pq:P585 "2013-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P4841 "+1.39"^^xsd:decimal>>
+    pq:P459 wd:Q791801;
+    pq:P585 "2014-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:PreferredRank.
+
+wd:Q183 wdt:P2046 "+357587.77"^^xsd:decimal.
+
+
+
+<<wd:Q183 wdt:P2046 "+357587.77"^^xsd:decimal>>
+     wikibase:rank wikibase:NormalRank.
+
+
+wd:Q183 wdt:P485 wd:Q685753.
+
+<<wd:Q183 wdt:P485 wd:Q685753>>
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P485 wd:Q639860>>
+     wikibase:rank wikibase:NormalRank.
+
+
+wd:Q183 wdt:P4342 "Tyskland".
+
+
+<<wd:Q183 wdt:P4342 "Tyskland">>
+    pq:P4390 wd:Q39893449;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P4342 "Deutschland">>
+    pq:P2241 wd:Q45403344;
+     wikibase:rank wikibase:DeprecatedRank.
+
+wd:Q183 wdt:P3270 "+5"^^xsd:decimal.
+wd:Q183 wdt:P3270 "+5"^^xsd:decimal.
+wd:Q183 wdt:P3270 "+5"^^xsd:decimal.
+wd:Q183 wdt:P3270 "+5"^^xsd:decimal.
+wd:Q183 wdt:P3270 "+6"^^xsd:decimal.
+wd:Q183 wdt:P3270 "+6"^^xsd:decimal.
+wd:Q183 wdt:P3270 "+6"^^xsd:decimal.
+wd:Q183 wdt:P3270 "+6"^^xsd:decimal.
+wd:Q183 wdt:P3270 "+5"^^xsd:decimal.
+wd:Q183 wdt:P3270 "+5"^^xsd:decimal.
+wd:Q183 wdt:P3270 "+6"^^xsd:decimal.
+wd:Q183 wdt:P3270 "+6"^^xsd:decimal.
+wd:Q183 wdt:P3270 "+6"^^xsd:decimal.
+wd:Q183 wdt:P3270 "+6"^^xsd:decimal.
+wd:Q183 wdt:P3270 "+5"^^xsd:decimal.
+wd:Q183 wdt:P3270 "+5"^^xsd:decimal.
+
+
+
+<<wd:Q183 wdt:P3270 "+5"^^xsd:decimal>>
+    pq:P805 wd:Q1582320;
+    pq:P3005 wd:Q985;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P3270 "+5"^^xsd:decimal>>
+    pq:P3005 wd:Q980;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P3270 "+5"^^xsd:decimal>>
+    pq:P3005 wd:Q64;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P3270 "+5"^^xsd:decimal>>
+    pq:P3005 wd:Q1208;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P3270 "+6"^^xsd:decimal>>
+    pq:P3005 wd:Q1209;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P3270 "+6"^^xsd:decimal>>
+    pq:P3005 wd:Q1055;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P3270 "+6"^^xsd:decimal>>
+    pq:P3005 wd:Q1199;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P3270 "+6"^^xsd:decimal>>
+    pq:P3005 wd:Q1196;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P3270 "+5"^^xsd:decimal>>
+    pq:P3005 wd:Q1197;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P3270 "+5"^^xsd:decimal>>
+    pq:P3005 wd:Q1205;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P3270 "+6"^^xsd:decimal>>
+    pq:P3005 wd:Q1194;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P3270 "+6"^^xsd:decimal>>
+    pq:P3005 wd:Q1206;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P3270 "+6"^^xsd:decimal>>
+    pq:P3005 wd:Q1202;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P3270 "+6"^^xsd:decimal>>
+    pq:P3005 wd:Q1201;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P3270 "+5"^^xsd:decimal>>
+    pq:P3005 wd:Q1200;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P3270 "+5"^^xsd:decimal>>
+    pq:P3005 wd:Q1198;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P3847 "place:germany".
+
+
+
+<<wd:Q183 wdt:P3847 "place:germany">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1889 wd:Q1350565.
+wd:Q183 wdt:P1889 wd:Q229632.
+
+
+
+<<wd:Q183 wdt:P1889 wd:Q1350565>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1889 wd:Q229632>>
+    pq:P1013 wd:Q24005632;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P910 wd:Q1410828.
+
+
+
+<<wd:Q183 wdt:P910 wd:Q1410828>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P268 "12205186t".
+wd:Q183 wdt:P268 "152996644".
+wd:Q183 wdt:P268 "11930867z".
+
+
+
+<<wd:Q183 wdt:P268 "12205186t">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P268 "152996644">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P268 "11930867z">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P242 "EU-Germany.svg".
+wd:Q183 wdt:P242 "LocationGermany.svg".
+wd:Q183 wdt:P242 "Germany on the globe (Europe centered).svg".
+
+
+
+<<wd:Q183 wdt:P242 "EU-Germany.svg">>
+    pq:P2096 "Location of Germany in the European Union on the globe"@en;
+    pq:P2096 "Lage Deutschlands in der Europäischen Union auf der Erde"@de;
+    pq:P2096 "Localisation de l'Allemagne dans l'Union européenne et le monde"@fr;
+    pq:P195 wd:Q43037778;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P242 "LocationGermany.svg">>
+    pq:P195 wd:Q40426579;
+    pq:P2061 wd:Q30302657;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P242 "Germany on the globe (Europe centered).svg">>
+    pq:P195 wd:Q47008743;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1617 "2e3befc0-e70a-41c7-b6cb-2f8f0d69a7db".
+
+
+
+<<wd:Q183 wdt:P1617 "2e3befc0-e70a-41c7-b6cb-2f8f0d69a7db">>
+     wikibase:rank wikibase:NormalRank.
+
+
+wd:Q183 wdt:P6 wd:Q61053.
+
+<<wd:Q183 wdt:P6 wd:Q567>>
+    pq:P580 "2005-11-22T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "2021-12-08T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P6 wd:Q2530>>
+    pq:P580 "1998-10-27T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "2005-10-18T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P6 wd:Q2518>>
+    pq:P580 "1982-10-04T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "1998-10-26T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P6 wd:Q2516>>
+    pq:P580 "1974-05-16T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "1982-10-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P6 wd:Q2571>>
+    pq:P580 "1974-05-07T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "1974-05-16T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P6 wd:Q2514>>
+    pq:P580 "1969-10-22T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "1974-05-07T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P6 wd:Q2512>>
+    pq:P580 "1966-12-01T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "1969-10-21T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P6 wd:Q2496>>
+    pq:P580 "1963-10-17T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "1966-11-30T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P6 wd:Q2492>>
+    pq:P580 "1949-09-20T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "1963-10-11T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P6 wd:Q61053>>
+    pq:P580 "2021-12-08T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:PreferredRank.
+
+wd:Q183 wdt:P984 "GER".
+
+
+
+<<wd:Q183 wdt:P984 "GER">>
+    pq:P580 "1992-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P2163 "1210272".
+
+
+
+<<wd:Q183 wdt:P2163 "1210272">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P4427 "601".
+
+
+
+<<wd:Q183 wdt:P4427 "601">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P5573 "2979".
+
+
+
+<<wd:Q183 wdt:P5573 "2979">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1417 "place/Germany".
+
+
+
+<<wd:Q183 wdt:P1417 "place/Germany">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P706 wd:Q27509.
+
+
+
+<<wd:Q183 wdt:P706 wd:Q27509>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P948 "Ötlingen - Panoramaansicht klein banner.jpg".
+
+
+
+<<wd:Q183 wdt:P948 "Ötlingen - Panoramaansicht klein banner.jpg">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1740 wd:Q7237249.
+
+
+
+<<wd:Q183 wdt:P1740 wd:Q7237249>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P2884 "+230"^^xsd:decimal.
+
+
+
+<<wd:Q183 wdt:P2884 "+230"^^xsd:decimal>>
+    pq:P2144 "+50"^^xsd:decimal;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P208 wd:Q1005903.
+wd:Q183 wdt:P208 wd:Q313827.
+
+
+
+<<wd:Q183 wdt:P208 wd:Q1005903>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P208 wd:Q313827>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P85 wd:Q44042.
+
+
+
+<<wd:Q183 wdt:P85 wd:Q44042>>
+    pq:P805 wd:Q4122341;
+    pq:P51 "National anthem of Germany - U.S. Army 1st Armored Division Band.ogg";
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P209 wd:Q56025.
+
+
+
+<<wd:Q183 wdt:P209 wd:Q56025>>
+     wikibase:rank wikibase:NormalRank.
+
+
+wd:Q183 wdt:P2250 "+80.8"^^xsd:decimal.
+
+<<wd:Q183 wdt:P2250 "+80.8"^^xsd:decimal>>
+    pq:P585 "2017-00-00T00:00:00Z"^^xsd:dateTime;
+    pq:P518 wd:Q27177113;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P2250 "+78.5"^^xsd:decimal>>
+    pq:P585 "2017-00-00T00:00:00Z"^^xsd:dateTime;
+    pq:P518 wd:Q6581097;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2250 "+83.3"^^xsd:decimal>>
+    pq:P585 "2017-00-00T00:00:00Z"^^xsd:dateTime;
+    pq:P518 wd:Q6581072;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2250 "+77.72683"^^xsd:decimal>>
+    pq:P585 "1999-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2250 "+77.92683"^^xsd:decimal>>
+    pq:P585 "2000-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2250 "+78.32927"^^xsd:decimal>>
+    pq:P585 "2001-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2250 "+78.22927"^^xsd:decimal>>
+    pq:P585 "2002-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2250 "+78.38049"^^xsd:decimal>>
+    pq:P585 "2003-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2250 "+78.68049"^^xsd:decimal>>
+    pq:P585 "2004-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2250 "+78.93171"^^xsd:decimal>>
+    pq:P585 "2005-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2250 "+79.13171"^^xsd:decimal>>
+    pq:P585 "2006-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2250 "+79.53415"^^xsd:decimal>>
+    pq:P585 "2007-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2250 "+79.73659"^^xsd:decimal>>
+    pq:P585 "2008-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2250 "+79.83659"^^xsd:decimal>>
+    pq:P585 "2009-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2250 "+79.9878"^^xsd:decimal>>
+    pq:P585 "2010-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2250 "+80.43659"^^xsd:decimal>>
+    pq:P585 "2011-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2250 "+80.53902"^^xsd:decimal>>
+    pq:P585 "2012-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2250 "+80.49024"^^xsd:decimal>>
+    pq:P585 "2013-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2250 "+81.09024"^^xsd:decimal>>
+    pq:P585 "2014-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2250 "+80.64146"^^xsd:decimal>>
+    pq:P585 "2015-00-00T00:00:00Z"^^xsd:dateTime;
+    pq:P585 "2016-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1968 "5c2cabf59cadd9002bc0c090".
+
+
+
+<<wd:Q183 wdt:P1968 "5c2cabf59cadd9002bc0c090">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P78 wd:Q37251.
+
+
+
+<<wd:Q183 wdt:P78 wd:Q37251>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P31 wd:Q3624078.
+wd:Q183 wdt:P31 wd:Q43702.
+wd:Q183 wdt:P31 wd:Q7270.
+wd:Q183 wdt:P31 wd:Q619610.
+wd:Q183 wdt:P31 wd:Q4209223.
+wd:Q183 wdt:P31 wd:Q63791824.
+wd:Q183 wdt:P31 wd:Q6256.
+
+
+
+<<wd:Q183 wdt:P31 wd:Q3624078>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P31 wd:Q43702>>
+    pq:P580 "1949-05-24T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P31 wd:Q7270>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P31 wd:Q619610>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P31 wd:Q4209223>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P31 wd:Q63791824>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P31 wd:Q6256>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P3403 wd:Q1350565.
+
+
+
+<<wd:Q183 wdt:P3403 wd:Q1350565>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P610 wd:Q3375.
+
+
+
+<<wd:Q183 wdt:P610 wd:Q3375>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1464 wd:Q7463306.
+
+
+
+<<wd:Q183 wdt:P1464 wd:Q7463306>>
+     wikibase:rank wikibase:NormalRank.
+
+
+wd:Q183 wdt:P1813 "Deutschland"@de.
+
+<<wd:Q183 wdt:P1813 "Германия">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1813 "Німеччина">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1813 "🇩🇪">>
+    pq:P31 wd:Q28840786;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1813 "Německo">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1813 "Germania">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1813 "Германия">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1813 "Allemagne">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1813 "Saksamaa">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1813 "Němska">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1813 "Nimska">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1813 "Nemecko">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1813 "ФРГ">>
+    pq:P1480 wd:Q29509080;
+     wikibase:rank wikibase:DeprecatedRank.
+
+<<wd:Q183 wdt:P1813 "Deutschland">>
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P1813 "Germany">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1622 wd:Q14565199.
+
+
+
+<<wd:Q183 wdt:P1622 wd:Q14565199>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P2982 "80".
+
+
+
+<<wd:Q183 wdt:P2982 "80">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1589 wd:Q514001.
+
+
+
+<<wd:Q183 wdt:P1589 wd:Q514001>>
+    pq:P2044 "-4"^^xsd:decimal;
+    pq:P625 "Point(9.31825 53.96325)"^^geo:wktLiteral;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P5180 "germany".
+
+
+
+<<wd:Q183 wdt:P5180 "germany">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P443 "De-Deutschland.ogg".
+wd:Q183 wdt:P443 "LL-Q7026 (cat)-Millars-Alemanya.wav".
+wd:Q183 wdt:P443 "Lb-Däitschland.ogg".
+wd:Q183 wdt:P443 "LL-Q9027 (swe)-Salgo60-Tyskland.wav".
+wd:Q183 wdt:P443 "LL-Q7913 (ron)-KlaudiuMihaila-Germania.wav".
+
+
+
+<<wd:Q183 wdt:P443 "De-Deutschland.ogg">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P443 "LL-Q7026 (cat)-Millars-Alemanya.wav">>
+    pq:P407 wd:Q7026;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P443 "Lb-Däitschland.ogg">>
+    pq:P407 wd:Q9051;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P443 "LL-Q9027 (swe)-Salgo60-Tyskland.wav">>
+    pq:P407 wd:Q9027;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P443 "LL-Q7913 (ron)-KlaudiuMihaila-Germania.wav">>
+    pq:P407 wd:Q7913;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P269 "030685435".
+
+
+
+<<wd:Q183 wdt:P269 "030685435">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P150 wd:Q985.
+wd:Q183 wdt:P150 wd:Q980.
+wd:Q183 wdt:P150 wd:Q64.
+wd:Q183 wdt:P150 wd:Q1209.
+wd:Q183 wdt:P150 wd:Q1055.
+wd:Q183 wdt:P150 wd:Q1196.
+wd:Q183 wdt:P150 wd:Q1197.
+wd:Q183 wdt:P150 wd:Q1198.
+wd:Q183 wdt:P150 wd:Q1200.
+wd:Q183 wdt:P150 wd:Q1201.
+wd:Q183 wdt:P150 wd:Q1202.
+wd:Q183 wdt:P150 wd:Q1206.
+wd:Q183 wdt:P150 wd:Q1194.
+wd:Q183 wdt:P150 wd:Q1205.
+wd:Q183 wdt:P150 wd:Q1208.
+wd:Q183 wdt:P150 wd:Q1199.
+
+
+
+<<wd:Q183 wdt:P150 wd:Q985>>
+    pq:P580 "1952-04-25T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P150 wd:Q980>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P150 wd:Q64>>
+    pq:P580 "1990-10-03T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P150 wd:Q1209>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P150 wd:Q1055>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P150 wd:Q1196>>
+    pq:P580 "1990-10-03T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P150 wd:Q1197>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P150 wd:Q1198>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P150 wd:Q1200>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P150 wd:Q1201>>
+    pq:P580 "1957-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P150 wd:Q1202>>
+    pq:P580 "1990-10-03T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P150 wd:Q1206>>
+    pq:P580 "1990-10-03T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P150 wd:Q1194>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P150 wd:Q1205>>
+    pq:P580 "1990-10-03T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P150 wd:Q1208>>
+    pq:P580 "1990-10-03T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P150 wd:Q1199>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P3024 "D".
+
+
+
+<<wd:Q183 wdt:P3024 "D">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1281 "23424829".
+
+
+
+<<wd:Q183 wdt:P1281 "23424829">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P244 "n80125931".
+
+
+
+<<wd:Q183 wdt:P244 "n80125931">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P3529 "+33333"^^xsd:decimal.
+
+
+
+<<wd:Q183 wdt:P3529 "+33333"^^xsd:decimal>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P625 "Point(10 51)"^^geo:wktLiteral.
+
+
+
+<<wd:Q183 wdt:P625 "Point(10 51)"^^geo:wktLiteral>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1343 wd:Q2041543.
+wd:Q183 wdt:P1343 wd:Q4114391.
+wd:Q183 wdt:P1343 wd:Q602358.
+wd:Q183 wdt:P1343 wd:Q4173137.
+wd:Q183 wdt:P1343 wd:Q19180675.
+wd:Q183 wdt:P1343 wd:Q1419983.
+wd:Q183 wdt:P1343 wd:Q867541.
+wd:Q183 wdt:P1343 wd:Q302556.
+
+
+
+<<wd:Q183 wdt:P1343 wd:Q2041543>>
+    pq:P805 wd:Q23862329;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1343 wd:Q4114391>>
+    pq:P805 wd:Q25375224;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1343 wd:Q602358>>
+    pq:P805 wd:Q24400161;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1343 wd:Q4173137>>
+    pq:P805 wd:Q24979547;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1343 wd:Q19180675>>
+    pq:P805 wd:Q24757328;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1343 wd:Q1419983>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1343 wd:Q867541>>
+    pq:P805 wd:Q84643186;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P1343 wd:Q302556>>
+    pq:P805 wd:Q99220020;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1670 "0053C1690F".
+
+
+
+<<wd:Q183 wdt:P1670 "0053C1690F">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P5019 "deutschland".
+wd:Q183 wdt:P5019 "bundesrepublik-deutschland".
+
+
+
+<<wd:Q183 wdt:P5019 "deutschland">>
+    pq:P1810 "Deutschland";
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P5019 "bundesrepublik-deutschland">>
+    pq:P1810 "Bundesrepublik Deutschland";
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1842 "Germany".
+
+
+
+<<wd:Q183 wdt:P1842 "Germany">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P5250 "1300".
+
+
+
+<<wd:Q183 wdt:P5250 "1300">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P6573 "Deutschland".
+
+
+
+<<wd:Q183 wdt:P6573 "Deutschland">>
+     wikibase:rank wikibase:NormalRank.
+
+
+wd:Q183 wdt:P6591 "+41.2"^^xsd:decimal.
+
+
+<<wd:Q183 wdt:P6591 "+42.6"^^xsd:decimal>>
+    pq:P585 "2019-07-25T00:00:00Z"^^xsd:dateTime;
+    pq:P276 wd:Q4185;
+    pq:P2241 wd:Q26256296;
+     wikibase:rank wikibase:DeprecatedRank.
+
+<<wd:Q183 wdt:P6591 "+41.2"^^xsd:decimal>>
+    pq:P585 "2019-07-25T00:00:00Z"^^xsd:dateTime;
+    pq:P276 wd:Q799749;
+    pq:P276 wd:Q163570;
+    pq:P828 wd:Q66467267;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P4801 "countries/gw".
+
+
+
+<<wd:Q183 wdt:P4801 "countries/gw">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P6794 "+9.19"^^xsd:decimal.
+wd:Q183 wdt:P6794 "+9.35"^^xsd:decimal.
+
+
+
+<<wd:Q183 wdt:P6794 "+9.19"^^xsd:decimal>>
+    pq:P518 wd:Q25235;
+    pq:P580 "2019-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P6794 "+9.35"^^xsd:decimal>>
+    pq:P580 "2020-01-01T00:00:00Z"^^xsd:dateTime;
+    pq:P518 wd:Q25235;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P2936 wd:Q327274.
+wd:Q183 wdt:P2936 wd:Q387066.
+wd:Q183 wdt:P2936 wd:Q32145.
+wd:Q183 wdt:P2936 wd:Q27154.
+wd:Q183 wdt:P2936 wd:Q1365342.
+wd:Q183 wdt:P2936 wd:Q131339.
+wd:Q183 wdt:P2936 wd:Q149208.
+wd:Q183 wdt:P2936 wd:Q699284.
+wd:Q183 wdt:P2936 wd:Q497345.
+wd:Q183 wdt:P2936 wd:Q505655.
+wd:Q183 wdt:P2936 wd:Q9051.
+wd:Q183 wdt:P2936 wd:Q9035.
+wd:Q183 wdt:P2936 wd:Q13286.
+wd:Q183 wdt:P2936 wd:Q13248.
+wd:Q183 wdt:P2936 wd:Q23014.
+wd:Q183 wdt:P2936 wd:Q188.
+wd:Q183 wdt:P2936 wd:Q28224.
+wd:Q183 wdt:P2936 wd:Q25433.
+wd:Q183 wdt:P2936 wd:Q33282.
+wd:Q183 wdt:P2936 wd:Q6593714.
+
+
+
+<<wd:Q183 wdt:P2936 wd:Q327274>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2936 wd:Q387066>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2936 wd:Q32145>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2936 wd:Q27154>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2936 wd:Q1365342>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2936 wd:Q131339>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2936 wd:Q149208>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2936 wd:Q699284>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2936 wd:Q497345>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2936 wd:Q505655>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2936 wd:Q9051>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2936 wd:Q9035>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2936 wd:Q13286>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2936 wd:Q13248>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2936 wd:Q23014>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2936 wd:Q188>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2936 wd:Q28224>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2936 wd:Q25433>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2936 wd:Q33282>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P2936 wd:Q6593714>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P6849 "tyskland".
+
+
+
+<<wd:Q183 wdt:P6849 "tyskland">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P7012 "germany".
+
+
+
+<<wd:Q183 wdt:P7012 "germany">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P5140 "Point(10.447777777778 51.163333333333)"^^geo:wktLiteral.
+
+
+
+<<wd:Q183 wdt:P5140 "Point(10.447777777778 51.163333333333)"^^geo:wktLiteral>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P3864 "+12.6"^^xsd:decimal.
+
+
+
+<<wd:Q183 wdt:P3864 "+12.6"^^xsd:decimal>>
+    pq:P585 "2014-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P3241 "06484b".
+
+
+
+<<wd:Q183 wdt:P3241 "06484b">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P4839 "Entity[\"Country\", \"Germany\"]".
+
+
+
+<<wd:Q183 wdt:P4839 "Entity[\"Country\", \"Germany\"]">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1296 "0220737".
+
+
+
+<<wd:Q183 wdt:P1296 "0220737">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P6766 "85633111".
+
+
+
+<<wd:Q183 wdt:P6766 "85633111">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P5002 "529087".
+
+
+
+<<wd:Q183 wdt:P5002 "529087">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1344 wd:Q838116.
+
+
+
+<<wd:Q183 wdt:P1344 wd:Q838116>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P856 "https://www.deutschland.de/".
+
+
+
+<<wd:Q183 wdt:P856 "https://www.deutschland.de/">>
+    pq:P407 wd:Q20923490;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P7471 "7207".
+
+
+
+<<wd:Q183 wdt:P7471 "7207">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1245 "7118".
+
+
+
+<<wd:Q183 wdt:P1245 "7118">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P902 "003352".
+
+
+
+<<wd:Q183 wdt:P902 "003352">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P3067 "400-440".
+
+
+
+<<wd:Q183 wdt:P3067 "400-440">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P2596 wd:Q1979615.
+
+
+
+<<wd:Q183 wdt:P2596 wd:Q1979615>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P5400 "VwiQvi".
+
+
+
+<<wd:Q183 wdt:P5400 "VwiQvi">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P4614 wd:Q12046593.
+wd:Q183 wdt:P4614 wd:Q9210293.
+wd:Q183 wdt:P4614 wd:Q1434368.
+wd:Q183 wdt:P4614 wd:Q12046596.
+wd:Q183 wdt:P4614 wd:Q29017011.
+
+
+
+<<wd:Q183 wdt:P4614 wd:Q12046593>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P4614 wd:Q9210293>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P4614 wd:Q1434368>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P4614 wd:Q12046596>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P4614 wd:Q29017011>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P7870 "3002".
+
+
+
+<<wd:Q183 wdt:P7870 "3002">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P7867 wd:Q8607377.
+
+
+
+<<wd:Q183 wdt:P7867 wd:Q8607377>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P6404 "germania".
+
+
+
+<<wd:Q183 wdt:P6404 "germania">>
+    pq:P1810 "Germania";
+    pq:P577 "2010-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P7818 "Allemagne".
+
+
+
+<<wd:Q183 wdt:P7818 "Allemagne">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P7829 "Germany".
+
+
+
+<<wd:Q183 wdt:P7829 "Germany">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P7827 "Alemania".
+
+
+
+<<wd:Q183 wdt:P7827 "Alemania">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P7832 "Alemania".
+
+
+
+<<wd:Q183 wdt:P7832 "Alemania">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P7822 "Germania".
+
+
+
+<<wd:Q183 wdt:P7822 "Germania">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P6058 "pays/wd/104884".
+
+
+
+<<wd:Q183 wdt:P6058 "pays/wd/104884">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P2799 "32785".
+
+
+
+<<wd:Q183 wdt:P2799 "32785">>
+     wikibase:rank wikibase:NormalRank.
+
+
+wd:Q183 wdt:P7859 "lccn-n80125931".
+
+
+<<wd:Q183 wdt:P7859 "lccn-n95056124">>
+    pq:P1810 "Deutschland (Ship)";
+    pq:P2241 wd:Q28091153;
+     wikibase:rank wikibase:DeprecatedRank.
+
+<<wd:Q183 wdt:P7859 "lccn-n80125931">>
+    pq:P1810 "Germany";
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P6262 "germany:Germany".
+wd:Q183 wdt:P6262 "countries:Germany".
+wd:Q183 wdt:P6262 "cryptids12-everything:Germany".
+
+
+
+<<wd:Q183 wdt:P6262 "germany:Germany">>
+    pq:P407 wd:Q1860;
+    pq:P1810 "Germany";
+    pq:P9675 "2067";
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P6262 "countries:Germany">>
+    pq:P407 wd:Q1860;
+    pq:P1810 "Germany";
+    pq:P9675 "2322";
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P6262 "cryptids12-everything:Germany">>
+    pq:P407 wd:Q1860;
+    pq:P1810 "Germany";
+    pq:P9675 "1176";
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P6900 "ドイツ".
+
+
+
+<<wd:Q183 wdt:P6900 "ドイツ">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P6897 "+99"^^xsd:decimal.
+
+
+
+<<wd:Q183 wdt:P6897 "+99"^^xsd:decimal>>
+    pq:P1480 wd:Q37113960;
+    pq:P585 "2003-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1273 "a10958964".
+
+
+
+<<wd:Q183 wdt:P1273 "a10958964">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P7028 "000018732".
+
+
+
+<<wd:Q183 wdt:P7028 "000018732">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P7369 "000000112".
+
+
+
+<<wd:Q183 wdt:P7369 "000000112">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1890 "000000337".
+
+
+
+<<wd:Q183 wdt:P1890 "000000337">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P4619 "000023054".
+
+
+
+<<wd:Q183 wdt:P4619 "000023054">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P5437 "1318".
+
+
+
+<<wd:Q183 wdt:P5437 "1318">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P7314 "almanya".
+
+
+
+<<wd:Q183 wdt:P7314 "almanya">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P361 wd:Q27496.
+wd:Q183 wdt:P361 wd:Q27509.
+
+
+
+<<wd:Q183 wdt:P361 wd:Q27496>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P361 wd:Q27509>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P8402 wd:Q59273239.
+wd:Q183 wdt:P8402 wd:Q61171716.
+
+
+
+<<wd:Q183 wdt:P8402 wd:Q59273239>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P8402 wd:Q61171716>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P8408 "Germany".
+
+
+
+<<wd:Q183 wdt:P8408 "Germany">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P8432 "D/Deutschland".
+
+
+
+<<wd:Q183 wdt:P8432 "D/Deutschland">>
+    pq:P356 "10.1553/0X0001CB9A";
+     wikibase:rank wikibase:NormalRank.
+
+
+wd:Q183 wdt:P571 "1949-05-23T00:00:00Z"^^xsd:dateTime.
+
+<<wd:Q183 wdt:P571 "1990-10-03T00:00:00Z"^^xsd:dateTime>>
+    pq:P1013 wd:Q16868672;
+    pq:P805 wd:Q56039;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P571 "0843-08-10T00:00:00Z"^^xsd:dateTime>>
+    pq:P5102 wd:Q153080;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P571 "1949-05-23T00:00:00Z"^^xsd:dateTime>>
+    pq:P805 wd:Q713750;
+     wikibase:rank wikibase:PreferredRank.
+
+wd:Q183 wdt:P1249 "0919-00-00T00:00:00Z"^^xsd:dateTime.
+
+
+
+<<wd:Q183 wdt:P1249 "0919-00-00T00:00:00Z"^^xsd:dateTime>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P4073 "germany".
+
+
+
+<<wd:Q183 wdt:P4073 "germany">>
+    pq:P407 wd:Q1860;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P5843 "Germany".
+
+
+
+<<wd:Q183 wdt:P5843 "Germany">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P8519 "456".
+
+
+
+<<wd:Q183 wdt:P8519 "456">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P8483 "A10".
+
+
+
+<<wd:Q183 wdt:P8483 "A10">>
+    pq:P4390 wd:Q39893449;
+    pq:P1810 "Germany";
+    pq:P5592 "+57613"^^xsd:decimal;
+    pq:P3740 "unknown value";
+    pq:P1545 "A 010";
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P672 "Z01.542.315".
+
+
+
+<<wd:Q183 wdt:P672 "Z01.542.315">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P5063 "i82954".
+
+
+
+<<wd:Q183 wdt:P5063 "i82954">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1438 "11122".
+
+
+
+<<wd:Q183 wdt:P1438 "11122">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P6839 "UsefulNotes/Germany".
+
+
+
+<<wd:Q183 wdt:P6839 "UsefulNotes/Germany">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P3749 "8496143413569250651".
+
+
+
+<<wd:Q183 wdt:P3749 "8496143413569250651">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P8717 "1588421523".
+
+
+
+<<wd:Q183 wdt:P8717 "1588421523">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P8744 wd:Q8046.
+
+
+
+<<wd:Q183 wdt:P8744 wd:Q8046>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P4527 "10438".
+
+
+
+<<wd:Q183 wdt:P4527 "10438">>
+    pq:P1810 "Germany";
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P8826 "H0005517".
+
+
+
+<<wd:Q183 wdt:P8826 "H0005517">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P8895 "Germany".
+
+
+
+<<wd:Q183 wdt:P8895 "Germany">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P5456 "germany".
+
+
+
+<<wd:Q183 wdt:P5456 "germany">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P8974 "p/a7cbf121-4ac8-4cbd-af7d-4d6d25cd7efb".
+
+
+
+<<wd:Q183 wdt:P8974 "p/a7cbf121-4ac8-4cbd-af7d-4d6d25cd7efb">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P9037 "2bde846d-48ca-4ac0-880c-91f4fe24c210".
+wd:Q183 wdt:P9037 "682b10e6-8392-4831-aa5a-1d734846f78f".
+
+
+
+<<wd:Q183 wdt:P9037 "2bde846d-48ca-4ac0-880c-91f4fe24c210">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P9037 "682b10e6-8392-4831-aa5a-1d734846f78f">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P9100 "deutschland".
+
+
+
+<<wd:Q183 wdt:P9100 "deutschland">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P8885 "독일".
+
+
+
+<<wd:Q183 wdt:P8885 "독일">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P8814 "08784821-n".
+
+
+
+<<wd:Q183 wdt:P8814 "08784821-n">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P7422 "-45.9"^^xsd:decimal.
+
+
+
+<<wd:Q183 wdt:P7422 "-45.9"^^xsd:decimal>>
+    pq:P585 "2001-12-24T00:00:00Z"^^xsd:dateTime;
+    pq:P276 wd:Q314939;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P9241 wd:Q327213.
+
+
+
+<<wd:Q183 wdt:P9241 wd:Q327213>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P9349 "ألمانيا".
+
+
+
+<<wd:Q183 wdt:P9349 "ألمانيا">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P9293 "4372".
+
+
+
+<<wd:Q183 wdt:P9293 "4372">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P9368 "germany".
+
+
+
+<<wd:Q183 wdt:P9368 "germany">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1280 "337912931".
+
+
+
+<<wd:Q183 wdt:P1280 "337912931">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P9318 "duiska".
+
+
+
+<<wd:Q183 wdt:P9318 "duiska">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P6293 "Y105087".
+
+
+
+<<wd:Q183 wdt:P6293 "Y105087">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P8309 "18-177448".
+
+
+
+<<wd:Q183 wdt:P8309 "18-177448">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P6200 "c77jz3md4rdt".
+
+
+
+<<wd:Q183 wdt:P6200 "c77jz3md4rdt">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P7850 "T84-600".
+
+
+
+<<wd:Q183 wdt:P7850 "T84-600">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P7960 "T115-306".
+
+
+
+<<wd:Q183 wdt:P7960 "T115-306">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P6328 "283".
+
+
+
+<<wd:Q183 wdt:P6328 "283">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1424 wd:Q12981598.
+
+
+
+<<wd:Q183 wdt:P1424 wd:Q12981598>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P9629 "4099".
+
+
+
+<<wd:Q183 wdt:P9629 "4099">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P3553 "19554996".
+
+
+
+<<wd:Q183 wdt:P3553 "19554996">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P8217 "2044274".
+
+
+
+<<wd:Q183 wdt:P8217 "2044274">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P8935 "Nimechchyna".
+
+
+
+<<wd:Q183 wdt:P8935 "Nimechchyna">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P4613 "72433".
+
+
+
+<<wd:Q183 wdt:P4613 "72433">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P9222 "82999".
+
+
+
+<<wd:Q183 wdt:P9222 "82999">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P8313 "Tyskland".
+
+
+
+<<wd:Q183 wdt:P8313 "Tyskland">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P6385 "strany_mira/GERMANIYA.html".
+
+
+
+<<wd:Q183 wdt:P6385 "strany_mira/GERMANIYA.html">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P9757 "66".
+
+
+
+<<wd:Q183 wdt:P9757 "66">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P7301 "where/germany".
+
+
+
+<<wd:Q183 wdt:P7301 "where/germany">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P17 wd:Q183.
+
+
+
+<<wd:Q183 wdt:P17 wd:Q183>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P7841 "Գերմանիա".
+
+
+
+<<wd:Q183 wdt:P7841 "Գերմանիա">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P9984 "981058516275306706".
+
+
+
+<<wd:Q183 wdt:P9984 "981058516275306706">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P7775 "Germany".
+
+
+
+<<wd:Q183 wdt:P7775 "Germany">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P8248 "SG--55".
+
+
+
+<<wd:Q183 wdt:P8248 "SG--55">>
+    pq:P747 wd:Q95449814;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P8189 "987007559778705171".
+
+
+
+<<wd:Q183 wdt:P8189 "987007559778705171">>
+     wikibase:rank wikibase:NormalRank.
+
+
+wd:Q183 wdt:P8328 "+8.67"^^xsd:decimal.
+
+<<wd:Q183 wdt:P8328 "+8.67"^^xsd:decimal>>
+    pq:P585 "2020-01-01T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:PreferredRank.
+
+<<wd:Q183 wdt:P8328 "+8.68"^^xsd:decimal>>
+    pq:P585 "2019-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P8328 "+8.68"^^xsd:decimal>>
+    pq:P585 "2018-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P8328 "+8.61"^^xsd:decimal>>
+    pq:P585 "2017-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P8328 "+8.63"^^xsd:decimal>>
+    pq:P585 "2016-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P8328 "+8.64"^^xsd:decimal>>
+    pq:P585 "2015-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P8328 "+8.64"^^xsd:decimal>>
+    pq:P585 "2014-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P8328 "+8.31"^^xsd:decimal>>
+    pq:P585 "2013-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P8328 "+8.34"^^xsd:decimal>>
+    pq:P585 "2012-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P8328 "+8.34"^^xsd:decimal>>
+    pq:P585 "2011-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P8328 "+8.38"^^xsd:decimal>>
+    pq:P585 "2010-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P8328 "+8.82"^^xsd:decimal>>
+    pq:P585 "2008-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P8328 "+8.82"^^xsd:decimal>>
+    pq:P585 "2006-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P9123 "Alemanya".
+
+
+
+<<wd:Q183 wdt:P9123 "Alemanya">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P7305 "4169110".
+
+
+
+<<wd:Q183 wdt:P7305 "4169110">>
+    pq:P1810 "Niemcy";
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P8843 "+14.8"^^xsd:decimal.
+
+
+
+<<wd:Q183 wdt:P8843 "+14.8"^^xsd:decimal>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P9937 "1865".
+
+
+
+<<wd:Q183 wdt:P9937 "1865">>
+    pq:P1810 "Saksamaa";
+    pq:P407 wd:Q9072;
+     wikibase:rank wikibase:NormalRank.
+
+
+wd:Q183 wdt:P35 wd:Q76658.
+
+<<wd:Q183 wdt:P35 wd:Q2594>>
+    pq:P580 "1949-09-12T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "1959-09-12T00:00:00Z"^^xsd:dateTime;
+    pq:P459 wd:Q314561;
+    pq:P459 wd:Q896247;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P35 wd:Q2582>>
+    pq:P580 "1959-09-13T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "1969-06-30T00:00:00Z"^^xsd:dateTime;
+    pq:P459 wd:Q896088;
+    pq:P459 wd:Q896080;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P35 wd:Q2573>>
+    pq:P580 "1969-07-01T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "1974-06-30T00:00:00Z"^^xsd:dateTime;
+    pq:P459 wd:Q896205;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P35 wd:Q2571>>
+    pq:P580 "1974-07-01T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "1979-06-30T00:00:00Z"^^xsd:dateTime;
+    pq:P459 wd:Q896236;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P35 wd:Q2569>>
+    pq:P580 "1979-07-01T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "1984-06-30T00:00:00Z"^^xsd:dateTime;
+    pq:P459 wd:Q896232;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P35 wd:Q2567>>
+    pq:P580 "1984-07-01T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "1994-06-30T00:00:00Z"^^xsd:dateTime;
+    pq:P459 wd:Q896226;
+    pq:P459 wd:Q570621;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P35 wd:Q2563>>
+    pq:P580 "1994-07-01T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "1999-06-30T00:00:00Z"^^xsd:dateTime;
+    pq:P459 wd:Q314570;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P35 wd:Q2551>>
+    pq:P580 "1999-07-01T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "2004-06-30T00:00:00Z"^^xsd:dateTime;
+    pq:P459 wd:Q451110;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P35 wd:Q2542>>
+    pq:P580 "2004-07-01T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "2010-05-31T00:00:00Z"^^xsd:dateTime;
+    pq:P459 wd:Q314532;
+    pq:P459 wd:Q707051;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P35 wd:Q2540>>
+    pq:P580 "2010-06-30T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "2012-02-17T00:00:00Z"^^xsd:dateTime;
+    pq:P459 wd:Q707063;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P35 wd:Q2538>>
+    pq:P459 wd:Q670933;
+    pq:P580 "2012-03-18T00:00:00Z"^^xsd:dateTime;
+    pq:P582 "2017-03-18T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P35 wd:Q76658>>
+    pq:P580 "2017-03-19T00:00:00Z"^^xsd:dateTime;
+    pq:P459 wd:Q23558762;
+     wikibase:rank wikibase:PreferredRank.
+
+wd:Q183 wdt:P6482 "Q183".
+
+
+
+<<wd:Q183 wdt:P6482 "Q183">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P10234 "deutschland".
+
+
+
+<<wd:Q183 wdt:P10234 "deutschland">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P10297 "m0345h".
+
+
+
+<<wd:Q183 wdt:P10297 "m0345h">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P9466 "Tyskland".
+
+
+
+<<wd:Q183 wdt:P9466 "Tyskland">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P9957 "209".
+
+
+
+<<wd:Q183 wdt:P9957 "209">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P10291 "21469".
+
+
+
+<<wd:Q183 wdt:P10291 "21469">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P10397 "VEAL001230".
+
+
+
+<<wd:Q183 wdt:P10397 "VEAL001230">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P10456 "10".
+
+
+
+<<wd:Q183 wdt:P10456 "10">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P18 "Deutschland Luftbild.jpg".
+
+
+
+<<wd:Q183 wdt:P18 "Deutschland Luftbild.jpg">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P10730 "country/DEU".
+
+
+
+<<wd:Q183 wdt:P10730 "country/DEU">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P4640 "Potsdamer Platz, Berlin, 360x180, 160403, ako.jpg".
+
+
+
+<<wd:Q183 wdt:P4640 "Potsdamer Platz, Berlin, 360x180, 160403, ako.jpg">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P1766 "Westerwolde+Haren - Rütenbrockerweg + Ter Apeler Straße 01 ies.jpg".
+
+
+
+<<wd:Q183 wdt:P1766 "Westerwolde+Haren - Rütenbrockerweg + Ter Apeler Straße 01 ies.jpg">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P10757 "50643".
+
+
+
+<<wd:Q183 wdt:P10757 "50643">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q183 wdt:P10046 "5450844560789544848".
+
+
+
+<<wd:Q183 wdt:P10046 "5450844560789544848">>
+     wikibase:rank wikibase:NormalRank.
+
+#   wd:Q10743: Böhlen (EN)
+
+wd:Q10743 rdfs:label "Böhlen"@en ;
+	skos:prefLabel "Böhlen"@en ;
+	schema:name "Böhlen"@en .
+
+wd:Q10743 schema:description "town in the Free State of Saxony, Germany"@en.
+
+
+wd:Q10743 wdt:P190 wd:Q81607.
+wd:Q10743 wdt:P190 wd:Q13596.
+
+
+
+<<wd:Q10743 wdt:P190 wd:Q81607>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q10743 wdt:P190 wd:Q13596>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q10743 wdt:P17 wd:Q183.
+
+
+
+<<wd:Q10743 wdt:P17 wd:Q183>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q10743 wdt:P373 "Böhlen (Sachsen)".
+
+
+
+<<wd:Q10743 wdt:P373 "Böhlen (Sachsen)">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q10743 wdt:P439 "14729040".
+
+
+
+<<wd:Q10743 wdt:P439 "14729040">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q10743 wdt:P625 "Point(12.385833333333 51.2025)"^^geo:wktLiteral.
+
+
+
+<<wd:Q10743 wdt:P625 "Point(12.385833333333 51.2025)"^^geo:wktLiteral>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q10743 wdt:P646 "/m/03r8bq".
+
+
+
+<<wd:Q10743 wdt:P646 "/m/03r8bq">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q10743 wdt:P227 "4087889-2".
+
+
+
+<<wd:Q10743 wdt:P227 "4087889-2">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q10743 wdt:P94 "Wappen Boehlen.png".
+
+
+
+<<wd:Q10743 wdt:P94 "Wappen Boehlen.png">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q10743 wdt:P31 wd:Q42744322.
+
+
+
+<<wd:Q10743 wdt:P31 wd:Q42744322>>
+     wikibase:rank wikibase:NormalRank.
+
+
+
+
+<<wd:Q10743 wdt:P1036 "2--432125">>
+     wikibase:rank wikibase:DeprecatedRank.
+
+wd:Q10743 wdt:P1566 "6550850".
+
+
+
+<<wd:Q10743 wdt:P1566 "6550850">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q10743 wdt:P910 wd:Q8916397.
+
+
+
+<<wd:Q10743 wdt:P910 wd:Q8916397>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q10743 wdt:P856 "http://www.stadt-boehlen.de/".
+
+
+
+<<wd:Q10743 wdt:P856 "http://www.stadt-boehlen.de/">>
+    pq:P407 wd:Q188;
+     wikibase:rank wikibase:NormalRank.
+
+
+wd:Q10743 wdt:P214 "249422654".
+
+
+<<wd:Q10743 wdt:P214 "315523483">>
+    pq:P2241 wd:Q28091153;
+     wikibase:rank wikibase:DeprecatedRank.
+
+<<wd:Q10743 wdt:P214 "249422654">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q10743 wdt:P18 "Rathaus Boehlen.JPG".
+
+
+
+<<wd:Q10743 wdt:P18 "Rathaus Boehlen.JPG">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q10743 wdt:P281 "04564".
+
+
+
+<<wd:Q10743 wdt:P281 "04564">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q10743 wdt:P242 "Böhlen in L.svg".
+
+
+
+<<wd:Q10743 wdt:P242 "Böhlen in L.svg">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q10743 wdt:P2503 "BOHLENJO61EE".
+
+
+
+<<wd:Q10743 wdt:P2503 "BOHLENJO61EE">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q10743 wdt:P131 wd:Q6308.
+
+
+
+<<wd:Q10743 wdt:P131 wd:Q6308>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q10743 wdt:P47 wd:Q10782.
+wd:Q10743 wdt:P47 wd:Q10750.
+wd:Q10743 wdt:P47 wd:Q10776.
+wd:Q10743 wdt:P47 wd:Q10755.
+wd:Q10743 wdt:P47 wd:Q10779.
+
+
+
+<<wd:Q10743 wdt:P47 wd:Q10782>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q10743 wdt:P47 wd:Q10750>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q10743 wdt:P47 wd:Q10776>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q10743 wdt:P47 wd:Q10755>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q10743 wdt:P47 wd:Q10779>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q10743 wdt:P421 wd:Q6655.
+wd:Q10743 wdt:P421 wd:Q6723.
+
+
+
+<<wd:Q10743 wdt:P421 wd:Q6655>>
+    pq:P1264 wd:Q1777301;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q10743 wdt:P421 wd:Q6723>>
+    pq:P1264 wd:Q36669;
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q10743 wdt:P2044 "+137"^^xsd:decimal.
+
+
+
+<<wd:Q10743 wdt:P2044 "+137"^^xsd:decimal>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q10743 wdt:P2046 "+24.55"^^xsd:decimal.
+wd:Q10743 wdt:P2046 "+24.56"^^xsd:decimal.
+
+
+
+<<wd:Q10743 wdt:P2046 "+24.55"^^xsd:decimal>>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q10743 wdt:P2046 "+24.56"^^xsd:decimal>>
+    pq:P585 "2017-12-31T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+
+wd:Q10743 wdt:P1082 "+6687"^^xsd:decimal.
+
+<<wd:Q10743 wdt:P1082 "+6676"^^xsd:decimal>>
+    pq:P585 "2014-01-02T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q10743 wdt:P1082 "+6701"^^xsd:decimal>>
+    pq:P585 "2017-12-31T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q10743 wdt:P1082 "+6687"^^xsd:decimal>>
+    pq:P585 "2019-09-30T00:00:00Z"^^xsd:dateTime;
+    pq:P459 wd:Q52679562;
+     wikibase:rank wikibase:PreferredRank.
+
+wd:Q10743 wdt:P402 "420478".
+
+
+
+<<wd:Q10743 wdt:P402 "420478">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q10743 wdt:P395 "L".
+
+
+
+<<wd:Q10743 wdt:P395 "L">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q10743 wdt:P473 "034206".
+wd:Q10743 wdt:P473 "034299".
+
+
+
+<<wd:Q10743 wdt:P473 "034206">>
+     wikibase:rank wikibase:NormalRank.
+
+<<wd:Q10743 wdt:P473 "034299">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q10743 wdt:P6766 "101841313".
+
+
+
+<<wd:Q10743 wdt:P6766 "101841313">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q10743 wdt:P7046 "4013".
+
+
+
+<<wd:Q10743 wdt:P7046 "4013">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q10743 wdt:P8168 "Q83251".
+
+
+
+<<wd:Q10743 wdt:P8168 "Q83251">>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q10743 wdt:P1889 wd:Q414017.
+
+
+
+<<wd:Q10743 wdt:P1889 wd:Q414017>>
+     wikibase:rank wikibase:NormalRank.
+
+wd:Q10743 wdt:P1343 wd:Q61707817.
+
+
+
+<<wd:Q10743 wdt:P1343 wd:Q61707817>>
+    pq:P805 wd:Q110476108;
+    pq:P585 "1860-00-00T00:00:00Z"^^xsd:dateTime;
+     wikibase:rank wikibase:NormalRank.
+
