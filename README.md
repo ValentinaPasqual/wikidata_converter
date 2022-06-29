@@ -185,7 +185,7 @@ s:Q183-0B26503A-A8BF-4B40-9F0A-CAE242AE03A1 a wikibase:Statement;
 ```
 
 ### Named Graphs
-With named graphs all statements are asserted. Rankings has been mantained with each graph in order to retrieve their confidence. 
+Note: With named graphs all statements are asserted. 
 
 ```
 GRAPH s:Q183-d657d418-4a25-98d6-5180-a3659a11fbcd { 
