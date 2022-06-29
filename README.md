@@ -132,7 +132,7 @@ A conversion test has been run agaist the templates. In the folder ```conversion
 | Singleton Properties | 1304             | 681             | 5385    |
 | Named Graphs         | 1239             | 611             | 3334    |
 | RDF-star             | 1089             | 201             | 3354    |
-| Conjectures          |                  |                 |         |
+| Conjectures          | 1120             | 849             | 4121    |
 
 
 ### Wikidata
