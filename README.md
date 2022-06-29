@@ -292,3 +292,54 @@ wd:Q183 wdt:P530 wd:Q1011.
     pq:P531 wd:Q58003162;
     wikibase:rank wikibase:PreferredRank.
 ```
+
+Conjectures (strong form)
+```
+#### Two statements ranked as normal ####
+
+GRAPH s:Q183-d657d418-4a25-98d6-5180-a3659a11fbcd  {
+wd:Q183 wdt:P1705 "Bundesrepublik Deutschland"@de.
+}
+s:Q183-d657d418-4a25-98d6-5180-a3659a11fbcd wikibase:rank wikibase:NormalRank.                
+
+GRAPH s:Q183-E2A638D7-78B7-424D-9F63-AF49F5DCAE84  {
+wd:Q183 wdt:P1705 "Deutschland"@de.
+}
+s:Q183-E2A638D7-78B7-424D-9F63-AF49F5DCAE84 wikibase:rank wikibase:NormalRank.                
+
+#### Three statements ranked respectively as normal, deprecated and preferred. ####  
+
+GRAPH s:Q183-DF432913-CEBA-49ED-BCA4-7214957E6CDA  {
+	wd:Q183 <http://w3id.org/conj-wikidata-test/conj/Q183P530136/P530> wd:Q865.
+	<http://w3id.org/conj-wikidata-test/conj/Q183P530136/P530> conj:isAConjecturalFormOf wd:P530 .
+}
+s:Q183-DF432913-CEBA-49ED-BCA4-7214957E6CDA pq:P805 wd:Q15910813.
+s:Q183-DF432913-CEBA-49ED-BCA4-7214957E6CDA pq:P582 "1972-00-00T00:00:00Z"^^xsd:dateTime.
+s:Q183-DF432913-CEBA-49ED-BCA4-7214957E6CDA pq:P2241 wd:Q26256296.
+s:Q183-DF432913-CEBA-49ED-BCA4-7214957E6CDA wikibase:rank wikibase:NormalRank.   
+
+GRAPH s:Q183-a6aa383f-4c30-79bf-0767-dcf4ea80f8d6  {
+	wd:Q183 <http://w3id.org/conj-wikidata-test/conj/Q183P530132/P530> wd:Q917.
+	<http://w3id.org/conj-wikidata-test/conj/Q183P530132/P530> conj:isAConjecturalFormOf wd:P530 .
+}
+s:Q183-a6aa383f-4c30-79bf-0767-dcf4ea80f8d6 pq:P805 wd:Q1201896.
+s:Q183-a6aa383f-4c30-79bf-0767-dcf4ea80f8d6 pq:P2241 wd:Q28831311.
+s:Q183-a6aa383f-4c30-79bf-0767-dcf4ea80f8d6 wikibase:rank wikibase:DeprecatedRank.   
+
+GRAPH s:Q183-0B26503A-A8BF-4B40-9F0A-CAE242AE03A1  {
+        wd:Q183 wdt:P530 wd:Q1011.
+}
+
+GRAPH s:Q183-0B26503A-A8BF-4B40-9F0A-CAE242AE03A1  {
+        wd:Q183 <http://w3id.org/conj-wikidata-test/conj/Q183P530133/P530> wd:Q1011.
+	<http://w3id.org/conj-wikidata-test/conj/Q183P530133/P530> conj:isAConjecturalFormOf wd:P530 .  
+}      
+
+GRAPH s:collapseOfQ183-0B26503A-A8BF-4B40-9F0A-CAE242AE03A1{
+        wd:Q183 wdt:P530 wd:Q1011.
+        s:collapseOfQ183-0B26503A-A8BF-4B40-9F0A-CAE242AE03A1 conj:collapses s:Q183-0B26503A-A8BF-4B40-9F0A-CAE242AE03A1 
+}
+s:Q183-0B26503A-A8BF-4B40-9F0A-CAE242AE03A1 pq:P805 wd:Q28498636.
+s:Q183-0B26503A-A8BF-4B40-9F0A-CAE242AE03A1 pq:P531 wd:Q58003162.
+s:Q183-0B26503A-A8BF-4B40-9F0A-CAE242AE03A1 wikibase:rank wikibase:PreferredRank.   
+```
