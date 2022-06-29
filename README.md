@@ -102,7 +102,7 @@ For example, the triples (1)```wd:Q10743 wdt:P214 "249422654"``` and (2)```wd:Q1
 
 - If both triples (1 and 2) are ranked as Normal, they are both asserted.
 - If both triples (1 and 2) are ranked as Preferred, they are both asserted.
-- If both triples (1 and 2) are ranked as Normal, they are both non-asserted.
+- If both triples (1 and 2) are ranked as Deprecated, they are both non-asserted.
 - If triple (1) is ranked as Preferred and triple (2) is ranked as Normal, the first (1) is asserted and the second (2) is non-asserted. 
 - If triple (1) is ranked as Deprecated and triple (2) is ranked as Noraml, the first (1) in non-asserted and the second (2) is asserted. 
 - If triple (1) is ranked as Deprecated and triples (2) is ranked as Preferred, the first (1) is non-asserted and the second (2) is asserted. 
