@@ -141,20 +141,20 @@ Each converted dataset is exemplified below with two different examples:
 2) The second represents three statements (_Germany has diplomatic relation with Taiwan_, _Germany has diplomatic relation with Bhutan_ (unconfirmed statement), _Germany has diplomatic relation with Cape Verde_) respectively rankes as normal (non asserted), deprecated (non asserted), preferred (asserted)
 
 
-### Wikidata
+### Wikidata 
 
 ```
 wd:Q183 p:P1705 s:Q183-d657d418-4a25-98d6-5180-a3659a11fbcd .
 s:Q183-d657d418-4a25-98d6-5180-a3659a11fbcd a wikibase:Statement; 
-    wikibase:rank wikibase:NormalRank;
+    wikibase:rank wikibase:NormalRank;                                      <-- Il rank compare due volte. Perchè?
     ps:P1705 "Bundesrepublik Deutschland"@de;
-    wikibase:rank wikibase:NormalRank.
+    wikibase:rank wikibase:NormalRank.                                      <-- Seconda volta
     
 wd:Q183 p:P1705 s:Q183$E2A638D7-78B7-424D-9F63-AF49F5DCAE84 .
 s:Q183-E2A638D7-78B7-424D-9F63-AF49F5DCAE84 a wikibase:Statement; 
-    wikibase:rank wikibase:NormalRank;
+    wikibase:rank wikibase:NormalRank;                                      <-- Il rank compare due volte. Perchè?
     ps:P1705 "Deutschland"@de;
-    wikibase:rank wikibase:NormalRank.
+    wikibase:rank wikibase:NormalRank.                                      <-- Seconda volta
 ```    
 ```
 wd:Q183 p:P530 s:Q183-DF432913-CEBA-49ED-BCA4-7214957E6CDA .
