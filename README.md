@@ -172,6 +172,8 @@ s:Q183-a6aa383f-4c30-79bf-0767-dcf4ea80f8d6 a wikibase:Statement;
     ps:P530 wd:Q917;
     wikibase:rank wikibase:DeprecatedRank.
      
+# ASSERTED TRIPLE?
+wd:Q183 wdt:P530 wd:Q1011.
 wd:Q183 p:P530 s:Q183-0B26503A-A8BF-4B40-9F0A-CAE242AE03A1 .
 s:Q183-0B26503A-A8BF-4B40-9F0A-CAE242AE03A1 a wikibase:Statement; 
     wikibase:rank wikibase:PreferredRank;
@@ -255,6 +257,40 @@ sng:Q183-a6aa383f-4c30-79bf-0767-dcf4ea80f8d6 sng:singletonPropertyOf wdt:P530 .
 wd:Q183 wdt:P530 wd:Q1011.
 wd:Q183 sng:Q183-0B26503A-A8BF-4B40-9F0A-CAE242AE03A1 wd:Q1011.
 sng:Q183-0B26503A-A8BF-4B40-9F0A-CAE242AE03A1 sng:singletonPropertyOf wdt:P530 .
+    pq:P805 wd:Q28498636;
+    pq:P531 wd:Q58003162;
+    wikibase:rank wikibase:PreferredRank.
+```
+
+### RDF-star (RDF 1.1 syntax extension)
+```
+#### Two statements ranked as normal ####
+
+
+wd:Q183 wdt:P1705 "Bundesrepublik Deutschland"@de.
+<<wd:Q183 wdt:P1705 "Bundesrepublik Deutschland">>
+     wikibase:rank wikibase:NormalRank.
+     
+wd:Q183 wdt:P1705 "Deutschland"@de.
+<<wd:Q183 wdt:P1705 "Deutschland">>
+     wikibase:rank wikibase:NormalRank.
+
+#### Three statements ranked respectively as normal, deprecated and preferred. ####  
+
+wd:Q183 wdt:P530 wd:Q865.
+<<wd:Q183 wdt:P530 wd:Q865>>
+    pq:P805 wd:Q15910813;
+    pq:P582 "1972-00-00T00:00:00Z"^^xsd:dateTime;
+    pq:P2241 wd:Q26256296;
+    wikibase:rank wikibase:NormalRank.
+
+<<wd:Q183 wdt:P530 wd:Q917>>
+    pq:P805 wd:Q1201896;
+    pq:P2241 wd:Q28831311;
+    wikibase:rank wikibase:DeprecatedRank.
+     
+wd:Q183 wdt:P530 wd:Q1011.
+<<wd:Q183 wdt:P530 wd:Q1011>>
     pq:P805 wd:Q28498636;
     pq:P531 wd:Q58003162;
     wikibase:rank wikibase:PreferredRank.
