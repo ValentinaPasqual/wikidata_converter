@@ -286,7 +286,7 @@ wd:Q183 wdt:P530 wd:Q1011.
     wikibase:rank wikibase:PreferredRank.
 ```
 
-### Conjectures (strong form)
+### Conjectures (weak form)
 ```
 GRAPH s:Q183-d657d418-4a25-98d6-5180-a3659a11fbcd  {
 wd:Q183 wdt:P1705 "Bundesrepublik Deutschland"@de.
