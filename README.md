@@ -12,7 +12,7 @@ The final dataset will be modelled with five different RDF models:
 - RDF-star
 - Conjectures
 
-## Dataset A
+## Dataset A - Artworks
 All artworks with their type and when available their location and creator. 
 
 From Wikidata SPARQL endpoint, we selected all artworks (Q1). Then we got all artworks related metadata from Wikidata API (```wbgetentities``` method). 
@@ -48,7 +48,7 @@ The results are summarised in the table below.
 | **Folder weight**        | 31.7 GB        | 74.6 GB        | 359,2 GB        |
 
 
-## Dataset B
+## Dataset B - Random Entities
 Then we selected 3'000'000 random wikidata entities which are not artworks along with their metadata (Q2).  This process is available at ```get_random_data.py```.
 
 Q2: 
@@ -68,7 +68,7 @@ The results are summarised in the table below.
 | **Statements**           | 62,102,993     |
 | **Folder weight**        | 144.3 GB       | 
 
-## Dataset C
+## Dataset C - Fake Statements
 
 Dataset C contains a selection of fake statements regarding the creator, author or location of artworks (from dataset A3). Those new statements contain fake randomic information and are ranked as Deprecated in order to increase the number of conjectural statements in the final dataset. 
 
