@@ -134,6 +134,12 @@ A conversion test has been run agaist the templates. In the folder ```conversion
 | RDF-star             | 1089             | 201             | 3354    |
 | Conjectures          | 1120             | 849             | 4121    |
 
+* The _Query Time (ms)_ has been calculated over the query: ```SELECT * WHERE {?s ?p ?o}```
+
+Each converted dataset is exemplified below with two different examples:
+1) The first represents two statements (_Germany native label is Bundesrepublik Deutschland_ and _Germany native label is Deutschland_) both ranked as normal, and then equally asserted.
+2) The second represents three statements (_Germany has diplomatic relation with Taiwan_, _Germany has diplomatic relation with Bhutan_ (unconfirmed statement), _Germany has diplomatic relation with Cape Verde_) respectively rankes as normal (non asserted), deprecated (non asserted), preferred (asserted)
+
 
 ### Wikidata
 
