@@ -128,11 +128,11 @@ A conversion test has been run agaist the templates. In the folder ```conversion
 
 |                      | Upload time (ms) | Query Time (ms) | Triples |
 |----------------------|------------------|-----------------|---------|
-| Wikidata Statement   | 1340             | 773             | 6,487   |
-| Singleton Properties | 1304             | 681             | 5,385   |
-| Named Graphs         | 1239             | 611             | 3,334   |
-| RDF-star             | 1089             | 201             | 3,354   |
-| Conjectures          | 1120             | 849             | 4,121   |
+| Wikidata Statement   | 1,340            | 773             | 6,487   |
+| Singleton Properties | 1,304            | 681             | 5,385   |
+| Named Graphs         | 1,239            | 611             | 3,334   |
+| RDF-star             | 1,089            | 201             | 3,354   |
+| Conjectures          | 1,120            | 849             | 4,121   |
 
 * The _Query Time (ms)_ has been calculated over the query: ```SELECT * WHERE {?s ?p ?o}```
 
