@@ -156,15 +156,6 @@ var helpers = {
 		}
 		return false
 	},
-  'hasQualifiers' : function(arg) {
-    let arr = []; 
-    for (var i in arg) {
-      if (arg[i].qualifiers) {
-          return true /* true if there are qualifiers */
-      }   
-      return false    /* false if there are no qualifiers */
-    }
-  },
 	'isDeprecated': function(arg) { return arg.rank == 'deprecated' },
 	'isNormal': function(arg) { return arg.rank == 'normal' },
 	'isPreferred': function(arg) { return arg.rank == 'preferred' },
