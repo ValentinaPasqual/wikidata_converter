@@ -223,32 +223,31 @@ s:Q183-0B26503A-A8BF-4B40-9F0A-CAE242AE03A1 wikibase:rank wikibase:PreferredRank
 ### Singleton Properties
 ```
 wd:Q183 wdt:P1705 "Bundesrepublik Deutschland"@de.
-wd:Q183 sng:Q183-d657d418-4a25-98d6-5180-a3659a11fbcd "Bundesrepublik Deutschland"@de.  <-- Non mi piace usare l'id dello statement come predicato singleton. 
-                                                                                        <-- Usiamo il tradizionale sng:P1705#1, sng:P1705#2, etc. 
-sng:Q183-d657d418-4a25-98d6-5180-a3659a11fbcd sng:singletonPropertyOf wdt:P1705 .
+sng:P417-0 sng:singletonPropertyOf wdt:P417  ;
+sng:P1705-0 sng:singletonPropertyOf wdt:P1705 ;
     wikibase:rank wikibase:NormalRank.
  
 wd:Q183 wdt:P1705 "Deutschland"@de.
-wd:Q183 sng:Q183-E2A638D7-78B7-424D-9F63-AF49F5DCAE84 "Deutschland"@de.  
-sng:Q183-E2A638D7-78B7-424D-9F63-AF49F5DCAE84 sng:singletonPropertyOf wdt:P1705 .
+wd:Q183 sng:P1705-1 "Deutschland"@de.
+sng:P1705-1 sng:singletonPropertyOf wdt:P1705  ;
     wikibase:rank wikibase:NormalRank.
 ```
 ```
-wd:Q183 sng:Q183-DF432913-CEBA-49ED-BCA4-7214957E6CDA wd:Q865.
-sng:Q183-DF432913-CEBA-49ED-BCA4-7214957E6CDA sng:singletonPropertyOf wdt:P530 .
+wd:Q183 sng:P530-136 wd:Q865.
+sng:P530-136 sng:singletonPropertyOf wdt:P530  ;
     pq:P805 wd:Q15910813;
     pq:P582 "1972-00-00T00:00:00Z"^^xsd:dateTime;
     pq:P2241 wd:Q26256296;
     wikibase:rank wikibase:NormalRank.
 
-wd:Q183 sng:Q183-a6aa383f-4c30-79bf-0767-dcf4ea80f8d6 wd:Q917.
-sng:Q183-a6aa383f-4c30-79bf-0767-dcf4ea80f8d6 sng:singletonPropertyOf wdt:P530 .
+wd:Q183 sng:P530-132 wd:Q917.
+sng:P530-132 sng:singletonPropertyOf wdt:P530  ;
     pq:P805 wd:Q1201896;
     pq:P2241 wd:Q28831311;
     wikibase:rank wikibase:DeprecatedRank.
 
-wd:Q183 wdt:P530 wd:Q1011.
-wd:Q183 sng:Q183-0B26503A-A8BF-4B40-9F0A-CAE242AE03A1 wd:Q1011.
+wd:Q183 sng:P530-133 wd:Q1011.
+sng:P530-133 sng:singletonPropertyOf wdt:P530  ;
 sng:Q183-0B26503A-A8BF-4B40-9F0A-CAE242AE03A1 sng:singletonPropertyOf wdt:P530 .
     pq:P805 wd:Q28498636;
     pq:P531 wd:Q58003162;
