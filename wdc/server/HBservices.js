@@ -20,8 +20,6 @@ Copyright (c) 2021 by Fabio Vitali
    CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 */
-var count1 = 1;
-var count2 = 1;
 
 var helpers = {
   counter1: function () {
@@ -158,6 +156,19 @@ var helpers = {
 		}
 		return false
 	},
+  'hasQualifiers' : function(arg) {
+    let arr = []; 
+    for (var i in arg) {
+      if (arg[i].qualifiers) {
+          arr.push(arg[i].qualifiers)
+          if (arr.includes(arg[i].qualifiers)) {
+            return true
+          }
+          return false
+      }   
+      return false
+    }
+  },
 	'isDeprecated': function(arg) { return arg.rank == 'deprecated' },
 	'isNormal': function(arg) { return arg.rank == 'normal' },
 	'isPreferred': function(arg) { return arg.rank == 'preferred' }
