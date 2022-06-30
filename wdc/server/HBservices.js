@@ -160,18 +160,14 @@ var helpers = {
     let arr = []; 
     for (var i in arg) {
       if (arg[i].qualifiers) {
-          arr.push(arg[i].qualifiers)
-          if (arr.includes(arg[i].qualifiers)) {
-            return true
-          }
-          return false
+          return true /* true if there are qualifiers */
       }   
-      return false
+      return false    /* false if there are no qualifiers */
     }
   },
 	'isDeprecated': function(arg) { return arg.rank == 'deprecated' },
 	'isNormal': function(arg) { return arg.rank == 'normal' },
-	'isPreferred': function(arg) { return arg.rank == 'preferred' }
+	'isPreferred': function(arg) { return arg.rank == 'preferred' },
 };
 
 function filterLanguages(items, languages, strict = false) {
