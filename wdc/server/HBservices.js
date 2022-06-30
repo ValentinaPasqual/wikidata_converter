@@ -46,6 +46,7 @@ var helpers = {
   deldq: function (aString) {
     return aString
       .toString()
+      .replace(/\\/,"\\\\")
       .replaceAll(/"/g, `\\"`)
       .replaceAll(/\\&quot;/g, ``)
       .replaceAll(/\\\//g, ` `);
@@ -61,6 +62,7 @@ var helpers = {
         '"' +
         arg.value.text
           .toString()
+          .replace(/\\/,"\\\\")
           .replace(/"/g, `\\"`)
           .replace(/\\\//g, ` `)
           .replaceAll(/\\&quot;/g, `"`) +
@@ -72,13 +74,20 @@ var helpers = {
         '"' +
         arg.value
           .toString()
+          .replace(/\\/,"\\\\")  /* replaces last occurrence of \ */
           .replace(/"/g, `\\"`)
           .replace(/\\\//g, ` `)
           .replaceAll(/\\&quot;/g, `"`) +
         '"'
       );
     if (arg.type == "time")
-      return '"' + arg.value.time.substr(1) + '"^^xsd:dateTime';
+      { if (arg.value.time.substr(1).includes('-00-00T00:00:00Z'))
+        return '"' + arg.value.time.substr(1).replace('-00-00T00:00:00Z', '-01-01T00:00:00Z') + '"^^xsd:dateTime'; 
+      else if (arg.value.time.substr(1).includes('-00T00:00:00Z'))
+        return '"' + arg.value.time.substr(1).replace('-00T00:00:00Z', '-01T00:00:00Z') + '"^^xsd:dateTime';
+      else 
+        return '"' + arg.value.time.substr(1) + '"^^xsd:dateTime';
+      }
     if (arg.type == "quantity")
       return '"' + arg.value.amount + '"^^xsd:decimal';
     if (arg.type == "globecoordinate")
@@ -98,6 +107,7 @@ var helpers = {
       return (
         '"' +
         arg.value.text
+          .replace(/\\/,"\\\\")
           .replaceAll(/"/g, `\\"`)
           .replaceAll(/\\\//g, ` `)
           .replaceAll(/&quot;/g, `"`) +
@@ -107,6 +117,7 @@ var helpers = {
       return (
         '"' +
         arg.value
+          .replace(/\\/,"\\\\")
           .replaceAll(/"/g, `\\"`)
           .replaceAll(/\\\//g, ` `)
           .replaceAll(/&quot;/g, `"`) +
