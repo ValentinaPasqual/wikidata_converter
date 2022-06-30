@@ -57,8 +57,8 @@ wd:{{main.id}} a wdno:{{statement.mainsnak.property}}.
 
 
 {{#each this as | statement |}}
-wd:{{main.id}} sng:{{rd statement.id}} {{{dataValue statement.mainsnak.datavalue}}}.
-sng:{{rd statement.id}} sng:singletonPropertyOf wdt:{{statement.mainsnak.property}}  ;
+wd:{{main.id}} sng:{{rd statement.mainsnak.property}}-{{@key}} {{{dataValue statement.mainsnak.datavalue}}}.
+sng:{{rd statement.mainsnak.property}}-{{@key}} sng:singletonPropertyOf wdt:{{statement.mainsnak.property}}  ;
 {{#each qualifiers}}
 {{#each this as |q|}}
     pq:{{q.property}} {{{dataValue q.datavalue}}};
