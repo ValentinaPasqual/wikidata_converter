@@ -156,6 +156,25 @@ var helpers = {
 		}
 		return false
 	},
+  'AllNoQualifiers' : function(arg) {
+    for (var i in arg) {
+      if (arg[i].qualifiers) {
+          return false
+        }
+      return true
+    }  
+  },
+  'AllSameQualifiers' : function(arg) {  
+    q = [];  
+    for (var i in arg) {
+      if (arg[i].qualifiers) {
+          q.push(arg[i].qualifiers)
+        }
+      }
+    const allEqual = arr => arr.every( v => JSON.stringify(v) === JSON.stringify(arr[0]))
+   if (allEqual(q) && q.length > 1) {return true}
+   else {return false}
+  },
 	'isDeprecated': function(arg) { return arg.rank == 'deprecated' },
 	'isNormal': function(arg) { return arg.rank == 'normal' },
 	'isPreferred': function(arg) { return arg.rank == 'preferred' },
