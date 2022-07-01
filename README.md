@@ -188,13 +188,9 @@ Note2: Since Named Graphs allows for statements groupings, when all statements a
 ```
 GRAPH s:Q183-d657d418-4a25-98d6-5180-a3659a11fbcd { 
     wd:Q183 wdt:P1705 "Bundesrepublik Deutschland"@de 
+     wd:Q183 wdt:P1705 "Deutschland"@de 
 }
 s:Q183-d657d418-4a25-98d6-5180-a3659a11fbcd wikibase:rank wikibase:NormalRank.
-
-GRAPH s:Q183-E2A638D7-78B7-424D-9F63-AF49F5DCAE84 { 
-    wd:Q183 wdt:P1705 "Deutschland"@de 
-}
-s:Q183-E2A638D7-78B7-424D-9F63-AF49F5DCAE84 wikibase:rank wikibase:NormalRank.
 ```
 ```
 GRAPH s:Q183-DF432913-CEBA-49ED-BCA4-7214957E6CDA { 
