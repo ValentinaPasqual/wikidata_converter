@@ -1,59 +1,55 @@
 {{#with this as | main | }}
-{{#each labels as |label|}}
+	{{#each labels as |label|}}
 #   wd:{{main.id}}: {{{deldq label.value}}} ({{uc label.language}})
-{{/each}}
+	{{/each}}
 
-{{#each labels as |label|}}
+	{{#each labels as |label|}}
 wd:{{main.id}} rdfs:label "{{{deldq label.value}}}"@{{label.language}} ;
 	skos:prefLabel "{{{deldq label.value}}}"@{{label.language}} ;
 	schema:name "{{{deldq label.value}}}"@{{label.language}} .
-{{/each}}
+	{{/each}}
 
-{{#each descriptions as |d|}}
+	{{#each descriptions as |d|}}
 wd:{{main.id}} schema:description "{{{deldq d.value}}}"@{{d.language}}.
-{{/each}}
+	{{/each}}
 
-{{#each aliases}}
-{{#each this as | alias |}}
+	{{#each aliases}}
+		{{#each this as | alias |}}
 wd:{{main.id}} skos:altLabel "{{{deldq alias.value}}}"@{{alias.language}}.
-{{/each}}
-{{/each}}
+		{{/each}}
+	{{/each}}
 
-      {{#each claims}}
-      {{#if (allNormals this) }}
-        {{#each this as | statement |}}
+      	{{#each claims}}
+      		{{#if (allNormals this) }}
+        		{{#each this as | statement |}}
 wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
-   {{/each}}
-{{/if}}
+   			{{/each}}
+		{{/if}}
 
-{{#if (hasPreferred this) }}
-   {{#each this as | statement |}}
-      {{#if (isPreferred statement) }}
+		{{#if (hasPreferred this) }}
+   			{{#each this as | statement |}}
+      				{{#if (isPreferred statement) }}
 wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
-      {{/if}}
-   {{/each}}
-{{else}}
-{{#if (hasDeprecated this) }}
-   {{#each this as | statement |}}
-      {{#if (isNormal statement) }}
+      				{{/if}}
+   			{{/each}}
+			{{else}}
+				{{#if (hasDeprecated this) }}
+   					{{#each this as | statement |}}
+      						{{#if (isNormal statement) }}
 wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
-      {{/if}}
-   {{/each}}
-{{/if}}
-
-{{/if}}
-
-
-{{#each this as | statement |}}
+     					 {{/if}}
+   				{{/each}}
+			{{/if}}
+		{{/if}}
+		{{#each this as | statement |}}
 wd:{{main.id}} sng:{{rd statement.mainsnak.property}}-{{@key}} {{{dataValue statement.mainsnak.datavalue}}}.
 sng:{{rd statement.mainsnak.property}}-{{@key}} sng:singletonPropertyOf wdt:{{statement.mainsnak.property}}  ;
-{{#each qualifiers}}
-{{#each this as |q|}}
+		{{#each qualifiers}}
+			{{#each this as |q|}}
     pq:{{q.property}} {{{dataValue q.datavalue}}};
-{{/each}}
-{{/each}}
+			{{/each}}
+		{{/each}}
     wikibase:rank wikibase:{{tc rank}}Rank.
-{{/each}}
-   
-{{/each}}
+		{{/each}}
+   	{{/each}}
 {{/with}}
