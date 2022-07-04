@@ -29,6 +29,7 @@ GRAPH s:{{rd this.[0].id}} {
 s:{{rd ../../this.[0].id}} pq:{{this.property}} {{{dataValue this.datavalue}}}.
                                         {{/each}}
                                 {{/each}}
+s:{{rd this.[0].id}} wikibase:rank wikibase:{{tc this.[0].rank}}Rank.
                         {{else}}
                                 {{#if (AllSameQualifiers this)}}
 GRAPH s:{{rd this.[0].id}} {
@@ -41,6 +42,7 @@ GRAPH s:{{rd this.[0].id}} {
 s:{{rd ../../this.[0].id}} pq:{{this.property}} {{{dataValue this.datavalue}}}.
                                                 {{/each}}
                                         {{/each}}
+s:{{rd this.[0].id}} wikibase:rank wikibase:{{tc this.[0].rank}}Rank.
                                 {{else}}
                                         {{#each this as | statement |}} 
 GRAPH s:{{rd statement.id}}  {
@@ -51,6 +53,7 @@ GRAPH s:{{rd statement.id}}  {
 s:{{rd statement.id}} pq:{{q.property}} {{{dataValue q.datavalue}}}.
                                                         {{/each}}
                                                 {{/each}}
+s:{{rd statement.id}} wikibase:rank wikibase:{{tc rank}}Rank.
                                         {{/each}}
                                 {{/if}}
                         {{/if}}
