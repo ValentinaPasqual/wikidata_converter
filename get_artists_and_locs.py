@@ -16,7 +16,7 @@ def select_data_from_json(directory_name):
         for entity in json_file['entities']:
             for predicate in json_file['entities'][entity]['claims']:
                 if predicate == 'P170' or predicate == 'P50' or predicate == 'P276':
-                    entities_list.append(entity)
+                    #entities_list.append(entity)
                     x = 0
                     while x < len(json_file['entities'][entity]['claims'][predicate]):
                         try:
