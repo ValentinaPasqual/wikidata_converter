@@ -154,9 +154,9 @@ A conversion test has been run agaist the templates. In the folder ```conversion
 |----------------------|------------------|-----------------|---------|--------------------------------|------------------|
 | Wikidata Statement   |                  |                 |         | SELECT * WHERE {?s ?p ?o}      |                  |
 | Singleton Properties |                  |                 |         | SELECT * WHERE {?s ?p ?o}      |                  |
-| Named Graphs         |   15.428         | 6.901           | 184'813 | SELECT * WHERE {?s ?p ?o}      |   364'150        |
+| Named Graphs         |   15.428         | 6.901           | 364'150 | SELECT * WHERE {?s ?p ?o}      |   184'813        |
 | RDF-star             |                  |                 |         | SELECT * WHERE {?s ?p ?o}      |                  |
-| Conjectures          |   13,419         |                 | 369'527  | SELECT * WHERE {?s ?p ?o}     |                  |
+| Conjectures          |   13,419         | 8.962           | 369'527 | SELECT * WHERE {?s ?p ?o}      |   184'813        |
 
 * The _Query Time (ms)_ has been calculated over the query: ```SELECT * WHERE {?s ?p ?o}```
 
