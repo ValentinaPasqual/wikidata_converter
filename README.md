@@ -143,11 +143,11 @@ A conversion test has been run agaist the templates. In the folder ```conversion
 
 | ** D1 **             | Upload time (ms) | Total Triples |  Query Time (ms) |  Query                                       | Queried Triples  |
 |----------------------|------------------|---------------|------------------|----------------------------------------------|------------------|
-| Wikidata Statement   |   18,904         |  853'028      | 32.860           | SELECT * WHERE {?s ?p ?o}                    |   751'332        |
-| Singleton Properties |   12,034         |  695,022      | 12.375           | SELECT * WHERE {?s ?p ?o}                    |   334'955        |
-| Named Graphs         |   15,428         |  364,150      | 6.901            | SELECT * WHERE {?s ?p ?o}                    |   184'813        |
-| RDF-star             |   12,556         |  379,010      | 7.985            | SELECT * WHERE {<< ?s ?p ?o >>} ?p1 ?o1      |   163'975        |
-| Conjectures          |   13,419         |  369,527      | 8.962            | SELECT * WHERE {?s ?p ?o}                    |   184'813        |
+| Wikidata Statement   |   18,904         |  853,028      | 32,860           | SELECT * WHERE {?s ?p ?o}                    |   751,332        |
+| Singleton Properties |   12,034         |  695,022      | 12,375           | SELECT * WHERE {?s ?p ?o}                    |   334,955        |
+| Named Graphs         |   15,428         |  364,150      | 6,901            | SELECT * WHERE {?s ?p ?o}                    |   184,813        |
+| RDF-star             |   12,556         |  379,010      | 7,985            | SELECT * WHERE {<< ?s ?p ?o >>} ?p1 ?o1      |   163,975        |
+| Conjectures          |   13,419         |  369,527      | 8,962            | SELECT * WHERE {?s ?p ?o}                    |   184,813        |
 
 | ** D2 **             | Upload time (ms) | Total Triples |  Query Time (ms) |  Query                                       | Queried Triples  |
 |----------------------|------------------|---------------|------------------|----------------------------------------------|------------------|
