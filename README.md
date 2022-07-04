@@ -141,22 +141,13 @@ The downloaded json files from Wikidata can be trasformed into RDF format with t
 # Example output RDF files out of handlebars templates
 A conversion test has been run agaist the templates. In the folder ```conversion_test``` can be found input and output data. Each output RDF dataset has been validated with Blazegraph. Below a summary:
 
-|                      | Upload time (ms) | Query Time (ms) | Triples |
-|----------------------|------------------|-----------------|---------|
-| Wikidata Statement   | 1,340            | 773             | 6,487   |
-| Singleton Properties | 1,304            | 681             | 5,385   |
-| Named Graphs         | 1,239            | 611             | 3,334   |
-| RDF-star             | 1,089            | 201             | 3,354   |
-| Conjectures          | 1,120            | 849             | 4,121   |
-
-
-| ** D1 **             | Upload time (ms) | Total Triples |  Query Time (ms) |  Query                         | Queried Triples  |
-|----------------------|------------------|---------------|------------------|--------------------------------|------------------|
-| Wikidata Statement   |   18,904         |  853'028      | 32.860           | SELECT * WHERE {?s ?p ?o}      |   751'332        |
-| Singleton Properties |   12,034         |  695,022      | 12.375           | SELECT * WHERE {?s ?p ?o}      |   334'955        |
-| Named Graphs         |   15,428         |  364,150      | 6.901            | SELECT * WHERE {?s ?p ?o}      |   184'813        |
-| RDF-star             |   12,556         |  379,010      |                  | SELECT * WHERE {?s ?p ?o}      |          |
-| Conjectures          |   13,419         |  369,527      | 8.962            | SELECT * WHERE {?s ?p ?o}      |   184'813        |
+| ** D1 **             | Upload time (ms) | Total Triples |  Query Time (ms) |  Query                                       | Queried Triples  |
+|----------------------|------------------|---------------|------------------|----------------------------------------------|------------------|
+| Wikidata Statement   |   18,904         |  853'028      | 32.860           | SELECT * WHERE {?s ?p ?o}                    |   751'332        |
+| Singleton Properties |   12,034         |  695,022      | 12.375           | SELECT * WHERE {?s ?p ?o}                    |   334'955        |
+| Named Graphs         |   15,428         |  364,150      | 6.901            | SELECT * WHERE {?s ?p ?o}                    |   184'813        |
+| RDF-star             |   12,556         |  379,010      | 7.985            | SELECT * WHERE {<< ?s ?p ?o >>} ?p1 ?o1      |   163'975        |
+| Conjectures          |   13,419         |  369,527      | 8.962            | SELECT * WHERE {?s ?p ?o}                    |   184'813        |
 
 * The _Query Time (ms)_ has been calculated over the query: ```SELECT * WHERE {?s ?p ?o}```
 
