@@ -149,6 +149,14 @@ A conversion test has been run agaist the templates. In the folder ```conversion
 | RDF-star             |   12,556         |  379,010      | 7.985            | SELECT * WHERE {<< ?s ?p ?o >>} ?p1 ?o1      |   163'975        |
 | Conjectures          |   13,419         |  369,527      | 8.962            | SELECT * WHERE {?s ?p ?o}                    |   184'813        |
 
+| ** D2 **             | Upload time (ms) | Total Triples |  Query Time (ms) |  Query                                       | Queried Triples  |
+|----------------------|------------------|---------------|------------------|----------------------------------------------|------------------|
+| Wikidata Statement   |                  |               |                  |                                              |                  |
+| Singleton Properties |                  |               |                  |                                              |                  |
+| Named Graphs         |                  |               |                  |                                              |                  |
+| RDF-star             |                  |               |                  |                                              |                  |
+| Conjectures          |                  |               |                  |                                              |                  |
+
 * The _Query Time (ms)_ has been calculated over the query: ```SELECT * WHERE {?s ?p ?o}```
 
 Each converted dataset is exemplified below with two different examples:
