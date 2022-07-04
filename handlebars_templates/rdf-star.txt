@@ -22,33 +22,21 @@ wd:{{main.id}} skos:altLabel "{{{deldq alias.value}}}"@{{alias.language}}.
       {{#each claims}}
       {{#if (allNormals this) }}
         {{#each this as | statement |}}
-      {{#if statement.mainsnak.datavalue }}
 wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
-      {{else}}
-wd:{{main.id}} a wdno:{{statement.mainsnak.property}}.
-      {{/if}}
    {{/each}}
 {{/if}}
 
 {{#if (hasPreferred this) }}
    {{#each this as | statement |}}
       {{#if (isPreferred statement) }}
-        {{#if statement.mainsnak.datavalue }}
 wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
-        {{else}}
-wd:{{main.id}} a wdno:{{statement.mainsnak.property}}.
-        {{/if}}
       {{/if}}
    {{/each}}
 {{else}}
 {{#if (hasDeprecated this) }}
    {{#each this as | statement |}}
       {{#if (isNormal statement) }}
-        {{#if statement.mainsnak.datavalue }}
 wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
-        {{else}}
-wd:{{main.id}} a wdno:{{statement.mainsnak.property}}.
-        {{/if}}
       {{/if}}
    {{/each}}
 {{/if}}
