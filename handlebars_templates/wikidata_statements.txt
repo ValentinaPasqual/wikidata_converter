@@ -52,15 +52,9 @@ s:{{rd statement.id}} a wikibase:Statement;
     pq:{{q.property}} {{{dataValue q.datavalue}}};
 {{/each}}
 {{/each}}
-   {{#if statement.mainsnak.datavalue }}
     ps:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}};
-   {{else}}
-    a wdno:{{statement.mainsnak.property}};
-   {{/if}}
      wikibase:rank wikibase:{{tc rank}}Rank.
 {{/each}}
    
 {{/each}}
 {{/with}}
-
-
