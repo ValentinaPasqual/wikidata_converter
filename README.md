@@ -139,7 +139,7 @@ The downloaded json files from Wikidata can be trasformed into RDF format with t
 - A .zip folder will be automatically downloaded. This archive contains all RDF files converted against your chosen templates. 
 
 # Example output RDF files out of handlebars templates
-A conversion test has been run agaist the templates. In the folder ```conversion_test``` can be found input and output data. Each output RDF dataset has been validated with Blazegraph. Below a summary:
+A conversion test has been run agaist the templates. In the folder ```conversion_test``` can be found input and output data. Each output RDF dataset has been validated with Apache Jena Fuseki. Below a summary for each dataset applied against each model:
 
 | ** D1 **             | Upload time (ms) | Total Triples |  Query Time (ms) |  Query                                       | Queried Triples  |
 |----------------------|------------------|---------------|------------------|----------------------------------------------|------------------|
