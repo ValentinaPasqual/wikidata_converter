@@ -182,18 +182,15 @@ s:Q183-0B26503A-A8BF-4B40-9F0A-CAE242AE03A1 a wikibase:Statement;
 ```
 
 ### Named Graphs
-Note: With named graphs all statements are asserted. 
+Note: With named graphs all statements are asserted.  
+Note2: Since Named Graphs allows for statements groupings, when all statements are ranked as Normal (or all has the same qualifiers) as the case below, they can be grouped in the same graph without changing any statement meaning.
 
 ```
 GRAPH s:Q183-d657d418-4a25-98d6-5180-a3659a11fbcd { 
     wd:Q183 wdt:P1705 "Bundesrepublik Deutschland"@de 
-}
-s:Q183-d657d418-4a25-98d6-5180-a3659a11fbcd wikibase:rank wikibase:NormalRank.
-
-GRAPH s:Q183-E2A638D7-78B7-424D-9F63-AF49F5DCAE84 { 
     wd:Q183 wdt:P1705 "Deutschland"@de 
 }
-s:Q183-E2A638D7-78B7-424D-9F63-AF49F5DCAE84 wikibase:rank wikibase:NormalRank.
+s:Q183-d657d418-4a25-98d6-5180-a3659a11fbcd wikibase:rank wikibase:NormalRank.
 ```
 ```
 GRAPH s:Q183-DF432913-CEBA-49ED-BCA4-7214957E6CDA { 
@@ -284,16 +281,13 @@ wd:Q183 wdt:P530 wd:Q1011.
 ```
 
 ### Conjectures (weak form)
+Note: Since conjectures allows for statements groupings (inheriting it from Named Graphs), when all statements are ranked as Normal (or all has the same qualifiers) as the case below, they can be grouped in the same graph without changing any statement meaning. 
 ```
 GRAPH s:Q183-d657d418-4a25-98d6-5180-a3659a11fbcd  {
 wd:Q183 wdt:P1705 "Bundesrepublik Deutschland"@de.
-}
-s:Q183-d657d418-4a25-98d6-5180-a3659a11fbcd wikibase:rank wikibase:NormalRank.                
-
-GRAPH s:Q183-E2A638D7-78B7-424D-9F63-AF49F5DCAE84  {
 wd:Q183 wdt:P1705 "Deutschland"@de.
 }
-s:Q183-E2A638D7-78B7-424D-9F63-AF49F5DCAE84 wikibase:rank wikibase:NormalRank.                
+s:Q183-d657d418-4a25-98d6-5180-a3659a11fbcd wikibase:rank wikibase:NormalRank.                        
 ```
 ```
 GRAPH s:Q183-DF432913-CEBA-49ED-BCA4-7214957E6CDA  {
