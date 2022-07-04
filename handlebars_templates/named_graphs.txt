@@ -61,15 +61,15 @@ s:{{rd statement.id}} pq:{{q.property}} {{{dataValue q.datavalue}}}.
                         {{/if}}
                 {{else}}
                         {{#each this as | statement |}}
-GRAPH s:{{rd statement.id}} { 
-wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}} 
-}
+        GRAPH s:{{rd statement.id}} { 
+        wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}} 
+        }
                                 {{#each qualifiers}}
                                         {{#each this as |q|}}
-s:{{rd statement.id}} pq:{{q.property}} {{{dataValue q.datavalue}}}.
+        s:{{rd statement.id}} pq:{{q.property}} {{{dataValue q.datavalue}}}.
                                         {{/each}}
                                 {{/each}}
-s:{{rd statement.id}} wikibase:rank wikibase:{{tc rank}}Rank.
+        s:{{rd statement.id}} wikibase:rank wikibase:{{tc rank}}Rank.
                         {{/each}}  
                 {{/if}}
         {{/each}}
