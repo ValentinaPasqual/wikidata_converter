@@ -44,7 +44,7 @@ var helpers = {
   deldq: function (aString) {
     return aString
       .toString()
-      .replace(/\\/,"\\\\")
+      .replace(/\\/g,"\\\\")
       .replaceAll(/"/g, `\\"`)
       .replaceAll(/\\&quot;/g, ``)
       .replaceAll(/\\\//g, ` `);
@@ -60,7 +60,7 @@ var helpers = {
         '"' +
         arg.value.text
           .toString()
-          .replace(/\\/,"\\\\")
+          .replace(/\\/g,"\\\\")
           .replace(/"/g, `\\"`)
           .replace(/\\\//g, ` `)
           .replaceAll(/\\&quot;/g, `"`) +
@@ -72,7 +72,7 @@ var helpers = {
         '"' +
         arg.value
           .toString()
-          .replace(/\\/,"\\\\")  /* replaces last occurrence of \ */
+          .replace(/\\/g,"\\\\")  /* replaces last occurrence of \ */
           .replace(/"/g, `\\"`)
           .replace(/\\\//g, ` `)
           .replaceAll(/\\&quot;/g, `"`) +
@@ -105,7 +105,7 @@ var helpers = {
       return (
         '"' +
         arg.value.text
-          .replace(/\\/,"\\\\")
+          .replace(/\\/g,"\\\\")
           .replaceAll(/"/g, `\\"`)
           .replaceAll(/\\\//g, ` `)
           .replaceAll(/&quot;/g, `"`) +
