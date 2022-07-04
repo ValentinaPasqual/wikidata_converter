@@ -150,13 +150,13 @@ A conversion test has been run agaist the templates. In the folder ```conversion
 | Conjectures          | 1,120            | 849             | 4,121   |
 
 
-| ** D1 **             | Upload time (s)  | Query Time (s)  | Triples |    Query                       | Total Triples    |
-|----------------------|------------------|-----------------|---------|--------------------------------|------------------|
-| Wikidata Statement   |                  |                 |         | SELECT * WHERE {?s ?p ?o}      |                  |
-| Singleton Properties |                  |                 | 695,022 | SELECT * WHERE {?s ?p ?o}      |                  |
-| Named Graphs         |   15.428         | 6.901           | 364,150 | SELECT * WHERE {?s ?p ?o}      |   184'813        |
-| RDF-star             |                  |                 |         | SELECT * WHERE {?s ?p ?o}      |                  |
-| Conjectures          |   13,419         | 8.962           | 369,527 | SELECT * WHERE {?s ?p ?o}      |   184'813        |
+| ** D1 **             | Upload time (ms) | Total Triples |  Query Time (ms) |  Query                         | Queried Triples  |
+|----------------------|------------------|---------------|------------------|--------------------------------|------------------|
+| Wikidata Statement   |   18,904         |  853'028      | 32.860           | SELECT * WHERE {?s ?p ?o}      |   751'332        |
+| Singleton Properties |   12,034         |  695,022      | 12.375           | SELECT * WHERE {?s ?p ?o}      |   334'955        |
+| Named Graphs         |   15,428         |  364,150      | 6.901            | SELECT * WHERE {?s ?p ?o}      |   184'813        |
+| RDF-star             |   12,556         |  379,010      |                  | SELECT * WHERE {?s ?p ?o}      |          |
+| Conjectures          |   13,419         |  369,527      | 8.962            | SELECT * WHERE {?s ?p ?o}      |   184'813        |
 
 * The _Query Time (ms)_ has been calculated over the query: ```SELECT * WHERE {?s ?p ?o}```
 
