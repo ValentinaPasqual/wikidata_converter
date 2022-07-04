@@ -93,15 +93,15 @@ In order to test Conjectures efficiency, we decided to create 3 additional datas
 
 |                                |     **D1**     |     **D2**     |     **D3**      |     **D3**     |
 |--------------------------------|----------------|----------------|-----------------|----------------|
-| **Artworks Entities**          | 35'422         | 3,587          |                 | 3,537,045      |    
-| **Artworks Statements**        | 415'045        | 38,658         |                 | 12,737,671     |
+| **Artworks Entities**          | 35,422         | 3,587          |                 | 3,537,045      |    
+| **Artworks Statements**        | 415,045        | 38,658         |                 | 12,737,671     |
 | **Artwork Related Entities**   | 981            | 11,700         |                 |                |
-| **Artwork Related Statements** | 59'032         | 1,061,560      |                 |                |
-| **Random Entities**            | 3049           | 30,049         |                 |                |          
-| **Random Statements**          | 58'209         | 631,865        |                 |                |
-| **Fake Statements**            | 2'107          | 21,243         |                 |                |
-| **Total Entities**             | 7'617          | 77,171         |                 |                |
-| **Total Statements (-fake)**   | 155'899        | 21,08,470      |                 |                |
+| **Artwork Related Statements** | 59,032         | 1,061,560      |                 |                |
+| **Random Entities**            | 3,049          | 30,049         |                 |                |          
+| **Random Statements**          | 58,209         | 631,865        |                 |                |
+| **Fake Statements**            | 2,107          | 21,243         |                 |                |
+| **Total Entities**             | 7,617          | 77,171         |                 |                |
+| **Total Statements (-fake)**   | 155,899        | 21,08,470      |                 |                |
 | **Folder weight (GB)**         | 0.366          | 5              |                 |                |
 
 
