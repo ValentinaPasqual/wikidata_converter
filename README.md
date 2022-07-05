@@ -101,7 +101,7 @@ In order to test Conjectures efficiency, we decided to create 3 additional datas
 | **Random Statements**          | 58,209         | 631,865        | 6,178,155       |                |
 | **Fake Statements**            | 2,107          | 21,243         |                 |                |
 | **Total Entities**             | 7,617          | 77,171         | 738,403         |                |
-| **Total Statements (-fake)**   | 155,899        | 21,08,470      | 12,278,711      |                |
+| **Total Statements (-fake)**   | 155,899        | 2,108,470      | 12,278,711      |                |
 | **Folder weight (GB)**         | 0.366          | 5              |                 |                |
 
 D1, D2, D3 contain a selected randomic selection of D4 in order to present the same Dataset in 4 different sizes (logaritmic increment) with a weighted distribution of the files.
