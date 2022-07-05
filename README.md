@@ -91,10 +91,10 @@ In order to test Conjectures efficiency, we decided to create 3 additional datas
 - D2 is D4 files / 100
 - D3 is D4 files / 10
 
-|                                |     **D1**     |     **D2**     |     **D3**      |     **D3**     |
+|                                |     **D1**     |     **D2**     |     **D3**      |     **D4**     |
 |--------------------------------|----------------|----------------|-----------------|----------------|
-| **Artworks Entities**          | 35,422         | 3,587          |                 | 3,537,045      |    
-| **Artworks Statements**        | 415,045        | 38,658         |                 | 12,737,671     |
+| **Artworks Entities**          | 3,587          | 35,422         |                 | 3,537,045      |    
+| **Artworks Statements**        | 38,658         | 415,045        |                 | 12,737,671     |
 | **Artwork Related Entities**   | 981            | 11,700         |                 |                |
 | **Artwork Related Statements** | 59,032         | 1,061,560      |                 |                |
 | **Random Entities**            | 3,049          | 30,049         |                 |                |          
