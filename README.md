@@ -93,18 +93,16 @@ In order to test Conjectures efficiency, we decided to create 3 additional datas
 
 |                                |     **D1**     |     **D2**     |     **D3**      |     **D4**     |
 |--------------------------------|----------------|----------------|-----------------|----------------|
-| **Artworks Entities**          | 3,587          | 35,422         |                 | 3,537,045      |    
-| **Artworks Statements**        | 38,658         | 415,045        |                 | 12,737,671     |
-| **Artwork Related Entities**   | 981            | 11,700         |                 |                |
-| **Artwork Related Statements** | 59,032         | 1,061,560      |                 |                |
-| **Random Entities**            | 3,049          | 30,049         |                 |                |          
-| **Random Statements**          | 58,209         | 631,865        |                 |                |
+| **Artworks Entities**          | 3,587          | 35,422         | 353,770         | 3,537,045      |    
+| **Artworks Statements**        | 38,658         | 415,045        | 3,973,274       | 12,737,671     |
+| **Artwork Related Entities**   | 981            | 11,700         | 42,292          |                |
+| **Artwork Related Statements** | 59,032         | 1,061,560      | 2,127,282       |                |
+| **Random Entities**            | 3,049          | 30,049         | 300,049         |                |          
+| **Random Statements**          | 58,209         | 631,865        | 6,178,155       |                |
 | **Fake Statements**            | 2,107          | 21,243         |                 |                |
-| **Total Entities**             | 7,617          | 77,171         |                 |                |
-| **Total Statements (-fake)**   | 155,899        | 21,08,470      |                 |                |
+| **Total Entities**             | 7,617          | 77,171         | 738,403         |                |
+| **Total Statements (-fake)**   | 155,899        | 21,08,470      | 12,278,711      |                |
 | **Folder weight (GB)**         | 0.366          | 5              |                 |                |
-
-
 
 D1, D2, D3 contain a selected randomic selection of D4 in order to present the same Dataset in 4 different sizes (logaritmic increment) with a weighted distribution of the files.
 
