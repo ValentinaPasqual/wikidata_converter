@@ -91,20 +91,17 @@ In order to test Conjectures efficiency, we decided to create 3 additional datas
 - D2 is D4 files / 100
 - D3 is D4 files / 10
 
-|                                |     **D1**     |     **D2**     |     **D3**      |     **D3**     |
+|                                |     **D1**     |     **D2**     |     **D3**      |     **D4**     |
 |--------------------------------|----------------|----------------|-----------------|----------------|
-| **Artworks Entities**          | 35,422         | 3,587          |                 | 3,537,045      |    
-| **Artworks Statements**        | 415,045        | 38,658         |                 | 12,737,671     |
-| **Artwork Related Entities**   | 981            | 11,700         |                 |                |
-| **Artwork Related Statements** | 59,032         | 1,061,560      |                 |                |
-| **Random Entities**            | 3,049          | 30,049         |                 |                |          
-| **Random Statements**          | 58,209         | 631,865        |                 |                |
+| **Artworks Entities**          | 3,587          | 35,422         | 353,770         | 3,537,045      |    
+| **Artworks Statements**        | 38,658         | 415,045        | 3,973,274       | 12,737,671     |
+| **Artwork Related Entities**   | 715            | 11,700         | 42,341          | 188,380        |
+| **Artwork Related Statements** | 39,982         | 1,061,560      | 2,130,997       | 6,788,221      |
+| **Random Entities**            | 3,049          | 30,049         | 300,049         | 2,999,999      |          
+| **Random Statements**          | 58,209         | 631,865        | 6,178,155       | 62,102,993     |
 | **Fake Statements**            | 2,107          | 21,243         |                 |                |
-| **Total Entities**             | 7,617          | 77,171         |                 |                |
-| **Total Statements (-fake)**   | 155,899        | 21,08,470      |                 |                |
-| **Folder weight (GB)**         | 0.366          | 5              |                 |                |
-
-
+| **Total Entities**             | 7,617          | 77,171         | 696,160         |                |
+| **Total Statements (-fake)**   | 136,849        | 2,108,470      | 12,282,426      |                |
 
 D1, D2, D3 contain a selected randomic selection of D4 in order to present the same Dataset in 4 different sizes (logaritmic increment) with a weighted distribution of the files.
 
@@ -139,17 +136,26 @@ The downloaded json files from Wikidata can be trasformed into RDF format with t
 - A .zip folder will be automatically downloaded. This archive contains all RDF files converted against your chosen templates. 
 
 # Example output RDF files out of handlebars templates
-A conversion test has been run agaist the templates. In the folder ```conversion_test``` can be found input and output data. Each output RDF dataset has been validated with Blazegraph. Below a summary:
+A conversion test has been run agaist the templates. In the folder ```conversion_test``` can be found input and output data. Each output RDF dataset has been validated with Apache Jena Fuseki. Below a summary for each dataset applied against each model:
 
-|                      | Upload time (ms) | Query Time (ms) | Triples |
-|----------------------|------------------|-----------------|---------|
-| Wikidata Statement   | 1,340            | 773             | 6,487   |
-| Singleton Properties | 1,304            | 681             | 5,385   |
-| Named Graphs         | 1,239            | 611             | 3,334   |
-| RDF-star             | 1,089            | 201             | 3,354   |
-| Conjectures          | 1,120            | 849             | 4,121   |
+| ** D1 **             | Upload time (ms) | Total Triples |  Query Time (ms) |  Query                                       | Queried Triples  |
+|----------------------|------------------|---------------|------------------|----------------------------------------------|------------------|
+| Wikidata Statement   |   18,904         |  853,028      | 32,860           | SELECT * WHERE {?s ?p ?o}                    |   751,332        |
+| Singleton Properties |   12,034         |  695,022      | 12,375           | SELECT * WHERE {?s ?p ?o}                    |   334,955        |
+| Named Graphs         |   15,428         |  364,150      | 6,901            | SELECT * WHERE {?s ?p ?o}                    |   184,813        |
+| RDF-star             |   12,556         |  379,010      | 7,985            | SELECT * WHERE {<< ?s ?p ?o >>} ?p1 ?o1      |   163,975        |
+| Conjectures          |   13,419         |  369,527      | 8,962            | SELECT * WHERE {?s ?p ?o}                    |   184,813        |
+
+| ** D2 **             | Upload time (ms) | Total Triples |  Query Time (ms) |  Query                                       | Queried Triples  |
+|----------------------|------------------|---------------|------------------|----------------------------------------------|------------------|
+| Wikidata Statement   |  172.638         |  11,337,988   | 25.975           | SELECT * WHERE {?s ?p ?o} LIMIT 1000000      |    1000000       |         
+| Singleton Properties |  104.060         |   9,229,518   | 17.282           | SELECT * WHERE {?s ?p ?o} LIMIT 1000000      |    1000000       |
+| Named Graphs         |  116.632         |   4,742,770** | 27.431           | SELECT * WHERE {?s ?p ?o} LIMIT 1000000      |    1000000       |
+| RDF-star             |   66.617         |   5,012,578   | 43.739           | SELECT * WHERE { << ?s ?p ?o >> ?p1 ?o1}     |    1000000       |
+| Conjectures          |  119.180         |   4,810,697** | 26.988           | SELECT * WHERE {?s ?p ?o} LIMIT 1000000      |    1000000       |
 
 * The _Query Time (ms)_ has been calculated over the query: ```SELECT * WHERE {?s ?p ?o}```
+** Total number of Quads
 
 Each converted dataset is exemplified below with two different examples:
 1) The first represents two statements (_Germany native label is Bundesrepublik Deutschland_ and _Germany native label is Deutschland_) both ranked as normal, and then equally asserted.
