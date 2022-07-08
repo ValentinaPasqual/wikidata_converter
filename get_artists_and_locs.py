@@ -16,7 +16,7 @@ def select_data_from_json(directory_name):
         for entity in json_file['entities']:
             for predicate in json_file['entities'][entity]['claims']:
                 if predicate == 'P170' or predicate == 'P50' or predicate == 'P276':
-                    #entities_list.append(entity)
+                    entities_list.append(entity)
                     x = 0
                     while x < len(json_file['entities'][entity]['claims'][predicate]):
                         try:
@@ -25,7 +25,7 @@ def select_data_from_json(directory_name):
                             #print('some uncaught json structure', entity, predicate)
                             None
                         x += 1
-    list(set(entities_list))
+    entities_list = list(set(entities_list))
     print(len(entities_list), 'new P170, P50 and P276 entities')
     return entities_list
 

@@ -44,10 +44,10 @@ var helpers = {
   deldq: function (aString) {
     return aString
       .toString()
-      .replace(/\\/g,"\\\\")
-      .replaceAll(/"/g, `\\"`)
-      .replaceAll(/\\&quot;/g, ``)
-      .replaceAll(/\\\//g, ` `);
+      .replaceAll(/"/g, ``)
+      .replaceAll(/\\\//g, ``)
+      .replace(/\\/g, ``)
+      .replaceAll(/\\&quot;/g, ``);
   },
   ifEquals: function (arg1, arg2, options) {
     return arg1 == arg2 ? options.fn(this) : options.inverse(this);
@@ -60,10 +60,11 @@ var helpers = {
         '"' +
         arg.value.text
           .toString()
-          .replace(/\\/g,"\\\\")
-          .replace(/"/g, `\\"`)
-          .replace(/\\\//g, ` `)
-          .replaceAll(/\\&quot;/g, `"`) +
+          .replace(/"/g, ``)
+          .replace(/\\\//g, ``)
+          .replace(/\\/g,"") 
+          .replaceAll(/\\&quot;/g, ``)
+          +
         '"@' +
         arg.value.language
       );
@@ -72,10 +73,11 @@ var helpers = {
         '"' +
         arg.value
           .toString()
-          .replace(/\\/g,"\\\\")  /* replaces last occurrence of \ */
-          .replace(/"/g, `\\"`)
-          .replace(/\\\//g, ` `)
-          .replaceAll(/\\&quot;/g, `"`) +
+          .replace(/"/g, ``)
+          .replace(/\\\//g, ``)
+          .replace(/\\/g, ``) 
+          .replaceAll(/\\&quot;/g, ``)
+          +
         '"'
       );
     if (arg.type == "time")
@@ -105,24 +107,31 @@ var helpers = {
       return (
         '"' +
         arg.value.text
-          .replace(/\\/g,"\\\\")
-          .replaceAll(/"/g, `\\"`)
-          .replaceAll(/\\\//g, ` `)
-          .replaceAll(/&quot;/g, `"`) +
+          .replaceAll(/"/g, ``)
+          .replaceAll(/\\\//g, ``)
+          .replace(/\\/g, ``)
+          .replaceAll(/&quot;/g, ``)
+          +
         '"'
       );
     if (arg.type == "string")
       return (
         '"' +
         arg.value
-          .replace(/\\/,"\\\\")
-          .replaceAll(/"/g, `\\"`)
-          .replaceAll(/\\\//g, ` `)
-          .replaceAll(/&quot;/g, `"`) +
+          .replaceAll(/"/g, ``)
+          .replaceAll(/\\\//g, ``)
+          .replace(/\\/g, ``) 
+          .replaceAll(/&quot;/g, ``) +
         '"'
       );
     if (arg.type == "time")
-      return '"' + arg.value.time.substr(1) + '"^^xsd:dateTime';
+    { if (arg.value.time.substr(1).includes('-00-00T00:00:00Z'))
+    return '"' + arg.value.time.substr(1).replace('-00-00T00:00:00Z', '-01-01T00:00:00Z') + '"^^xsd:dateTime'; 
+    else if (arg.value.time.substr(1).includes('-00T00:00:00Z'))
+    return '"' + arg.value.time.substr(1).replace('-00T00:00:00Z', '-01T00:00:00Z') + '"^^xsd:dateTime';
+    else 
+    return '"' + arg.value.time.substr(1) + '"^^xsd:dateTime';
+    }
     if (arg.type == "quantity")
       return '"' + arg.value.amount + '"^^xsd:decimal';
     if (arg.type == "globecoordinate")
