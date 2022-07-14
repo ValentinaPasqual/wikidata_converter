@@ -27,7 +27,10 @@ Query to retrieve all 200000 humans from wikidata:
 ```
 SELECT DISTINCT ?human
     WHERE {
-        ?human wdt:P31 wd:Q5}
+        ?human wdt:P31 wd:Q5; 
+              wdt:P101 | wdt:P106 ?occupation.
+        ?occupation wdt:P31 wd:Q88789639 . 
+       }
 
 LIMIT 200000
 ```
