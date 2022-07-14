@@ -22,15 +22,18 @@ wd:{{main.id}} skos:altLabel "{{{deldq alias.value}}}"@{{alias.language}}.
 {{#each claims}}
 {{#each this as | statement |}}
 
-wd:{{main.id}} s:{{rd statement.id}} {{{dataValue statement.mainsnak.datavalue}}}.
-s:{{rd statement.id}} wikibase:rank wikibase:{{tc rank}}Rank ;
-    singleton:singletonPropertyOf wdt:{{statement.mainsnak.property}} .
+wd:{{main.id}} sng:{{rd statement.id}} {{{dataValue statement.mainsnak.datavalue}}}.
+sng:{{rd statement.id}} sng:singletonPropertyOf wdt:{{statement.mainsnak.property}} ;
 {{#each qualifiers}}
 {{#each this as |q|}}
-s:{{rd statement.id}} p:{{q.property}} {{{dataValue q.datavalue}}}.
+      {{#ifEquals q.property 'P248'}}
+         pq:{{q.property}} {{{q.datavalue.value.id}}};
+      {{else}}
+         pq:{{q.property}} {{{dataValue q.datavalue}}};
+      {{/ifEquals}}
 {{/each}}
 {{/each}}
-s:{{rd statement.id}} rdfs:comment  "fake statement" . 
+   wikibase:rank wikibase:DeprecatedRank .
 {{/each}}
    
 {{/each}}
