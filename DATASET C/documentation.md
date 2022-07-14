@@ -86,13 +86,14 @@ LIMIT 250000
 ```
 Query to retrieve 250000 valid timespans from wikidata:
 ```
-SELECT DISTINCT ?startTime ?endTime
+SELECT DISTINCT ?startTime
     WHERE {
-      ?s pq:P580 ?startTime ;
-         pq:P582 ?endTime
+    ?s pq:P580 | wd:P580 | ps:P580 | pq:P582 | wd:P582 | ps:P582 ?startTime .
+    FILTER (?startTime > "1900-01-00T00:00:00"^^xsd:dateTime)  
+    FILTER (?startTime < "2005-12-31T00:00:00"^^xsd:dateTime)  
     }
 
-LIMIT 250000
+LIMIT 200000
 ```
 
 As statements URI, we create random identifiers (e.g. "RL-94400-0-Q29478781")
