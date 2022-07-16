@@ -20,40 +20,18 @@ wd:{{main.id}} skos:altLabel "{{{deldq alias.value}}}"@{{alias.language}}.
 	{{/each}}
 	
 	{{#each claims}}
-      		{{#if (allNormals this) }}
-        		{{#each this as | statement |}}
-wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
-   			{{/each}}
-		{{/if}}
-		{{#if (hasPreferred this) }}
-   			{{#each this as | statement |}}
-      				{{#if (isPreferred statement) }}
-wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
-      				{{/if}}
-   			{{/each}}
-		{{else}}
-		{{#if (hasDeprecated this) }}
-  			{{#each this as | statement |}}
-      				{{#if (isNormal statement) }}
-wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
-     				 {{/if}}
-   			{{/each}}
-		{{/if}}
-	{{/if}}
-
-	{{#each this as | statement |}}
+		{{#each this as | statement |}}
 <<wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValueRDFStar statement.mainsnak.datavalue}}}>>
-		{{#each qualifiers}}
-			{{#each this as |q|}}
-            {{#ifEquals q.property 'P248'}}
-               pq:{{q.property}} {{{q.datavalue.value.id}}};
-            {{else}}
-               pq:{{q.property}} {{{dataValue q.datavalue}}};
-            {{/ifEquals}}
+			{{#each qualifiers}}
+				{{#each this as |q|}}
+					{{#ifEquals q.property 'P248'}}
+pq:{{q.property}} {{{q.datavalue.value.id}}};
+					{{else}}
+pq:{{q.property}} {{{dataValue q.datavalue}}};
+					{{/ifEquals}}
 				{{/each}}
 			{{/each}}
-    wikibase:rank wikibase:DeprecatedRank.
-
+wikibase:rank wikibase:DeprecatedRank.
 		{{/each}}
 	{{/each}}
 {{/with}}
