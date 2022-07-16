@@ -64,7 +64,7 @@ s:{{rd statement.id}} wikibase:rank wikibase:{{tc rank}}Rank.
                                 {{#if (isPreferred statement) }}
 GRAPH s:{{rd statement.id}}  {
         wd:{{main.id}} <http://w3id.org/conj-wikidata-test/conj/{{main.id}}-{{@key}}/{{statement.mainsnak.property}}> {{{dataValue statement.mainsnak.datavalue}}}.
-	<http://w3id.org/conj-wikidata-test/conj/{{main.id}}-{{@key}}/{{statement.mainsnak.property}}> conj:isAConjecturalFormOf wd:{{statement.mainsnak.property}} .  
+	<http://w3id.org/conj-wikidata-test/conj/{{main.id}}-{{@key}}/{{statement.mainsnak.property}}> conj:isAConjecturalFormOf wdt:{{statement.mainsnak.property}} .  
 }                                             
 GRAPH s:collapseOf{{rd statement.id}}{
         wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
@@ -74,13 +74,13 @@ GRAPH s:collapseOf{{rd statement.id}}{
                                 {{#if (isNormal statement) }}
 GRAPH s:{{rd statement.id}}  {
 	wd:{{main.id}} <http://w3id.org/conj-wikidata-test/conj/{{main.id}}-{{@key}}/{{statement.mainsnak.property}}> {{{dataValue statement.mainsnak.datavalue}}}.
-	<http://w3id.org/conj-wikidata-test/conj/{{main.id}}-{{@key}}/{{statement.mainsnak.property}}> conj:isAConjecturalFormOf wd:{{statement.mainsnak.property}} .
+	<http://w3id.org/conj-wikidata-test/conj/{{main.id}}-{{@key}}/{{statement.mainsnak.property}}> conj:isAConjecturalFormOf wdt:{{statement.mainsnak.property}} .
 }
                                 {{/if}}
                                         {{#if (isDeprecated statement) }}
 GRAPH s:{{rd statement.id}}  {
 	wd:{{main.id}} <http://w3id.org/conj-wikidata-test/conj/{{main.id}}-{{@key}}/{{statement.mainsnak.property}}> {{{dataValue statement.mainsnak.datavalue}}}.
-	<http://w3id.org/conj-wikidata-test/conj/{{main.id}}-{{@key}}/{{statement.mainsnak.property}}> conj:isAConjecturalFormOf wd:{{statement.mainsnak.property}} .
+	<http://w3id.org/conj-wikidata-test/conj/{{main.id}}-{{@key}}/{{statement.mainsnak.property}}> conj:isAConjecturalFormOf wdt:{{statement.mainsnak.property}} .
 }
                                 {{/if}}
                         {{#each qualifiers}}
@@ -101,7 +101,7 @@ GRAPH s:{{rd statement.id}}  {
                                         {{#if (isDeprecated statement) }}
 GRAPH s:{{rd statement.id}}  {
         wd:{{main.id}} <http://w3id.org/conj-wikidata-test/conj/{{main.id}}-{{@key}}/{{statement.mainsnak.property}}> {{{dataValue statement.mainsnak.datavalue}}}.
-        <http://w3id.org/conj-wikidata-test/conj/{{main.id}}-{{@key}}/{{statement.mainsnak.property}}> conj:isAConjecturalFormOf wd:{{statement.mainsnak.property}} .
+        <http://w3id.org/conj-wikidata-test/conj/{{main.id}}-{{@key}}/{{statement.mainsnak.property}}> conj:isAConjecturalFormOf wdt:{{statement.mainsnak.property}} .
 }
                                         {{/if}}
                                         {{#each qualifiers}}
