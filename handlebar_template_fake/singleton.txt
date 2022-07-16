@@ -22,8 +22,8 @@ wd:{{main.id}} skos:altLabel "{{{deldq alias.value}}}"@{{alias.language}}.
 {{#each claims}}
 {{#each this as | statement |}}
 
-wd:{{main.id}} sng:{{rd statement.id}} {{{dataValue statement.mainsnak.datavalue}}}.
-sng:{{rd statement.id}} sng:singletonPropertyOf wdt:{{statement.mainsnak.property}} ;
+wd:{{main.id}} s:{{rd statement.id}} {{{dataValue statement.mainsnak.datavalue}}}.
+s:{{rd statement.id}} sng:singletonPropertyOf wdt:{{statement.mainsnak.property}} ;
 {{#each qualifiers}}
 {{#each this as |q|}}
       {{#ifEquals q.property 'P248'}}
