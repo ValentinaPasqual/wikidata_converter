@@ -40,7 +40,7 @@ wd:{{main.id}} a wdno:{{statement.mainsnak.property}}.
                                         {{#if statement.mainsnak.datavalue }}
 GRAPH s:{{rd statement.id}}  {
         wd:{{main.id}} <http://w3id.org/conj-wikidata-test/conj/{{main.id}}{{statement.mainsnak.property}}{{@key}}/{{statement.mainsnak.property}}> {{{dataValue statement.mainsnak.datavalue}}}.
-	<http://w3id.org/conj-wikidata-test/conj/{{main.id}}{{statement.mainsnak.property}}{{@key}}/{{statement.mainsnak.property}}> conj:isAConjecturalFormOf wd:{{statement.mainsnak.property}} .  
+	<http://w3id.org/conj-wikidata-test/conj/{{main.id}}{{statement.mainsnak.property}}{{@key}}/{{statement.mainsnak.property}}> conj:isAConjecturalFormOf wdt:{{statement.mainsnak.property}} .  
 }                                             
 GRAPH s:collapseOf{{rd statement.id}}{
         wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
@@ -61,7 +61,7 @@ GRAPH s:collapseOf{{rd statement.id}}{
                                         {{#if statement.mainsnak.datavalue }}
 GRAPH s:{{rd statement.id}}  {
 	wd:{{main.id}} <http://w3id.org/conj-wikidata-test/conj/{{main.id}}{{statement.mainsnak.property}}{{@key}}/{{statement.mainsnak.property}}> {{{dataValue statement.mainsnak.datavalue}}}.
-	<http://w3id.org/conj-wikidata-test/conj/{{main.id}}{{statement.mainsnak.property}}{{@key}}/{{statement.mainsnak.property}}> conj:isAConjecturalFormOf wd:{{statement.mainsnak.property}} .
+	<http://w3id.org/conj-wikidata-test/conj/{{main.id}}{{statement.mainsnak.property}}{{@key}}/{{statement.mainsnak.property}}> conj:isAConjecturalFormOf wdt:{{statement.mainsnak.property}} .
 }
                                         {{else}}
 GRAPH s:{{rd statement.id}}  {
@@ -75,7 +75,7 @@ GRAPH s:{{rd statement.id}}  {
                                                 {{#if statement.mainsnak.datavalue }}
 GRAPH s:{{rd statement.id}}  {
 	wd:{{main.id}} <http://w3id.org/conj-wikidata-test/conj/{{main.id}}{{statement.mainsnak.property}}{{@key}}/{{statement.mainsnak.property}}> {{{dataValue statement.mainsnak.datavalue}}}.
-	<http://w3id.org/conj-wikidata-test/conj/{{main.id}}{{statement.mainsnak.property}}{{@key}}/{{statement.mainsnak.property}}> conj:isAConjecturalFormOf wd:{{statement.mainsnak.property}} .
+	<http://w3id.org/conj-wikidata-test/conj/{{main.id}}{{statement.mainsnak.property}}{{@key}}/{{statement.mainsnak.property}}> conj:isAConjecturalFormOf wdt:{{statement.mainsnak.property}} .
 }
                                         {{else}}
 GRAPH s:{{rd statement.id}}  {
@@ -102,7 +102,7 @@ GRAPH GRAPH s:{{rd statement.id}} {
                                                 {{#if statement.mainsnak.datavalue }}
 GRAPH s:{{rd statement.id}}  {
         wd:{{main.id}} <http://w3id.org/conj-wikidata-test/conj/{{main.id}}{{statement.mainsnak.property}}{{@key}}/{{statement.mainsnak.property}}> {{{dataValue statement.mainsnak.datavalue}}}.
-        <http://w3id.org/conj-wikidata-test/conj/{{main.id}}{{statement.mainsnak.property}}{{@key}}/{{statement.mainsnak.property}}> conj:isAConjecturalFormOf wd:{{statement.mainsnak.property}} .
+        <http://w3id.org/conj-wikidata-test/conj/{{main.id}}{{statement.mainsnak.property}}{{@key}}/{{statement.mainsnak.property}}> conj:isAConjecturalFormOf wdt:{{statement.mainsnak.property}} .
 }
                                                 {{else}}
 GRAPH s:{{rd statement.id}}  {
