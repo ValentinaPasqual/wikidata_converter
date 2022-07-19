@@ -21,7 +21,10 @@ wd:{{main.id}} skos:altLabel "{{{deldq alias.value}}}"@{{alias.language}}.
                         {{#if (AllNoQualifiers this)}}
 GRAPH s:{{rd this.[0].id}} {
                                 {{#each this as | statement | }}
-        wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
+        GRAPH s:{{rd statement.id}}  {
+	wd:{{main.id}} <http://w3id.org/conj-wikidata-test/conj/{{main.id}}-{{@key}}/{{statement.mainsnak.property}}> {{{dataValue statement.mainsnak.datavalue}}}.
+	<http://w3id.org/conj-wikidata-test/conj/{{main.id}}-{{@key}}/{{statement.mainsnak.property}}> conj:isAConjecturalFormOf wdt:{{statement.mainsnak.property}} .
+}
                                 {{/each}}
 }
                                 {{#each this.[0].qualifiers}}
@@ -38,7 +41,10 @@ s:{{rd this.[0].id}} wikibase:rank wikibase:DeprecatedRank.
                                 {{#if (AllSameQualifiers this)}}
 GRAPH s:{{rd this.[0].id}} {
                                         {{#each this as | statement | }}
-        wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
+        GRAPH s:{{rd statement.id}}  {
+	wd:{{main.id}} <http://w3id.org/conj-wikidata-test/conj/{{main.id}}-{{@key}}/{{statement.mainsnak.property}}> {{{dataValue statement.mainsnak.datavalue}}}.
+	<http://w3id.org/conj-wikidata-test/conj/{{main.id}}-{{@key}}/{{statement.mainsnak.property}}> conj:isAConjecturalFormOf wdt:{{statement.mainsnak.property}} .
+}
                                         {{/each}}
 } 
                                         {{#each this.[0].qualifiers}}
@@ -54,7 +60,10 @@ s:{{rd this.[0].id}} wikibase:rank wikibase:DeprecatedRank.
                                 {{else}}
                                         {{#each this as | statement |}} 
 GRAPH s:{{rd statement.id}}  {
-        wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
+        GRAPH s:{{rd statement.id}}  {
+	wd:{{main.id}} <http://w3id.org/conj-wikidata-test/conj/{{main.id}}-{{@key}}/{{statement.mainsnak.property}}> {{{dataValue statement.mainsnak.datavalue}}}.
+	<http://w3id.org/conj-wikidata-test/conj/{{main.id}}-{{@key}}/{{statement.mainsnak.property}}> conj:isAConjecturalFormOf wdt:{{statement.mainsnak.property}} .
+}
 }
                                                 {{#each qualifiers}}
                                                         {{#each this as |q|}}
@@ -79,7 +88,10 @@ GRAPH s:{{rd statement.id}}  {
 	<http://w3id.org/conj-wikidata-test/conj/{{main.id}}-{{@key}}/{{statement.mainsnak.property}}> conj:isAConjecturalFormOf wdt:{{statement.mainsnak.property}} .  
 }                                             
 GRAPH s:collapseOf{{rd statement.id}}{
-        wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
+        GRAPH s:{{rd statement.id}}  {
+	wd:{{main.id}} <http://w3id.org/conj-wikidata-test/conj/{{main.id}}-{{@key}}/{{statement.mainsnak.property}}> {{{dataValue statement.mainsnak.datavalue}}}.
+	<http://w3id.org/conj-wikidata-test/conj/{{main.id}}-{{@key}}/{{statement.mainsnak.property}}> conj:isAConjecturalFormOf wdt:{{statement.mainsnak.property}} .
+}
         s:collapseOf{{rd statement.id}} conj:collapses s:{{rd statement.id}} 
 }
                                 {{/if}}
@@ -111,7 +123,10 @@ s:{{rd statement.id}} wikibase:rank wikibase:DeprecatedRank.
                                 {{#each this as | statement |}}
                                         {{#if (isNormal statement) }}
 GRAPH s:{{rd statement.id}}  {
-        wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
+        GRAPH s:{{rd statement.id}}  {
+	wd:{{main.id}} <http://w3id.org/conj-wikidata-test/conj/{{main.id}}-{{@key}}/{{statement.mainsnak.property}}> {{{dataValue statement.mainsnak.datavalue}}}.
+	<http://w3id.org/conj-wikidata-test/conj/{{main.id}}-{{@key}}/{{statement.mainsnak.property}}> conj:isAConjecturalFormOf wdt:{{statement.mainsnak.property}} .
+}
 }           
                                         {{/if}}
                                         {{#if (isDeprecated statement) }}
