@@ -31,10 +31,14 @@ GRAPH s:{{rd this.[0].id}} {
 }
                                 {{#each this.[0].qualifiers}}
                                         {{#each this as |q|}}
+                                                {{#ifEquals q.property 'P248'}}
+s:{{rd ../../this.[0].id}} pq:{{q.property}} {{{q.datavalue.value.id}}};
+                                                {{else}}
 s:{{rd ../../this.[0].id}} pq:{{this.property}} {{{dataValue this.datavalue}}}.
+                                                {{/ifEquals}}
                                         {{/each}}
                                 {{/each}}
-s:{{rd this.[0].id}} wikibase:rank wikibase:{{tc this.[0].rank}}Rank.
+s:{{rd this.[0].id}} wikibase:rank wikibase:DeprecatedRank.
                         {{else}}
                                 {{#if (AllSameQualifiers this)}}
 GRAPH s:{{rd this.[0].id}} {
@@ -44,10 +48,14 @@ GRAPH s:{{rd this.[0].id}} {
 } 
                                         {{#each this.[0].qualifiers}}
                                                 {{#each this as |q|}}
+                                                        {{#ifEquals q.property 'P248'}}
+s:{{rd ../../this.[0].id}} pq:{{q.property}} {{{q.datavalue.value.id}}};
+                                                        {{else}}
 s:{{rd ../../this.[0].id}} pq:{{this.property}} {{{dataValue this.datavalue}}}.
+                                                        {{/ifEquals}}
                                                 {{/each}}
                                         {{/each}}
-s:{{rd this.[0].id}} wikibase:rank wikibase:{{tc this.[0].rank}}Rank.
+s:{{rd this.[0].id}} wikibase:rank wikibase:DeprecatedRank.
                                 {{else}}
                                         {{#each this as | statement |}} 
 GRAPH s:{{rd statement.id}}  {
@@ -55,10 +63,14 @@ GRAPH s:{{rd statement.id}}  {
 }
                                                 {{#each qualifiers}}
                                                         {{#each this as |q|}}
-s:{{rd statement.id}} pq:{{q.property}} {{{dataValue q.datavalue}}}.
+                                                                {{#ifEquals q.property 'P248'}}
+s:{{rd statement.id}} pq:{{q.property}} {{{q.datavalue.value.id}}};
+                                                                {{else}}
+s:{{rd statement.id}} pq:{{q.property}} {{{dataValue q.datavalue}}};
+                                                                {{/ifEquals}}   
                                                         {{/each}}
                                                 {{/each}}
-s:{{rd statement.id}} wikibase:rank wikibase:{{tc rank}}Rank.
+s:{{rd statement.id}} wikibase:rank wikibase:DeprecatedRank.
                                         {{/each}}
                                 {{/if}}
                         {{/if}}
@@ -69,10 +81,14 @@ GRAPH s:{{rd statement.id}} {
 }
                                 {{#each qualifiers}}
                                         {{#each this as |q|}}
- s:{{rd statement.id}} pq:{{q.property}} {{{dataValue q.datavalue}}}.
+                                                {{#ifEquals q.property 'P248'}}
+s:{{rd statement.id}} pq:{{q.property}} {{{q.datavalue.value.id}}};
+                                                {{else}}
+s:{{rd statement.id}} pq:{{q.property}} {{{dataValue q.datavalue}}};
+                                                {{/ifEquals}}   
                                         {{/each}}
                                 {{/each}}
-s:{{rd statement.id}} wikibase:rank wikibase:{{tc rank}}Rank.
+s:{{rd statement.id}} wikibase:rank wikibase:DeprecatedRank.
                         {{/each}}  
                 {{/if}}
         {{/each}}
