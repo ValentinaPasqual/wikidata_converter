@@ -30,5 +30,5 @@
 @prefix wdno: <http://www.wikidata.org/prop/novalue/> .
 @prefix sng: <http://example.org/> . 
 @prefix conj: <https://w3id.org/conjectures/> . 
-@prefix conj-s: <https://w3id.org/conjectures/conjectural-statement/> . 
-@prefix assert-s: <https://w3id.org/conjectures/asserted-statement/> . 
+@prefix conj-s: <conj-https://w3id.org/conjectures/> . 
+@prefix assert-s: <assert-https://w3id.org/conjectures/> . 
