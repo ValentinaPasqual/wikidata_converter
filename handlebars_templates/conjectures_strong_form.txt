@@ -19,41 +19,41 @@ wd:{{main.id}} skos:altLabel "{{{deldq alias.value}}}"@{{alias.language}}.
         {{#each claims}}
                 {{#if (allNormals this) }}
                         {{#if (AllNoQualifiers this)}}
-GRAPH s:{{rd this.[0].id}} {
+GRAPH assert-s:{{rd this.[0].id}} {
                                 {{#each this as | statement | }}
         wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
                                 {{/each}}
 }
                                 {{#each this.[0].qualifiers}}
                                         {{#each this as |q|}}
-s:{{rd ../../this.[0].id}} pq:{{this.property}} {{{dataValue this.datavalue}}}.
+assert-s:{{rd ../../this.[0].id}} pq:{{this.property}} {{{dataValue this.datavalue}}}.
                                         {{/each}}
                                 {{/each}}
-s:{{rd this.[0].id}} wikibase:rank wikibase:{{tc this.[0].rank}}Rank.
+assert-s:{{rd this.[0].id}} wikibase:rank wikibase:{{tc this.[0].rank}}Rank.
                         {{else}}
                                 {{#if (AllSameQualifiers this)}}
-GRAPH s:{{rd this.[0].id}} {
+GRAPH assert-s:{{rd this.[0].id}} {
                                         {{#each this as | statement | }}
         wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
                                         {{/each}}
 } 
                                         {{#each this.[0].qualifiers}}
                                                 {{#each this as |q|}}
-s:{{rd ../../this.[0].id}} pq:{{this.property}} {{{dataValue this.datavalue}}}.
+assert-s:{{rd ../../this.[0].id}} pq:{{this.property}} {{{dataValue this.datavalue}}}.
                                                 {{/each}}
                                         {{/each}}
-s:{{rd this.[0].id}} wikibase:rank wikibase:{{tc this.[0].rank}}Rank.
+assert-s:{{rd this.[0].id}} wikibase:rank wikibase:{{tc this.[0].rank}}Rank.
                                 {{else}}
                                         {{#each this as | statement |}} 
-GRAPH s:{{rd statement.id}}  {
+GRAPH assert-s:{{rd statement.id}}  {
         wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
 }
                                                 {{#each qualifiers}}
                                                         {{#each this as |q|}}
-s:{{rd statement.id}} pq:{{q.property}} {{{dataValue q.datavalue}}}.
+assert-s:{{rd statement.id}} pq:{{q.property}} {{{dataValue q.datavalue}}}.
                                                         {{/each}}
                                                 {{/each}}
-s:{{rd statement.id}} wikibase:rank wikibase:{{tc rank}}Rank.
+assert-s:{{rd statement.id}} wikibase:rank wikibase:{{tc rank}}Rank.
                                         {{/each}}
                                 {{/if}}
                         {{/if}}
@@ -82,10 +82,10 @@ GRAPH conj-s:{{rd statement.id}}  {
 }
                                         {{#each qualifiers}}
                                                 {{#each this as |q|}}
-s:{{rd statement.id}} pq:{{q.property}} {{{dataValue q.datavalue}}}.
+conj-s:{{rd statement.id}} pq:{{q.property}} {{{dataValue q.datavalue}}}.
                                         {{/each}}
                                 {{/each}}
-s:{{rd statement.id}} wikibase:rank wikibase:{{tc rank}}Rank.  
+conj-s:{{rd statement.id}} wikibase:rank wikibase:{{tc rank}}Rank.  
                                 {{/if}}
                                         {{#if (isDeprecated statement) }}
 GRAPH conj-s:{{rd statement.id}}  {
@@ -103,16 +103,15 @@ conj-s:{{rd statement.id}} wikibase:rank wikibase:{{tc rank}}Rank.
                         {{#if (hasDeprecated this) }}
                                 {{#each this as | statement |}}
                                         {{#if (isNormal statement) }}
-GRAPH s:{{rd statement.id}}  {
+GRAPH assert-s:{{rd statement.id}}  {
         wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
 }           
-
                                         {{#each qualifiers}}
                                                 {{#each this as |q|}}
-s:{{rd statement.id}} pq:{{q.property}} {{{dataValue q.datavalue}}}.
+assert-s:{{rd statement.id}} pq:{{q.property}} {{{dataValue q.datavalue}}}.
                                                 {{/each}}
                                         {{/each}}
-s:{{rd statement.id}} wikibase:rank wikibase:{{tc rank}}Rank.  
+assert-s:{{rd statement.id}} wikibase:rank wikibase:{{tc rank}}Rank.  
                                         {{/if}}
                                         {{#if (isDeprecated statement) }}
 GRAPH conj-s:{{rd statement.id}}  {
