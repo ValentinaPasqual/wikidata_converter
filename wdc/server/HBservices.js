@@ -81,12 +81,12 @@ var helpers = {
         '"'
       );
     if (arg.type == "time")
-      { if (arg.value.time.substr(1).includes('-00-00T00:00:00Z'))
-        return '"' + arg.value.time.substr(1).replace('-00-00T00:00:00Z', '-01-01T00:00:00Z') + '"^^xsd:dateTime'; 
-      else if (arg.value.time.substr(1).includes('-00T00:00:00Z'))
-        return '"' + arg.value.time.substr(1).replace('-00T00:00:00Z', '-01T00:00:00Z') + '"^^xsd:dateTime';
+      { if (arg.value.time.substr(0).includes('-00-00T00:00:00Z'))
+        return '"' + arg.value.time.substr(0).replace('-00-00T00:00:00Z', '-01-01T00:00:00Z') + '"^^xsd:dateTime'; 
+      else if (arg.value.time.substr(0).includes('-00T00:00:00Z'))
+        return '"' + arg.value.time.substr(0).replace('-00T00:00:00Z', '-01T00:00:00Z') + '"^^xsd:dateTime';
       else 
-        return '"' + arg.value.time.substr(1) + '"^^xsd:dateTime';
+        return '"' + arg.value.time.substr(0) + '"^^xsd:dateTime';
       }
     if (arg.type == "quantity")
       return '"' + arg.value.amount + '"^^xsd:decimal';
@@ -125,12 +125,12 @@ var helpers = {
         '"'
       );
     if (arg.type == "time")
-    { if (arg.value.time.substr(1).includes('-00-00T00:00:00Z'))
-    return '"' + arg.value.time.substr(1).replace('-00-00T00:00:00Z', '-01-01T00:00:00Z') + '"^^xsd:dateTime'; 
-    else if (arg.value.time.substr(1).includes('-00T00:00:00Z'))
-    return '"' + arg.value.time.substr(1).replace('-00T00:00:00Z', '-01T00:00:00Z') + '"^^xsd:dateTime';
+    { if (arg.value.time.substr(0).includes('-00-00T00:00:00Z'))
+    return '"' + arg.value.time.substr(0).replace('-00-00T00:00:00Z', '-01-01T00:00:00Z') + '"^^xsd:dateTime'; 
+    else if (arg.value.time.substr(0).includes('-00T00:00:00Z'))
+    return '"' + arg.value.time.substr(0).replace('-00T00:00:00Z', '-01T00:00:00Z') + '"^^xsd:dateTime';
     else 
-    return '"' + arg.value.time.substr(1) + '"^^xsd:dateTime';
+    return '"' + arg.value.time.substr(0) + '"^^xsd:dateTime';
     }
     if (arg.type == "quantity")
       return '"' + arg.value.amount + '"^^xsd:decimal';

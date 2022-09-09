@@ -1,7 +1,7 @@
 import json
 import os
 
-directory_name = 'C:/Users/Valentina/Documents/DHDK/DHARC/PhD/tesi_eduard/dataset/D_datasets/D1/'
+directory_name = 'E:/Datasets/D4_fake'
 directory = os.fsencode(directory_name)
 
 
@@ -19,7 +19,7 @@ def counter(json_file):
 tot_ne, tot_ns = int(), int()
 for file in os.listdir(directory):
     filename = os.fsdecode(file)
-    if filename.endswith(".json") and filename.startswith('artwork'):
+    if filename.endswith(".json") and filename.startswith('author'):
         f = open(directory_name + '/' + filename, encoding='utf-8')
         json_file = json.load(f) # input jsons
         ne, ns = counter(json_file)
@@ -27,3 +27,4 @@ for file in os.listdir(directory):
         tot_ns += ns
         
 print(tot_ne, tot_ns)
+
