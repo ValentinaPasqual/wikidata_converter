@@ -4,7 +4,9 @@ import time
 
 import csv
 
-with open('C:\\Users\\Valentina\\Downloads\D3_results\\general_queries.csv') as f:
+# BEFORE STARTING RUNNING THIS SCRIPT, PLEASE BE SURE THAT BLAZEGRAPH IS RUNNING LOCALLY WITH ALL DATASETS IN THEIR SPECIFIC NAMESPACES
+
+with open('general_queries.csv') as f:
     general_queries = [{k: v for k, v in row.items()}
         for row in csv.DictReader(f, skipinitialspace=True, delimiter='@')]
 
@@ -19,8 +21,8 @@ def make_request(namespace, query):
 datasets_list = ['D1', 'D2', 'D3'] # add D4
 models_list = ['conj', 'ng', 'sng', 'wiki']
 
-with open('C:\\Users\\Valentina\\Downloads\D3_results\\BLAZEGRAPH_partial_general_queries_exec_time_results.txt', 'w') as f, \
-        open('C:\\Users\\Valentina\\Downloads\D3_results\\BLAZEGAPH_final_general_queries_exec_time_results.txt', 'w') as f_final :
+with open('results/BLAZEGRAPH_partial_general_queries_exec_time_results.txt', 'w') as f, \
+        open('results/BLAZEGAPH_final_general_queries_exec_time_results.txt', 'w') as f_final :
     for d in datasets_list:
         for m in models_list:
             f_final.write(f'\n\n#### ' + d + ' ' + m + ' ####\n')
