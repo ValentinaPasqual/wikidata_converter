@@ -16,8 +16,8 @@ def make_request(namespace, query):
     exec_time = (toc - tic)*1000
     return exec_time, len(result['results']['bindings'])
 
-datasets_list = ['D1', 'D2', 'D2'] # add D4
-models_list = ['conj', 'ng', 'sng', 'wiki', 'rdfstar']
+datasets_list = ['D1'] # add D4
+models_list = ['conj', 'ng', 'rdfstar']
 
 
 with open('results/GRAPHDB_partial_general_queries_exec_time_results.txt', 'w') as f, \
