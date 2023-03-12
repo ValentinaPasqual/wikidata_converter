@@ -99,9 +99,9 @@ In order to test Conjectures efficiency, we decided to create 3 additional datas
 | **Artwork Related Statements** | 39,982         | 1,061,560      | 2,130,997       | 6,788,221      |
 | **Random Entities**            | 3,049          | 30,049         | 300,049         | 2,999,999      |          
 | **Random Statements**          | 58,209         | 631,865        | 6,178,155       | 62,102,993     |
-| **Fake Statements**            | 2,107          | 21,243         |                 |                |
-| **Total Entities**             | 7,617          | 77,171         | 696,160         |                |
-| **Total Statements (-fake)**   | 136,849        | 2,108,470      | 12,282,426      |                |
+| **Fake Statements**            | 1,792          | 19,214         | 187,577         | 1,889,968      |
+| **Total Entities**             | 7,617          | 77,171         | 696,160         | 6,537,044      |
+| **Total Statements (-fake)**   | 136,849        | 2,108,470      | 12,282,426      | 81,628,885     |
 
 D1, D2, D3 contain a selected randomic selection of D4 in order to present the same Dataset in 4 different sizes (logaritmic increment) with a weighted distribution of the files.
 
