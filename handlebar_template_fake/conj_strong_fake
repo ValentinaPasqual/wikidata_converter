@@ -1,0 +1,116 @@
+{{#with this as | main | }}
+
+        {{#each claims}}
+                {{#if (allNormals this) }}
+                        {{#if (AllNoQualifiers this)}}
+CONJ s:{{rd this.[0].id}} {
+                                {{#each this as | statement | }}
+wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
+                                  
+                                {{/each}}
+}
+                                {{#each this.[0].qualifiers}}
+                                    {{#each this as |q|}}
+                                        {{#ifEquals q.property 'P248'}}
+s:{{rd ../../this.[0].id}} pq:{{q.property}} {{{q.datavalue.value.id}}}.
+                                        {{else}}
+s:{{rd ../../this.[0].id}} pq:{{this.property}} {{{dataValue this.datavalue}}}.
+                                        {{/ifEquals}}
+                                    {{/each}}
+                                {{/each}}
+s:{{rd this.[0].id}} wikibase:rank wikibase:DeprecatedRank.
+                        {{else}}
+                                {{#if (AllSameQualifiers this)}}
+CONJ s:{{rd this.[0].id}} {
+                                        {{#each this as | statement | }}
+wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
+                                
+                                        {{/each}}
+} 
+                                        {{#each this.[0].qualifiers}}
+                                                {{#each this as |q|}}
+                                                    {{#ifEquals q.property 'P248'}}
+s:{{rd ../../this.[0].id}} pq:{{q.property}} {{{q.datavalue.value.id}}}.
+                                                        {{else}}
+s:{{rd ../../this.[0].id}} pq:{{this.property}} {{{dataValue this.datavalue}}}.
+                                                    {{/ifEquals}}
+                                                {{/each}}
+                                        {{/each}}
+s:{{rd this.[0].id}} wikibase:rank wikibase:DeprecatedRank.
+                                {{else}}
+                                        {{#each this as | statement |}} 
+CONJ s:{{rd statement.id}}  {
+        wd:{{main.id}}  wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
+} 
+                                                {{#each qualifiers}}
+                                                        {{#each this as |q|}}
+                                                            {{#ifEquals q.property 'P248'}}
+s:{{rd statement.id}} pq:{{q.property}} {{{q.datavalue.value.id}}}.
+                                                            {{else}}
+s:{{rd statement.id}} pq:{{q.property}} {{{dataValue q.datavalue}}}.
+                                                            {{/ifEquals}}
+                                                        {{/each}}
+                                                {{/each}}
+s:{{rd statement.id}} wikibase:rank wikibase:DeprecatedRank.
+                                        {{/each}}
+                                {{/if}}
+                        {{/if}}
+                {{/if}}
+
+                {{#if (hasPreferred this) }}
+                        {{#each this as | statement |}}
+                                {{#if (isPreferred statement) }}
+# ACTUALLY IT IS A COLLAPSED CONJECTURE
+GRAPH s:{{rd statement.id}}  {
+        wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.  
+}                                             
+                                {{/if}}
+                                {{#if (isNormal statement) }}
+CONJ s:{{rd statement.id}}  {
+        wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
+} 
+                                {{/if}}
+                                        {{#if (isDeprecated statement) }}
+CONJ s:{{rd statement.id}}  {
+        wd:{{main.id}}  wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
+} 
+                                {{/if}}
+                        {{#each qualifiers}}
+                                {{#each this as |q|}}
+                                    {{#ifEquals q.property 'P248'}}
+s:{{rd statement.id}} pq:{{q.property}} {{{q.datavalue.value.id}}}.
+                                    {{else}}
+s:{{rd statement.id}} pq:{{q.property}} {{{dataValue q.datavalue}}}.
+                                    {{/ifEquals}}     
+                                {{/each}}
+                        {{/each}}
+s:{{rd statement.id}} wikibase:rank wikibase:DeprecatedRank.   
+                        {{/each}}
+                {{else}}
+                        {{#if (hasDeprecated this) }}
+                                {{#each this as | statement |}}
+                                        {{#if (isNormal statement) }}
+CONJ s:{{rd statement.id}}  {
+        wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
+}            
+                                        {{/if}}
+                                        {{#if (isDeprecated statement) }}
+CONJ s:{{rd statement.id}}  {
+        wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
+} 
+                                        {{/if}}
+                                        {{#each qualifiers}}
+                                             {{#each this as |q|}}
+                                                {{#ifEquals q.property 'P248'}}
+s:{{rd statement.id}} pq:{{q.property}} {{{q.datavalue.value.id}}}.
+                                                {{else}}
+s:{{rd statement.id}} pq:{{q.property}} {{{dataValue q.datavalue}}}.
+                                                {{/ifEquals}}                                             
+                                            {{/each}}
+                                        {{/each}}
+s:{{rd statement.id}} wikibase:rank wikibase:DeprecatedRank.   
+                                {{/each}}
+                        {{/if}}
+                {{/if}}
+        {{/each}}
+{{/with}}
