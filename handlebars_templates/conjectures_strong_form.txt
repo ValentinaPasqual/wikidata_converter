@@ -28,7 +28,7 @@ GRAPH s:{{rd this.[0].id}} {
                                 {{#each this.[0].qualifiers}}
                                     {{#each this as |q|}}
                                         {{#ifEquals q.property 'P248'}}
-s:{{rd ../../this.[0].id}} pq:{{q.property}} {{{q.datavalue.value.id}}};
+s:{{rd ../../this.[0].id}} pq:{{q.property}} {{{q.datavalue.value.id}}}.
                                         {{else}}
 s:{{rd ../../this.[0].id}} pq:{{this.property}} {{{dataValue this.datavalue}}}.
                                         {{/ifEquals}}
@@ -46,7 +46,7 @@ GRAPH s:{{rd this.[0].id}} {
                                         {{#each this.[0].qualifiers}}
                                                 {{#each this as |q|}}
                                                     {{#ifEquals q.property 'P248'}}
-s:{{rd ../../this.[0].id}} pq:{{q.property}} {{{q.datavalue.value.id}}};
+s:{{rd ../../this.[0].id}} pq:{{q.property}} {{{q.datavalue.value.id}}}.
                                                         {{else}}
 s:{{rd ../../this.[0].id}} pq:{{this.property}} {{{dataValue this.datavalue}}}.
                                                     {{/ifEquals}}
@@ -61,9 +61,9 @@ GRAPH s:{{rd statement.id}}  {
                                                 {{#each qualifiers}}
                                                         {{#each this as |q|}}
                                                             {{#ifEquals q.property 'P248'}}
-s:{{rd statement.id}} pq:{{q.property}} {{{q.datavalue.value.id}}};
+s:{{rd statement.id}} pq:{{q.property}} {{{q.datavalue.value.id}}}.
                                                             {{else}}
-s:{{rd statement.id}} pq:{{q.property}} {{{dataValue q.datavalue}}};
+s:{{rd statement.id}} pq:{{q.property}} {{{dataValue q.datavalue}}}.
                                                             {{/ifEquals}}
                                                         {{/each}}
                                                 {{/each}}
@@ -94,9 +94,9 @@ CONJ s:{{rd statement.id}}  {
                         {{#each qualifiers}}
                                 {{#each this as |q|}}
                                     {{#ifEquals q.property 'P248'}}
-s:{{rd statement.id}} pq:{{q.property}} {{{q.datavalue.value.id}}};
+s:{{rd statement.id}} pq:{{q.property}} {{{q.datavalue.value.id}}}.
                                     {{else}}
-s:{{rd statement.id}} pq:{{q.property}} {{{dataValue q.datavalue}}};
+s:{{rd statement.id}} pq:{{q.property}} {{{dataValue q.datavalue}}}.
                                     {{/ifEquals}}     
                                 {{/each}}
                         {{/each}}
@@ -118,9 +118,9 @@ CONJ s:{{rd statement.id}}  {
                                         {{#each qualifiers}}
                                              {{#each this as |q|}}
                                                 {{#ifEquals q.property 'P248'}}
-s:{{rd statement.id}} pq:{{q.property}} {{{q.datavalue.value.id}}};
+s:{{rd statement.id}} pq:{{q.property}} {{{q.datavalue.value.id}}}.
                                                 {{else}}
-s:{{rd statement.id}} pq:{{q.property}} {{{dataValue q.datavalue}}};
+s:{{rd statement.id}} pq:{{q.property}} {{{dataValue q.datavalue}}}.
                                                 {{/ifEquals}}                                             
                                             {{/each}}
                                         {{/each}}
