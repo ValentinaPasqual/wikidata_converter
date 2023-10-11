@@ -82,7 +82,7 @@ GRAPH s:{{rd statement.id}}  {
 }                                             
                                 {{/if}}
                                 {{#if (isNormal statement) }}
-GRAPH s:{{rd statement.id}}  {
+CONJ s:{{rd statement.id}}  {
 	wd:{{main.id}} wdt:{{statement.mainsnak.property}} {{{dataValue statement.mainsnak.datavalue}}}.
 }
                                 {{/if}}
