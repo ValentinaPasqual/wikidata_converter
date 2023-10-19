@@ -1,13 +1,13 @@
 {
    "headings": {
-      "Q1": "Which are all items and their creators ?",
-      "Q2": "Which are all items and their locations?",
-      "Q3" : "Which are all attributions deemed to be questionable?",
-      "Q4" : "Which are all the past locations of items?",
-      "Q5" : "Which is the source of questioned attributions of items?",
-      "Q6" : "Which is the source of past locations of items?",
-      "Q7" : "Which are all currently accepted attributions?",
-      "Q8" : "Which are the current locations of items?"
+      "Q1" : "Which are all paintings and their creators ?",
+      "Q2" : "Which are all paintings and their locations?",
+      "Q3" : "Which are all attributions about paintings deemed to be questionable?",
+      "Q4" : "Which are all the past locations of paintings?",
+      "Q5" : "Which is the source of questioned attributions of paintings?",
+      "Q6" : "Which is the source of past locations of paintings?",
+      "Q7" : "Which are all currently accepted attributions about paintings?",
+      "Q8" : "Which are the current locations of paintings?"
    },
    "weak-conj":{
       "Q1":"prefix wdt: <http://www.wikidata.org/prop/direct/> prefix wd: <http://www.wikidata.org/entity/> SELECT DISTINCT ?artwork ?artist WHERE { GRAPH ?g31 {?artwork wdt:P31 wd:Q3305213.} GRAPH ?g {?artwork wdt:P170 ?artist} }",
@@ -59,7 +59,7 @@
       "Q7":"prefix wdt: <http://www.wikidata.org/prop/direct/> prefix wd: <http://www.wikidata.org/entity/> prefix wikibase: <http://wikiba.se/ontology#> prefix p: <http://www.wikidata.org/prop/> prefix ps: <http://www.wikidata.org/prop/statement/> SELECT DISTINCT ?artwork ?artist WHERE { ?artwork p:P170 ?statement. ?artwork wdt:P31 wd:Q3305213. ?statement ps:P170 ?artist . ?statement wikibase:rank wikibase:PreferredRank. }",
       "Q8":"prefix wdt: <http://www.wikidata.org/prop/direct/> prefix wd: <http://www.wikidata.org/entity/> prefix wikibase: <http://wikiba.se/ontology#> prefix p: <http://www.wikidata.org/prop/> prefix ps: <http://www.wikidata.org/prop/statement/> SELECT DISTINCT ?artwork ?location WHERE { ?artwork p:P276 ?statement. ?artwork wdt:P31 wd:Q3305213. ?statement ps:P276 ?location . ?statement wikibase:rank wikibase:PreferredRank. }"
    },
-   "rdf-star":{
+   "rdfstar":{
       "Q1":"prefix wdt: <http://www.wikidata.org/prop/direct/> prefix wd: <http://www.wikidata.org/entity/> SELECT DISTINCT ?artwork ?artist WHERE { ?artwork wdt:P31 wd:Q3305213. ?artwork wdt:P170 ?artist. }",
       "Q2":"prefix wdt: <http://www.wikidata.org/prop/direct/> prefix wd: <http://www.wikidata.org/entity/> SELECT DISTINCT ?artwork ?location WHERE { ?artwork wdt:P31 wd:Q3305213. ?artwork wdt:P276 ?location }",
       "Q3":"PREFIX pq: <http://www.wikidata.org/prop/qualifier/> prefix wdt: <http://www.wikidata.org/prop/direct/> prefix wd: <http://www.wikidata.org/entity/> prefix wikibase: <http://wikiba.se/ontology#> prefix p: <http://www.wikidata.org/prop/> prefix ps: <http://www.wikidata.org/prop/statement/> SELECT DISTINCT ?artwork ?artist WHERE { BIND(<< ?artwork wdt:P170 ?artist >> AS ?attribution) ?artwork wdt:P31 wd:Q3305213. FILTER NOT EXISTS {?artwork wdt:P170 ?artist} } ",
