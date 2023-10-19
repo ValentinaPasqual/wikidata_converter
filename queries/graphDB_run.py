@@ -2,11 +2,20 @@ import json
 from pymantic import sparql
 import time
 
-import csv
 
-with open('general_queries.csv') as f:
-    general_queries = [{k: v for k, v in row.items()}
-        for row in csv.DictReader(f, skipinitialspace=True, delimiter='@')]
+options = ["A) General Queries", "B) Filtered Queries"]
+
+for option in options:
+    print(option)
+
+choice = input("Enter the letter corresponding to your choice (A/B): ").strip().upper()
+
+if choice == "A":
+    with open('general_queries.json', 'r') as file:
+        queries = json.load(file)
+elif choice == "B":
+    with open('filtered_queries.json', 'r') as file:
+        queries = json.load(file)
 
 def make_request(namespace, query):
     server = sparql.SPARQLServer('http://localhost:7200/repositories/' + namespace)
@@ -16,29 +25,27 @@ def make_request(namespace, query):
     exec_time = (toc - tic)*1000
     return exec_time, len(result['results']['bindings'])
 
-datasets_list = ['D1'] # add D4
-models_list = ['conj', 'ng', 'rdfstar']
+log_datasets_list = ['D2']
 
-
-with open('results/GRAPHDB_partial_general_queries_exec_time_results.txt', 'w') as f, \
-        open('results/GRAPHDB_final_general_queries_exec_time_results.txt', 'w') as f_final :
-    for d in datasets_list:
-        for m in models_list:
-            f_final.write(f'\n\n#### ' + d + ' ' + m + ' ####\n')
-            for idx, g in enumerate(general_queries):
-                f.write(f'\n\n#### ' + d + ' ' + m + ' Q' + str(idx + 1) + ' ####\n')
-                namespace = d + '-' + m
-                x = 0
-                sum_et = 0
-                while x < 11:
-                    exec_time, nres = make_request(namespace, g[m])
-                    if x != 0:
-                        f.write(str(exec_time) + '\n')
-                        sum_et += exec_time
-                        #time.sleep(1)
-                    x += 1
-                sum_string = str(sum_et/10).replace('.', ',')
-                f_final.write(sum_string + '\n')
-                print(d + ' ' + m + ' Q' + str(idx + 1) + ': ' + str(nres))
-
-
+choice_string = choice.replace(' ', '').replace(')', '')
+for log_d in log_datasets_list:
+    with open(f'results/{log_d}_{choice_string}_partial_queries_exec_time_results.txt', 'w') as f, \
+            open(f'results/{log_d}_{choice_string}_final_general_queries_exec_time_results.txt', 'w') as f_final :
+        for key in queries:
+            if key != 'headings':
+                for query_id,query in queries[key].items():
+                    if query != 'None':
+                        f.write(f'\n\n#### {log_d} {key} {query_id} ####\n')
+                        namespace = log_d + '-' + key
+                        x = 0
+                        sum_et = 0
+                        while x < 11:
+                            exec_time, nres = make_request(namespace, query)
+                            if x != 0:
+                                f.write(str(exec_time) + '\n')
+                                sum_et += exec_time
+                                #time.sleep(1)
+                            x += 1
+                        sum_string = str(sum_et/10).replace('.', ',')
+                        f_final.write(sum_string + '\n')
+                        print(f'{log_d} {key} {query_id}: {str(nres)}')
