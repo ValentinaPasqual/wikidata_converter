@@ -7,3 +7,5 @@ Both scripts run the 8 selected queries (stored in general_queries.json and filt
 - the first contains the execution times of each query
 - the second contains the avarage exectution for each query (run 10 times) of each dataset
 - additionally, the scripts print the number of results in the python console aiming to check also the dataset consistency
+
+If you occur in some Heap memory threshold overload, please add to your GraphDB instance the rule "Ddefault.min.distinct.threshold:300000000" (which is usually 250m by default)
