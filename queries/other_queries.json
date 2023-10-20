@@ -1,0 +1,33 @@
+{
+   "headings": {
+      "Q1" : "",
+      "Q2" : "",
+      "Q3" : "Which are the most recurring authors which have been discarded for artworks?",
+      "Q4" : "Which are the most recurring authors which have been discarded for artworks and have been claimed by Fabio Vitali?",
+      "Q5" : "Which is the source of questioned attributions of paintings made by Fabio Vitali?",
+      "Q6" : "Which is the source of past locations of paintings from 1500 to 1700?",
+      "Q7" : "",
+      "Q8" : ""
+   },
+   "rdfstar":{
+     "Q3":"prefix wdt: <http://www.wikidata.org/prop/direct/> prefix wd: <http://www.wikidata.org/entity/> SELECT (COUNT (?discardedArtist) as ?num)  ?discardedArtist WHERE { ?artwork wdt:P31 ?type. ?type (wdt:P279*) wd:Q838948. {BIND(<< ?artwork wdt:P170 ?discardedArtist >> AS ?discardedAttribution)} UNION {BIND(<< ?artwork wdt:P50 ?discardedArtist >> AS ?discardedAttribution)} FILTER NOT EXISTS {?artwork wdt:P170|wdt:P50 ?discardedArtist} } GROUP BY ?discardedArtist ORDER BY DESC (?num)",
+     "Q4":"PREFIX pq: <http://www.wikidata.org/prop/qualifier/> prefix wd: <http://www.wikidata.org/entity/> prefix wdt: <http://www.wikidata.org/prop/direct/> SELECT (COUNT (?discardedArtist) as ?num)  ?discardedArtist WHERE { ?artwork wdt:P31 ?type. ?type (wdt:P279*) wd:Q838948. {BIND(<< ?artwork wdt:P170 ?discardedArtist >> AS ?discardedAttribution)} UNION {BIND(<< ?artwork wdt:P50 ?discardedArtist >> AS ?discardedAttribution)} ?discardedAttribution pq:P248 <https://w3id.org/conjectures/InventedPaternityOfArtworks-FV>. FILTER NOT EXISTS {?artwork wdt:P170|wdt:P50 ?discardedArtist} } GROUP BY ?discardedArtist ORDER BY DESC (?num)"
+   },
+   "weak-conj":{
+      "Q3":"prefix wdt: <http://www.wikidata.org/prop/direct/> prefix wd: <http://www.wikidata.org/entity/> PREFIX conj: <https://w3id.org/conjectures/> SELECT (COUNT (?discardedArtist) as ?num)  ?discardedArtist WHERE { ?artwork wdt:P31 ?type. ?type (wdt:P279*) wd:Q838948. {GRAPH ?conjecture { ?conjPred conj:isAConjecturalFormOf wdt:P170}} UNION {GRAPH ?conjecture { ?conjPred conj:isAConjecturalFormOf wdt:P50}} GRAPH ?conjecture {?artwork ?conjPred ?discardedArtist} FILTER NOT EXISTS {?gg conj:collapses ?conjecture} } GROUP BY ?discardedArtist ORDER BY DESC (?num)",
+      "Q4":"PREFIX pq: <http://www.wikidata.org/prop/qualifier/> prefix wdt: <http://www.wikidata.org/prop/direct/> prefix wd: <http://www.wikidata.org/entity/> PREFIX conj: <https://w3id.org/conjectures/> SELECT (COUNT (?discardedArtist) as ?num)  ?discardedArtist WHERE { ?artwork wdt:P31 ?type. ?type (wdt:P279*) wd:Q838948. {GRAPH ?conjecture { ?conjPred conj:isAConjecturalFormOf wdt:P170}} UNION {GRAPH ?conjecture { ?conjPred conj:isAConjecturalFormOf wdt:P50}} ?conjecture pq:P248 <https://w3id.org/conjectures/InventedPaternityOfArtworks-FV>. GRAPH ?conjecture {?artwork ?conjPred ?discardedArtist} FILTER NOT EXISTS {?gg conj:collapses ?conjecture} } GROUP BY ?discardedArtist ORDER BY DESC (?num)"
+    },
+   "strong-conj":{
+      "Q3": "prefix wdt: <http://www.wikidata.org/prop/direct/> prefix wd: <http://www.wikidata.org/entity/> SELECT (COUNT (?discardedArtist) as ?num)  ?discardedArtist WHERE { ?artwork wdt:P31 ?type. ?type (wdt:P279*) wd:Q838948. CONJ ?conjecture { ?artwork wdt:P170|wdt:P50 ?discardedArtist } } GROUP BY ?discardedArtist ORDER BY DESC (?num)",
+      "Q4": "PREFIX pq: <http://www.wikidata.org/prop/qualifier/> prefix wdt: <http://www.wikidata.org/prop/direct/> prefix wd: <http://www.wikidata.org/entity/> SELECT (COUNT (?discardedArtist) as ?num)  ?discardedArtist WHERE { ?artwork wdt:P31 ?type. ?type (wdt:P279*) wd:Q838948. CONJ ?conjecture { ?artwork wdt:P170|wdt:P50 ?discardedArtist } ?conjecture pq:P248 <https://w3id.org/conjectures/InventedPaternityOfArtworks-FV>} GROUP BY ?discardedArtist ORDER BY DESC (?num)"
+   },
+   "wikidata":{
+     "Q3":"prefix wdt: <http://www.wikidata.org/prop/direct/> prefix wd: <http://www.wikidata.org/entity/> PREFIX p: <http://www.wikidata.org/prop/> PREFIX ps: <http://www.wikidata.org/prop/statement/> SELECT (COUNT (?discardedArtist) as ?num)  ?discardedArtist WHERE { ?artwork wdt:P31 ?type. ?type (wdt:P279*) wd:Q838948. ?artwork p:P170|p:P50 ?statement. ?statement ps:P170|ps:P50 ?discardedArtist. FILTER NOT EXISTS {?artwork wdt:P170|wdt:P50 ?discardedArtist} } GROUP BY ?discardedArtist ORDER BY DESC (?num)",
+      "Q4":"PREFIX pq: <http://www.wikidata.org/prop/qualifier/> prefix wdt: <http://www.wikidata.org/prop/direct/> prefix wd: <http://www.wikidata.org/entity/> PREFIX p: <http://www.wikidata.org/prop/> PREFIX ps: <http://www.wikidata.org/prop/statement/> SELECT (COUNT (?discardedArtist) as ?num)  ?discardedArtist WHERE { ?artwork wdt:P31 ?type. ?type (wdt:P279*) wd:Q838948. ?artwork p:P170|p:P50 ?statement. ?statement ps:P170|ps:P50 ?discardedArtist. ?statement pq:P248 <https://w3id.org/conjectures/InventedPaternityOfArtworks-FV>. FILTER NOT EXISTS {?artwork wdt:P170|wdt:P50 ?discardedArtist} } GROUP BY ?discardedArtist ORDER BY DESC (?num)"
+    },
+   "ng":{
+
+   },
+   "singleton":{
+   }
+}

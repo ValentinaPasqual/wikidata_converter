@@ -3,18 +3,21 @@ from pymantic import sparql
 import time
 
 
-options = ["A) General Queries", "B) Filtered Queries"]
+options = ["A) General Queries", "B) Filtered Queries", "C) Other queries"]
 
 for option in options:
     print(option)
 
-choice = input("Enter the letter corresponding to your choice (A/B): ").strip().upper()
+choice = input("Enter the letter corresponding to your choice (A/B/C): ").strip().upper()
 
 if choice == "A":
     with open('general_queries.json', 'r') as file:
         queries = json.load(file)
 elif choice == "B":
     with open('filtered_queries.json', 'r') as file:
+        queries = json.load(file)
+elif choice == "C":
+    with open('other_queries.json', 'r') as file:
         queries = json.load(file)
 
 def make_request(namespace, query):
@@ -30,7 +33,7 @@ log_datasets_list = ['D2']
 choice_string = choice.replace(' ', '').replace(')', '')
 for log_d in log_datasets_list:
     with open(f'results/{log_d}_{choice_string}_partial_queries_exec_time_results.txt', 'w') as f, \
-            open(f'results/{log_d}_{choice_string}_final_general_queries_exec_time_results.txt', 'w') as f_final :
+            open(f'results/{log_d}_{choice_string}_final_queries_exec_time_results.txt', 'w') as f_final :
         for key in queries:
             if key != 'headings':
                 for query_id,query in queries[key].items():
